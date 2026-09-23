@@ -22,7 +22,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (32 algorithms)
+## Catalog (33 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -58,6 +58,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [minimum_spanning_tree](algorithm_lab/minimum_spanning_tree.py) | Graphs | Kruskal tree or forest with stable edge selection |
 | [disjoint_set](algorithm_lab/disjoint_set.py) | Data structures | Union-find with path compression and component sizes |
 | [strongly_connected_components](algorithm_lab/strongly_connected_components.py) | Graphs | Iterative Kosaraju decomposition of directed cycles |
+| [bipartite_coloring](algorithm_lab/bipartite_coloring.py) | Graphs | Two-color undirected graphs or detect an odd cycle |
 
 ## Validation
 
