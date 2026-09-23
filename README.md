@@ -22,7 +22,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (45 algorithms)
+## Catalog (46 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -71,6 +71,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [prime_sieve](algorithm_lab/prime_sieve.py) | Number theory | Sieve of Eratosthenes through an inclusive bound |
 | [prime_factorization](algorithm_lab/prime_factorization.py) | Number theory | Exact trial-division factorization with multiplicities |
 | [integer_sqrt](algorithm_lab/integer_sqrt.py) | Number theory | Exact floor square roots using integer Newton iteration |
+| [fast_fibonacci](algorithm_lab/fast_fibonacci.py) | Number theory | Exact Fibonacci numbers by iterative fast doubling |
 
 ## Validation
 
