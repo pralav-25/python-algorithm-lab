@@ -22,12 +22,13 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (2 algorithms)
+## Catalog (3 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
 | [binary_search](algorithm_lab/binary_search.py) | Searching | First matching index in a sorted sequence |
 | [quickselect](algorithm_lab/quickselect.py) | Selection | Zero-based order statistics with three-way partitioning |
+| [merge_sort](algorithm_lab/merge_sort.py) | Sorting | Stable sorting with an optional key function |
 
 ## Validation
 
