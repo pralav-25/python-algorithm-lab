@@ -22,7 +22,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (11 algorithms)
+## Catalog (12 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -37,6 +37,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [prefix_sum](algorithm_lab/prefix_sum.py) | Sequences | Immutable preprocessing for constant-time range sums |
 | [sliding_window_max](algorithm_lab/sliding_window_max.py) | Sequences | Window maxima using a monotonic deque |
 | [longest_increasing_subsequence](algorithm_lab/longest_increasing_subsequence.py) | Sequences | Reconstruct one strictly increasing subsequence |
+| [merge_intervals](algorithm_lab/merge_intervals.py) | Intervals | Union of overlapping closed integer intervals |
 
 ## Validation
 
