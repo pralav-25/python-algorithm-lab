@@ -22,7 +22,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (19 algorithms)
+## Catalog (20 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -45,6 +45,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [levenshtein](algorithm_lab/levenshtein.py) | Strings | Edit distance with linear working memory |
 | [longest_common_subsequence](algorithm_lab/longest_common_subsequence.py) | Strings | Dynamic-programming reconstruction of a common subsequence |
 | [longest_palindrome](algorithm_lab/longest_palindrome.py) | Strings | Expand around centers to find a palindromic substring |
+| [trie](algorithm_lab/trie.py) | Data structures | Prefix dictionary with insertion, deletion, and completions |
 
 ## Validation
 
