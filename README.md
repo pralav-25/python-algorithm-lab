@@ -22,7 +22,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (9 algorithms)
+## Catalog (10 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -35,6 +35,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [two_sum](algorithm_lab/two_sum.py) | Sequences | Find original indices of an integer pair with a target sum |
 | [max_subarray](algorithm_lab/max_subarray.py) | Sequences | Kadane maximum sum with original slice boundaries |
 | [prefix_sum](algorithm_lab/prefix_sum.py) | Sequences | Immutable preprocessing for constant-time range sums |
+| [sliding_window_max](algorithm_lab/sliding_window_max.py) | Sequences | Window maxima using a monotonic deque |
 
 ## Validation
 
