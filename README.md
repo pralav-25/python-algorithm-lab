@@ -1,0 +1,38 @@
+# Python Algorithm Lab
+
+Readable implementations of core algorithms, with executable examples and
+independent regression tests. Python 3.11+; no runtime dependencies.
+
+These modules are learning implementations. Their docstrings state the
+input assumptions, tie behavior, and complexity. Import only the module you need.
+
+```python
+from algorithm_lab.binary_search import binary_search
+
+assert binary_search([1, 3, 3, 8], 3) == 1
+```
+
+## Run locally
+
+```bash
+python -m unittest discover -s tests -v
+python -m doctest algorithm_lab/*.py
+```
+
+Optional installation: `python -m pip install -e .`. For linting and formatting,
+install `.[dev]` and run `ruff check .` and `ruff format --check .`.
+
+## Catalog (1 algorithms)
+
+| Module | Topic | What it demonstrates |
+| --- | --- | --- |
+| [binary_search](algorithm_lab/binary_search.py) | Searching | First matching index in a sorted sequence |
+
+## Validation
+
+Tests use standard-library oracles, exhaustive small cases, and seeded inputs.
+Examples are checked with `doctest`. GitHub Actions runs tests on Python 3.11,
+3.12, and 3.13. Each feature commit includes its implementation and tests.
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for development guidance. Licensed under
+the [MIT license](LICENSE).
