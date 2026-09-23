@@ -22,7 +22,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (14 algorithms)
+## Catalog (15 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -40,6 +40,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [merge_intervals](algorithm_lab/merge_intervals.py) | Intervals | Union of overlapping closed integer intervals |
 | [interval_scheduling](algorithm_lab/interval_scheduling.py) | Intervals | Maximum-cardinality selection of compatible activities |
 | [inversion_count](algorithm_lab/inversion_count.py) | Sequences | Count out-of-order pairs using merge-based accumulation |
+| [kmp_search](algorithm_lab/kmp_search.py) | Strings | Find overlapping matches with a prefix-function automaton |
 
 ## Validation
 
