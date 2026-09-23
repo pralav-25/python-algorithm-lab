@@ -34,3 +34,5 @@ class DijkstraTests(unittest.TestCase):
                 dijkstra({"disconnected": [("leaf", weight)]}, "source")
         with self.assertRaises(ValueError):
             dijkstra({0: [(1, 1e308)], 1: [(2, 1e308)]}, 0)
+        with self.assertRaises(ValueError):
+            dijkstra({0: [(1, 10**1000)], 1: [(2, 1.0)]}, 0)

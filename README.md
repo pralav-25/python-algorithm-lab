@@ -1,10 +1,18 @@
 # Python Algorithm Lab
 
+[![Tests](https://github.com/pralav-25/python-algorithm-lab/actions/workflows/ci.yml/badge.svg)](https://github.com/pralav-25/python-algorithm-lab/actions/workflows/ci.yml)
+
 Readable implementations of core algorithms, with executable examples and
 independent regression tests. Python 3.11+; no runtime dependencies.
 
 These modules are learning implementations. Their docstrings state the
 input assumptions, tie behavior, and complexity. Import only the module you need.
+
+Comparison-based routines require mutually comparable values with a consistent
+total order; NaN is unsupported. String algorithms operate on Unicode code points,
+without normalization. Graph vertices must be hashable. Numeric routines document
+their accepted domains and validation behavior. Weighted path routines
+raise `ValueError` if a computed cost cannot be represented as a finite number.
 
 ```python
 from algorithm_lab.binary_search import binary_search
@@ -22,7 +30,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (49 algorithms)
+## Catalog (50 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -75,6 +83,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [binomial_coefficient](algorithm_lab/binomial_coefficient.py) | Combinatorics | Exact combinations without factorial intermediates |
 | [chinese_remainder](algorithm_lab/chinese_remainder.py) | Number theory | Merge modular constraints, including compatible non-coprime moduli |
 | [reservoir_sample](algorithm_lab/reservoir_sample.py) | Sampling | Uniform samples from a stream without knowing its length |
+| [running_stats](algorithm_lab/running_stats.py) | Streaming statistics | Welford mean and variance with validated atomic updates |
 
 ## Validation
 

@@ -32,3 +32,5 @@ class BellmanFordTests(unittest.TestCase):
         self.assertEqual(bellman_ford({}, "alone"), {"alone": 0})
         with self.assertRaises(ValueError):
             bellman_ford({1: [(2, math.nan)]}, 0)
+        with self.assertRaises(ValueError):
+            bellman_ford({0: [(1, 10**1000)], 1: [(2, 1.0)]}, 0)

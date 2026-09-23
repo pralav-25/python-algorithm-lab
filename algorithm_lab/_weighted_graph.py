@@ -20,7 +20,10 @@ def weighted_graph(graph, *, allow_negative=False):
 
 
 def path_cost(first, second):
-    total = first + second
+    try:
+        total = first + second
+    except OverflowError as exc:
+        raise ValueError("path cost exceeds the finite numeric range") from exc
     if isinstance(total, float) and not math.isfinite(total):
         raise ValueError("path cost exceeds the finite numeric range")
     return total
