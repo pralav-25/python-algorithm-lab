@@ -22,7 +22,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (22 algorithms)
+## Catalog (23 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -48,6 +48,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [trie](algorithm_lab/trie.py) | Data structures | Prefix dictionary with insertion, deletion, and completions |
 | [run_length_encoding](algorithm_lab/run_length_encoding.py) | Strings | Lossless run encoding with bounded decoding |
 | [balanced_brackets](algorithm_lab/balanced_brackets.py) | Strings | Stack-based matching for parentheses, brackets, and braces |
+| [bfs_shortest_path](algorithm_lab/bfs_shortest_path.py) | Graphs | Shortest unweighted paths with predecessor reconstruction |
 
 ## Validation
 
