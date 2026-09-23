@@ -22,7 +22,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (25 algorithms)
+## Catalog (26 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -51,6 +51,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [bfs_shortest_path](algorithm_lab/bfs_shortest_path.py) | Graphs | Shortest unweighted paths with predecessor reconstruction |
 | [depth_first_search](algorithm_lab/depth_first_search.py) | Graphs | Iterative DFS preorder without recursion limits |
 | [connected_components](algorithm_lab/connected_components.py) | Graphs | Undirected components including isolated and neighbor-only vertices |
+| [topological_sort](algorithm_lab/topological_sort.py) | Graphs | Kahn ordering with explicit directed-cycle detection |
 
 ## Validation
 
