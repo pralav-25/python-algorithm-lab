@@ -22,7 +22,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (42 algorithms)
+## Catalog (43 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -68,6 +68,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [grid_paths](algorithm_lab/grid_paths.py) | Dynamic programming | Count exact right-and-down paths around obstacles |
 | [extended_gcd](algorithm_lab/extended_gcd.py) | Number theory | Bezout coefficients for signed arbitrary-size integers |
 | [modular_power](algorithm_lab/modular_power.py) | Number theory | Exponentiation by squaring under a positive modulus |
+| [prime_sieve](algorithm_lab/prime_sieve.py) | Number theory | Sieve of Eratosthenes through an inclusive bound |
 
 ## Validation
 
