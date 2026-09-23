@@ -22,7 +22,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (16 algorithms)
+## Catalog (17 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -42,6 +42,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [inversion_count](algorithm_lab/inversion_count.py) | Sequences | Count out-of-order pairs using merge-based accumulation |
 | [kmp_search](algorithm_lab/kmp_search.py) | Strings | Find overlapping matches with a prefix-function automaton |
 | [rabin_karp](algorithm_lab/rabin_karp.py) | Strings | Rolling-hash substring search with exact collision checks |
+| [levenshtein](algorithm_lab/levenshtein.py) | Strings | Edit distance with linear working memory |
 
 ## Validation
 
