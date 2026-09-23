@@ -22,7 +22,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (5 algorithms)
+## Catalog (6 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -31,6 +31,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [merge_sort](algorithm_lab/merge_sort.py) | Sorting | Stable sorting with an optional key function |
 | [counting_sort](algorithm_lab/counting_sort.py) | Sorting | Integer sorting with a bounded value range |
 | [heap_sort](algorithm_lab/heap_sort.py) | Sorting | Comparison sorting with an explicit binary max heap |
+| [radix_sort](algorithm_lab/radix_sort.py) | Sorting | Stable byte-wise sorting of signed arbitrary-size integers |
 
 ## Validation
 
