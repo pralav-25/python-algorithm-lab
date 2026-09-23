@@ -22,7 +22,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (36 algorithms)
+## Catalog (37 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -62,6 +62,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [astar_grid](algorithm_lab/astar_grid.py) | Graphs | Optimal four-neighbor grid paths with a Manhattan heuristic |
 | [coin_change](algorithm_lab/coin_change.py) | Dynamic programming | Minimum-coin change with an actual combination |
 | [knapsack](algorithm_lab/knapsack.py) | Dynamic programming | 0/1 knapsack with selected original item indices |
+| [subset_sum](algorithm_lab/subset_sum.py) | Dynamic programming | Bounded bitset reachability for nonnegative integer subsets |
 
 ## Validation
 
