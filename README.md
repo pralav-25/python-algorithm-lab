@@ -22,7 +22,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (47 algorithms)
+## Catalog (48 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -73,6 +73,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [integer_sqrt](algorithm_lab/integer_sqrt.py) | Number theory | Exact floor square roots using integer Newton iteration |
 | [fast_fibonacci](algorithm_lab/fast_fibonacci.py) | Number theory | Exact Fibonacci numbers by iterative fast doubling |
 | [binomial_coefficient](algorithm_lab/binomial_coefficient.py) | Combinatorics | Exact combinations without factorial intermediates |
+| [chinese_remainder](algorithm_lab/chinese_remainder.py) | Number theory | Merge modular constraints, including compatible non-coprime moduli |
 
 ## Validation
 
