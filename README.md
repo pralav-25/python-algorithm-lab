@@ -22,7 +22,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (28 algorithms)
+## Catalog (29 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -54,6 +54,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [topological_sort](algorithm_lab/topological_sort.py) | Graphs | Kahn ordering with explicit directed-cycle detection |
 | [dijkstra](algorithm_lab/dijkstra.py) | Graphs | Nonnegative weighted shortest paths with arbitrary vertex labels |
 | [bellman_ford](algorithm_lab/bellman_ford.py) | Graphs | Shortest paths with negative edges and reachable-cycle detection |
+| [floyd_warshall](algorithm_lab/floyd_warshall.py) | Graphs | All-pairs shortest distances with negative-cycle detection |
 
 ## Validation
 
