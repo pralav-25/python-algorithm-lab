@@ -22,7 +22,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (13 algorithms)
+## Catalog (14 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -39,6 +39,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [longest_increasing_subsequence](algorithm_lab/longest_increasing_subsequence.py) | Sequences | Reconstruct one strictly increasing subsequence |
 | [merge_intervals](algorithm_lab/merge_intervals.py) | Intervals | Union of overlapping closed integer intervals |
 | [interval_scheduling](algorithm_lab/interval_scheduling.py) | Intervals | Maximum-cardinality selection of compatible activities |
+| [inversion_count](algorithm_lab/inversion_count.py) | Sequences | Count out-of-order pairs using merge-based accumulation |
 
 ## Validation
 
