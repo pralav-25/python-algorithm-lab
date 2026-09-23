@@ -22,7 +22,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (39 algorithms)
+## Catalog (40 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -65,6 +65,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [subset_sum](algorithm_lab/subset_sum.py) | Dynamic programming | Bounded bitset reachability for nonnegative integer subsets |
 | [matrix_chain](algorithm_lab/matrix_chain.py) | Dynamic programming | Optimal parenthesization of compatible matrix products |
 | [longest_common_substring](algorithm_lab/longest_common_substring.py) | Strings | Longest contiguous common text with deterministic ties |
+| [grid_paths](algorithm_lab/grid_paths.py) | Dynamic programming | Count exact right-and-down paths around obstacles |
 
 ## Validation
 
