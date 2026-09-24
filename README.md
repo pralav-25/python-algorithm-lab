@@ -30,7 +30,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (56 algorithms)
+## Catalog (57 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -90,6 +90,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [lru_cache](algorithm_lab/lru_cache.py) | Data structures | Bounded least-recently-used cache with explicit eviction |
 | [min_stack](algorithm_lab/min_stack.py) | Data structures | Stack with constant-time minimum tracking |
 | [median_stream](algorithm_lab/median_stream.py) | Data structures | Exact streaming medians using two balanced heaps |
+| [ring_buffer](algorithm_lab/ring_buffer.py) | Data structures | Fixed-capacity FIFO with explicit overflow and wraparound |
 
 ## Validation
 
