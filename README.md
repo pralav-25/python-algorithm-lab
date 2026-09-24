@@ -30,7 +30,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (80 algorithms)
+## Catalog (81 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -114,6 +114,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [anagram_groups](algorithm_lab/anagram_groups.py) | Strings | Stable grouping of words by exact character multiplicities |
 | [minimum_window](algorithm_lab/minimum_window.py) | Strings | Smallest covering substring with multiplicity-aware sliding window |
 | [aho_corasick](algorithm_lab/aho_corasick.py) | Strings | Multi-pattern search with failure links and overlapping matches |
+| [bridges](algorithm_lab/bridges.py) | Graphs | Iterative low-link detection of critical undirected edges |
 
 ## Validation
 
