@@ -30,7 +30,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (92 algorithms)
+## Catalog (93 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -126,6 +126,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [graph_condensation](algorithm_lab/graph_condensation.py) | Graphs | Collapse strongly connected components into an acyclic graph |
 | [integer_partitions](algorithm_lab/integer_partitions.py) | Combinatorics | Lazy generation of nonincreasing integer partitions |
 | [set_partitions](algorithm_lab/set_partitions.py) | Combinatorics | Canonical lazy partitions of a finite indexed set |
+| [catalan_number](algorithm_lab/catalan_number.py) | Combinatorics | Exact Catalan numbers by an integral multiplicative recurrence |
 
 ## Validation
 
