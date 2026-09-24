@@ -30,7 +30,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (75 algorithms)
+## Catalog (76 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -109,6 +109,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [suffix_array](algorithm_lab/suffix_array.py) | Strings | Suffix ordering by prefix doubling without copied suffix strings |
 | [lcp_array](algorithm_lab/lcp_array.py) | Strings | Kasai longest-common-prefix array for adjacent sorted suffixes |
 | [optimal_string_alignment](algorithm_lab/optimal_string_alignment.py) | Strings | Restricted edit distance including adjacent transpositions |
+| [palindrome_partition](algorithm_lab/palindrome_partition.py) | Dynamic programming | Reconstruct a minimum-cardinality palindromic partition |
 
 ## Validation
 
