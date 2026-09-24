@@ -30,7 +30,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (91 algorithms)
+## Catalog (92 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -125,6 +125,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [find_directed_cycle](algorithm_lab/find_directed_cycle.py) | Graphs | Iterative DFS returning an explicit directed-cycle witness |
 | [graph_condensation](algorithm_lab/graph_condensation.py) | Graphs | Collapse strongly connected components into an acyclic graph |
 | [integer_partitions](algorithm_lab/integer_partitions.py) | Combinatorics | Lazy generation of nonincreasing integer partitions |
+| [set_partitions](algorithm_lab/set_partitions.py) | Combinatorics | Canonical lazy partitions of a finite indexed set |
 
 ## Validation
 
