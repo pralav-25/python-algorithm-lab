@@ -30,7 +30,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (69 algorithms)
+## Catalog (70 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -103,6 +103,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [product_except_self](algorithm_lab/product_except_self.py) | Sequences | Division-free products with prefix and suffix accumulation |
 | [next_greater](algorithm_lab/next_greater.py) | Sequences | Nearest strictly greater neighbors using a monotonic stack |
 | [histogram_area](algorithm_lab/histogram_area.py) | Sequences | Largest rectangle in a histogram using a monotonic stack |
+| [trapped_water](algorithm_lab/trapped_water.py) | Sequences | Two-pointer computation of water retained between bars |
 
 ## Validation
 
