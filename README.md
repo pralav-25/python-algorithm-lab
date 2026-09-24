@@ -30,7 +30,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (86 algorithms)
+## Catalog (87 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -120,6 +120,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [dag_shortest_paths](algorithm_lab/dag_shortest_paths.py) | Graphs | Topological shortest distances with signed integer edge costs |
 | [max_flow](algorithm_lab/max_flow.py) | Graphs | Edmonds-Karp maximum flow with a reachable-side minimum-cut certificate |
 | [bipartite_matching](algorithm_lab/bipartite_matching.py) | Graphs | Maximum-cardinality matching by iterative augmenting paths |
+| [transitive_closure](algorithm_lab/transitive_closure.py) | Graphs | Reachability sets by iterative traversal from each vertex |
 
 ## Validation
 
