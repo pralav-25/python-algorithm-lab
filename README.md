@@ -30,7 +30,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (88 algorithms)
+## Catalog (89 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -122,6 +122,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [bipartite_matching](algorithm_lab/bipartite_matching.py) | Graphs | Maximum-cardinality matching by iterative augmenting paths |
 | [transitive_closure](algorithm_lab/transitive_closure.py) | Graphs | Reachability sets by iterative traversal from each vertex |
 | [tree_diameter](algorithm_lab/tree_diameter.py) | Graphs | Longest path in a validated unweighted tree using two BFS passes |
+| [find_directed_cycle](algorithm_lab/find_directed_cycle.py) | Graphs | Iterative DFS returning an explicit directed-cycle witness |
 
 ## Validation
 
