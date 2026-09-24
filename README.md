@@ -30,7 +30,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (83 algorithms)
+## Catalog (84 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -117,6 +117,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [bridges](algorithm_lab/bridges.py) | Graphs | Iterative low-link detection of critical undirected edges |
 | [articulation_points](algorithm_lab/articulation_points.py) | Graphs | Iterative detection of vertices that disconnect an undirected graph |
 | [eulerian_trail](algorithm_lab/eulerian_trail.py) | Graphs | Hierholzer traversal consuming every directed edge exactly once |
+| [dag_shortest_paths](algorithm_lab/dag_shortest_paths.py) | Graphs | Topological shortest distances with signed integer edge costs |
 
 ## Validation
 
