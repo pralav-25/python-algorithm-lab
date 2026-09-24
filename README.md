@@ -30,7 +30,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (81 algorithms)
+## Catalog (82 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -115,6 +115,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [minimum_window](algorithm_lab/minimum_window.py) | Strings | Smallest covering substring with multiplicity-aware sliding window |
 | [aho_corasick](algorithm_lab/aho_corasick.py) | Strings | Multi-pattern search with failure links and overlapping matches |
 | [bridges](algorithm_lab/bridges.py) | Graphs | Iterative low-link detection of critical undirected edges |
+| [articulation_points](algorithm_lab/articulation_points.py) | Graphs | Iterative detection of vertices that disconnect an undirected graph |
 
 ## Validation
 
