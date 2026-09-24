@@ -30,7 +30,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (52 algorithms)
+## Catalog (53 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -86,6 +86,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [running_stats](algorithm_lab/running_stats.py) | Streaming statistics | Welford mean and variance with validated atomic updates |
 | [fenwick_tree](algorithm_lab/fenwick_tree.py) | Data structures | Point updates and half-open range sums in logarithmic time |
 | [segment_tree](algorithm_lab/segment_tree.py) | Data structures | Iterative sum tree with point replacement and range queries |
+| [sparse_table](algorithm_lab/sparse_table.py) | Data structures | Static range minima with constant-time queries |
 
 ## Validation
 
