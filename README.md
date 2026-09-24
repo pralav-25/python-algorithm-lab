@@ -30,7 +30,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (72 algorithms)
+## Catalog (73 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -106,6 +106,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [trapped_water](algorithm_lab/trapped_water.py) | Sequences | Two-pointer computation of water retained between bars |
 | [z_function](algorithm_lab/z_function.py) | Strings | Linear-time prefix-match lengths at every text offset |
 | [manacher](algorithm_lab/manacher.py) | Strings | Linear-time longest palindrome with separate odd and even radii |
+| [suffix_array](algorithm_lab/suffix_array.py) | Strings | Suffix ordering by prefix doubling without copied suffix strings |
 
 ## Validation
 
