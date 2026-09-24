@@ -30,7 +30,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (78 algorithms)
+## Catalog (79 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -112,6 +112,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [palindrome_partition](algorithm_lab/palindrome_partition.py) | Dynamic programming | Reconstruct a minimum-cardinality palindromic partition |
 | [wildcard_match](algorithm_lab/wildcard_match.py) | Strings | Full-string wildcard matching with rolling dynamic programming |
 | [anagram_groups](algorithm_lab/anagram_groups.py) | Strings | Stable grouping of words by exact character multiplicities |
+| [minimum_window](algorithm_lab/minimum_window.py) | Strings | Smallest covering substring with multiplicity-aware sliding window |
 
 ## Validation
 
