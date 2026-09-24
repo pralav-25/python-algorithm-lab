@@ -30,7 +30,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (61 algorithms)
+## Catalog (62 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -95,6 +95,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [ordered_multiset](algorithm_lab/ordered_multiset.py) | Data structures | Sorted multiset with rank, selection and duplicate-aware removal |
 | [rollback_disjoint_set](algorithm_lab/rollback_disjoint_set.py) | Data structures | Union by size with snapshots and rollback |
 | [equal_range](algorithm_lab/equal_range.py) | Searching | Locate both boundaries of duplicate keys in sorted data |
+| [rotated_search](algorithm_lab/rotated_search.py) | Searching | Binary search in rotated ascending sequences with distinct keys |
 
 ## Validation
 
