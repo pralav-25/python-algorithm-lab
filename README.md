@@ -30,7 +30,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (58 algorithms)
+## Catalog (59 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -92,6 +92,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [median_stream](algorithm_lab/median_stream.py) | Data structures | Exact streaming medians using two balanced heaps |
 | [ring_buffer](algorithm_lab/ring_buffer.py) | Data structures | Fixed-capacity FIFO with explicit overflow and wraparound |
 | [two_stack_queue](algorithm_lab/two_stack_queue.py) | Data structures | Unbounded FIFO from two stacks with amortized constant cost |
+| [ordered_multiset](algorithm_lab/ordered_multiset.py) | Data structures | Sorted multiset with rank, selection and duplicate-aware removal |
 
 ## Validation
 
