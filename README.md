@@ -30,7 +30,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (96 algorithms)
+## Catalog (97 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -130,6 +130,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [derangements](algorithm_lab/derangements.py) | Combinatorics | Exact count of permutations with no fixed points |
 | [pascal_row](algorithm_lab/pascal_row.py) | Combinatorics | One exact row of Pascal triangle without preceding rows |
 | [josephus](algorithm_lab/josephus.py) | Combinatorics | Zero-based Josephus survivor with an iterative recurrence |
+| [gray_code](algorithm_lab/gray_code.py) | Combinatorics | Lazy binary-reflected Gray-code enumeration |
 
 ## Validation
 
