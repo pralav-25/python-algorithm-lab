@@ -30,7 +30,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (66 algorithms)
+## Catalog (67 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -100,6 +100,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [majority_element](algorithm_lab/majority_element.py) | Sequences | Boyer-Moore candidate voting with majority verification |
 | [longest_unique_substring](algorithm_lab/longest_unique_substring.py) | Strings | Sliding window for the earliest longest substring without repeats |
 | [longest_subarray_sum](algorithm_lab/longest_subarray_sum.py) | Sequences | Longest target-sum slice using first-seen prefix sums |
+| [product_except_self](algorithm_lab/product_except_self.py) | Sequences | Division-free products with prefix and suffix accumulation |
 
 ## Validation
 
