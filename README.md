@@ -30,7 +30,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (99 algorithms)
+## Catalog (100 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -133,6 +133,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [gray_code](algorithm_lab/gray_code.py) | Combinatorics | Lazy binary-reflected Gray-code enumeration |
 | [n_queens](algorithm_lab/n_queens.py) | Backtracking | Lazy nonattacking queen placements using bit masks |
 | [fractional_knapsack](algorithm_lab/fractional_knapsack.py) | Optimization | Exact rational fractional-knapsack value and item fractions |
+| [weighted_interval_scheduling](algorithm_lab/weighted_interval_scheduling.py) | Optimization | Maximum-value compatible intervals with original-index reconstruction |
 
 ## Validation
 
