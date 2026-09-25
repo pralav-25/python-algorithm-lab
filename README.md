@@ -33,7 +33,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (146 algorithms)
+## Catalog (147 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -183,6 +183,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [minimum_interval_cover](algorithm_lab/minimum_interval_cover.py) | Intervals | Greedy minimum-cardinality coverage of a closed target interval |
 | [interval_overlap_peak](algorithm_lab/interval_overlap_peak.py) | Intervals | Sweep-line maximum overlap for half-open integer intervals |
 | [interval_intersection](algorithm_lab/interval_intersection.py) | Intervals | Intersect two sorted disjoint lists of closed integer intervals |
+| [stable_matching](algorithm_lab/stable_matching.py) | Graphs | Gale-Shapley matching with complete strict preferences |
 
 ## Validation
 
