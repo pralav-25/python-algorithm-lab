@@ -2,6 +2,9 @@
 
 [![Tests](https://github.com/pralav-25/python-algorithm-lab/actions/workflows/ci.yml/badge.svg)](https://github.com/pralav-25/python-algorithm-lab/actions/workflows/ci.yml)
 
+[![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-blue)](pyproject.toml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+
 Readable implementations of core algorithms, with executable examples and
 independent regression tests. Python 3.11+; no runtime dependencies.
 
@@ -30,7 +33,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (100 algorithms)
+## Catalog (101 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -134,6 +137,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [n_queens](algorithm_lab/n_queens.py) | Backtracking | Lazy nonattacking queen placements using bit masks |
 | [fractional_knapsack](algorithm_lab/fractional_knapsack.py) | Optimization | Exact rational fractional-knapsack value and item fractions |
 | [weighted_interval_scheduling](algorithm_lab/weighted_interval_scheduling.py) | Optimization | Maximum-value compatible intervals with original-index reconstruction |
+| [modular_inverse](algorithm_lab/modular_inverse.py) | Number theory | Extended-Euclidean modular inverses |
 
 ## Validation
 
