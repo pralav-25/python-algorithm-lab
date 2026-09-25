@@ -33,7 +33,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (115 algorithms)
+## Catalog (116 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -152,6 +152,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [polynomial_divmod](algorithm_lab/polynomial_divmod.py) | Algebra | Exact polynomial long division over rational coefficients |
 | [lagrange_interpolation](algorithm_lab/lagrange_interpolation.py) | Algebra | Evaluate the interpolating polynomial with exact rationals |
 | [gaussian_elimination](algorithm_lab/gaussian_elimination.py) | Algebra | Solve square rational linear systems by pivoted elimination |
+| [determinant](algorithm_lab/determinant.py) | Algebra | Compute exact determinants by elimination |
 
 ## Validation
 
