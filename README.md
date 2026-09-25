@@ -33,7 +33,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (137 algorithms)
+## Catalog (148 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -174,6 +174,17 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [minimum_jumps](algorithm_lab/minimum_jumps.py) | Sequences | Fewest forward jumps to the final array position |
 | [maximal_square](algorithm_lab/maximal_square.py) | Dynamic programming | Largest all-one square with deterministic coordinates |
 | [triangle_min_path](algorithm_lab/triangle_min_path.py) | Dynamic programming | Minimum sum down an integer triangle with path reconstruction |
+| [sliding_window_min](algorithm_lab/sliding_window_min.py) | Sequences | Window minima with a monotonic deque |
+| [subarray_sum_count](algorithm_lab/subarray_sum_count.py) | Sequences | Count contiguous target-sum slices using prefix frequencies |
+| [max_product_subarray](algorithm_lab/max_product_subarray.py) | Sequences | Maximum contiguous integer product with signed extrema |
+| [circular_max_subarray](algorithm_lab/circular_max_subarray.py) | Sequences | Maximum nonempty circular slice sum |
+| [inversion_vector](algorithm_lab/inversion_vector.py) | Sequences | Count smaller successors for every position with a Fenwick tree |
+| [longest_bitonic_subsequence](algorithm_lab/longest_bitonic_subsequence.py) | Sequences | Reconstruct a strictly increasing then decreasing subsequence |
+| [minimum_interval_cover](algorithm_lab/minimum_interval_cover.py) | Intervals | Greedy minimum-cardinality coverage of a closed target interval |
+| [interval_overlap_peak](algorithm_lab/interval_overlap_peak.py) | Intervals | Sweep-line maximum overlap for half-open integer intervals |
+| [interval_intersection](algorithm_lab/interval_intersection.py) | Intervals | Intersect two sorted disjoint lists of closed integer intervals |
+| [stable_matching](algorithm_lab/stable_matching.py) | Graphs | Gale-Shapley matching with complete strict preferences |
+| [zero_one_bfs](algorithm_lab/zero_one_bfs.py) | Graphs | Shortest distances in directed graphs with zero-or-one edge costs |
 
 ## Validation
 
