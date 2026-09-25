@@ -33,7 +33,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (119 algorithms)
+## Catalog (120 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -156,6 +156,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [matrix_power](algorithm_lab/matrix_power.py) | Algebra | Integer matrix powers by repeated squaring |
 | [linear_recurrence](algorithm_lab/linear_recurrence.py) | Algebra | Evaluate integer recurrences with a companion matrix |
 | [stirling_second](algorithm_lab/stirling_second.py) | Combinatorics | Count partitions into a specified number of nonempty blocks |
+| [combination_rank](algorithm_lab/combination_rank.py) | Combinatorics | Lexicographic ranking of fixed-size combinations |
 
 ## Validation
 
