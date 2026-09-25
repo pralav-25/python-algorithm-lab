@@ -33,7 +33,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (136 algorithms)
+## Catalog (137 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -173,6 +173,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [rod_cutting](algorithm_lab/rod_cutting.py) | Dynamic programming | Optimal complete rod cutting with a length witness |
 | [minimum_jumps](algorithm_lab/minimum_jumps.py) | Sequences | Fewest forward jumps to the final array position |
 | [maximal_square](algorithm_lab/maximal_square.py) | Dynamic programming | Largest all-one square with deterministic coordinates |
+| [triangle_min_path](algorithm_lab/triangle_min_path.py) | Dynamic programming | Minimum sum down an integer triangle with path reconstruction |
 
 ## Validation
 
