@@ -33,7 +33,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (117 algorithms)
+## Catalog (118 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -154,6 +154,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [gaussian_elimination](algorithm_lab/gaussian_elimination.py) | Algebra | Solve square rational linear systems by pivoted elimination |
 | [determinant](algorithm_lab/determinant.py) | Algebra | Compute exact determinants by elimination |
 | [matrix_power](algorithm_lab/matrix_power.py) | Algebra | Integer matrix powers by repeated squaring |
+| [linear_recurrence](algorithm_lab/linear_recurrence.py) | Algebra | Evaluate integer recurrences with a companion matrix |
 
 ## Validation
 
