@@ -4,7 +4,8 @@ observations yields (x,y) pairs of finite int/float values, excluding bool.
 sample is a bool selecting n-1 rather than n as divisor. Require one pair
 for population or two for sample covariance. Return a float; unrepresentable
 intermediate state raises ValueError. O(n) time and O(1) state using a
-paired Welford recurrence; observations need not fit in memory.
+paired Welford recurrence after shifting by the first pair to preserve precision
+near large common offsets; observations need not fit in memory.
 
 >>> online_covariance([(1, 2), (2, 4), (3, 6)], sample=True)
 2.0
@@ -19,8 +20,12 @@ def online_covariance(observations, *, sample=False):
     if not isinstance(sample, bool):
         raise ValueError("sample must be a boolean")
     count, mean_x, mean_y, moment = 0, 0.0, 0.0, 0.0
+    origin_x = origin_y = 0.0
     for x, y in observations:
         x, y = finite(x), finite(y)
+        if count == 0:
+            origin_x, origin_y = x, y
+        x, y = x - origin_x, y - origin_y
         count += 1
         delta_x, delta_y = x - mean_x, y - mean_y
         mean_x += delta_x / count
