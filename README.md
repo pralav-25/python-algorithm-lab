@@ -33,7 +33,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (127 algorithms)
+## Catalog (137 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -164,6 +164,16 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [bounded_compositions](algorithm_lab/bounded_compositions.py) | Combinatorics | Enumerate fixed-sum tuples under per-position upper bounds |
 | [subset_zeta_transform](algorithm_lab/subset_zeta_transform.py) | Combinatorics | Sum values over every subset of each bit mask |
 | [subset_mobius_transform](algorithm_lab/subset_mobius_transform.py) | Combinatorics | Invert subset sums by Mobius inversion on bit masks |
+| [edit_script](algorithm_lab/edit_script.py) | Strings | Reconstruct a minimum-cost Levenshtein alignment |
+| [shortest_common_supersequence](algorithm_lab/shortest_common_supersequence.py) | Strings | Reconstruct a shortest string containing two subsequences |
+| [longest_palindromic_subsequence](algorithm_lab/longest_palindromic_subsequence.py) | Strings | Reconstruct a longest palindromic subsequence |
+| [count_distinct_subsequences](algorithm_lab/count_distinct_subsequences.py) | Strings | Count distinct subsequence strings including the empty string |
+| [coin_change_count](algorithm_lab/coin_change_count.py) | Dynamic programming | Count unordered ways to make change with unlimited coins |
+| [bounded_knapsack](algorithm_lab/bounded_knapsack.py) | Dynamic programming | Maximum integer value with bounded item quantities |
+| [rod_cutting](algorithm_lab/rod_cutting.py) | Dynamic programming | Optimal complete rod cutting with a length witness |
+| [minimum_jumps](algorithm_lab/minimum_jumps.py) | Sequences | Fewest forward jumps to the final array position |
+| [maximal_square](algorithm_lab/maximal_square.py) | Dynamic programming | Largest all-one square with deterministic coordinates |
+| [triangle_min_path](algorithm_lab/triangle_min_path.py) | Dynamic programming | Minimum sum down an integer triangle with path reconstruction |
 
 ## Validation
 
