@@ -33,7 +33,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (139 algorithms)
+## Catalog (140 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -176,6 +176,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [triangle_min_path](algorithm_lab/triangle_min_path.py) | Dynamic programming | Minimum sum down an integer triangle with path reconstruction |
 | [sliding_window_min](algorithm_lab/sliding_window_min.py) | Sequences | Window minima with a monotonic deque |
 | [subarray_sum_count](algorithm_lab/subarray_sum_count.py) | Sequences | Count contiguous target-sum slices using prefix frequencies |
+| [max_product_subarray](algorithm_lab/max_product_subarray.py) | Sequences | Maximum contiguous integer product with signed extrema |
 
 ## Validation
 
