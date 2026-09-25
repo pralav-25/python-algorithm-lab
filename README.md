@@ -33,7 +33,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (101 algorithms)
+## Catalog (102 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -138,6 +138,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [fractional_knapsack](algorithm_lab/fractional_knapsack.py) | Optimization | Exact rational fractional-knapsack value and item fractions |
 | [weighted_interval_scheduling](algorithm_lab/weighted_interval_scheduling.py) | Optimization | Maximum-value compatible intervals with original-index reconstruction |
 | [modular_inverse](algorithm_lab/modular_inverse.py) | Number theory | Extended-Euclidean modular inverses |
+| [euler_totient](algorithm_lab/euler_totient.py) | Number theory | Count coprime residues by prime factorization |
 
 ## Validation
 
