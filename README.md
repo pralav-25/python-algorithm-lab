@@ -33,7 +33,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (127 algorithms)
+## Catalog (128 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -164,6 +164,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [bounded_compositions](algorithm_lab/bounded_compositions.py) | Combinatorics | Enumerate fixed-sum tuples under per-position upper bounds |
 | [subset_zeta_transform](algorithm_lab/subset_zeta_transform.py) | Combinatorics | Sum values over every subset of each bit mask |
 | [subset_mobius_transform](algorithm_lab/subset_mobius_transform.py) | Combinatorics | Invert subset sums by Mobius inversion on bit masks |
+| [edit_script](algorithm_lab/edit_script.py) | Strings | Reconstruct a minimum-cost Levenshtein alignment |
 
 ## Validation
 
