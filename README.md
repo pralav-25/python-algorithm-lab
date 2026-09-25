@@ -33,7 +33,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (148 algorithms)
+## Catalog (156 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -185,6 +185,14 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [interval_intersection](algorithm_lab/interval_intersection.py) | Intervals | Intersect two sorted disjoint lists of closed integer intervals |
 | [stable_matching](algorithm_lab/stable_matching.py) | Graphs | Gale-Shapley matching with complete strict preferences |
 | [zero_one_bfs](algorithm_lab/zero_one_bfs.py) | Graphs | Shortest distances in directed graphs with zero-or-one edge costs |
+| [percentile](algorithm_lab/percentile.py) | Statistics | Linearly interpolated sample quantiles |
+| [weighted_median](algorithm_lab/weighted_median.py) | Statistics | Lower weighted medians with exact integer weights |
+| [entropy](algorithm_lab/entropy.py) | Statistics | Shannon entropy in bits from nonnegative weights |
+| [jensen_shannon_divergence](algorithm_lab/jensen_shannon_divergence.py) | Statistics | Symmetric Jensen-Shannon divergence in bits |
+| [softmax](algorithm_lab/softmax.py) | Statistics | Stable softmax by subtracting the maximum logit |
+| [isotonic_regression](algorithm_lab/isotonic_regression.py) | Statistics | Exact unweighted isotonic regression with pooled adjacent violators |
+| [kendall_tau](algorithm_lab/kendall_tau.py) | Statistics | Tie-adjusted Kendall rank correlation tau-b |
+| [online_covariance](algorithm_lab/online_covariance.py) | Statistics | One-pass covariance for paired numeric observations |
 
 ## Validation
 
