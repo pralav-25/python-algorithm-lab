@@ -33,7 +33,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (151 algorithms)
+## Catalog (152 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -188,6 +188,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [percentile](algorithm_lab/percentile.py) | Statistics | Linearly interpolated sample quantiles |
 | [weighted_median](algorithm_lab/weighted_median.py) | Statistics | Lower weighted medians with exact integer weights |
 | [entropy](algorithm_lab/entropy.py) | Statistics | Shannon entropy in bits from nonnegative weights |
+| [jensen_shannon_divergence](algorithm_lab/jensen_shannon_divergence.py) | Statistics | Symmetric Jensen-Shannon divergence in bits |
 
 ## Validation
 
