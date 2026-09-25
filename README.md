@@ -33,7 +33,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (147 algorithms)
+## Catalog (148 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -184,6 +184,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [interval_overlap_peak](algorithm_lab/interval_overlap_peak.py) | Intervals | Sweep-line maximum overlap for half-open integer intervals |
 | [interval_intersection](algorithm_lab/interval_intersection.py) | Intervals | Intersect two sorted disjoint lists of closed integer intervals |
 | [stable_matching](algorithm_lab/stable_matching.py) | Graphs | Gale-Shapley matching with complete strict preferences |
+| [zero_one_bfs](algorithm_lab/zero_one_bfs.py) | Graphs | Shortest distances in directed graphs with zero-or-one edge costs |
 
 ## Validation
 
