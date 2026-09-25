@@ -33,7 +33,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (124 algorithms)
+## Catalog (125 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -161,6 +161,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [permutation_rank](algorithm_lab/permutation_rank.py) | Combinatorics | Lehmer-code ranking of permutations of range(n) |
 | [permutation_unrank](algorithm_lab/permutation_unrank.py) | Combinatorics | Factoradic selection of a lexicographic permutation |
 | [multiset_permutations](algorithm_lab/multiset_permutations.py) | Combinatorics | Generate distinct integer permutations in lexicographic order |
+| [bounded_compositions](algorithm_lab/bounded_compositions.py) | Combinatorics | Enumerate fixed-sum tuples under per-position upper bounds |
 
 ## Validation
 
