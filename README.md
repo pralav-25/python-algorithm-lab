@@ -33,7 +33,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (141 algorithms)
+## Catalog (142 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -178,6 +178,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [subarray_sum_count](algorithm_lab/subarray_sum_count.py) | Sequences | Count contiguous target-sum slices using prefix frequencies |
 | [max_product_subarray](algorithm_lab/max_product_subarray.py) | Sequences | Maximum contiguous integer product with signed extrema |
 | [circular_max_subarray](algorithm_lab/circular_max_subarray.py) | Sequences | Maximum nonempty circular slice sum |
+| [inversion_vector](algorithm_lab/inversion_vector.py) | Sequences | Count smaller successors for every position with a Fenwick tree |
 
 ## Validation
 
