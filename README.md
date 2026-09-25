@@ -33,7 +33,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (112 algorithms)
+## Catalog (113 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -149,6 +149,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [multiplicative_order](algorithm_lab/multiplicative_order.py) | Number theory | Find the order of an invertible residue |
 | [polynomial_evaluate](algorithm_lab/polynomial_evaluate.py) | Algebra | Horner evaluation of integer polynomials |
 | [polynomial_multiply](algorithm_lab/polynomial_multiply.py) | Algebra | Exact dense polynomial convolution |
+| [polynomial_divmod](algorithm_lab/polynomial_divmod.py) | Algebra | Exact polynomial long division over rational coefficients |
 
 ## Validation
 
