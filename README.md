@@ -33,7 +33,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (150 algorithms)
+## Catalog (151 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -187,6 +187,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [zero_one_bfs](algorithm_lab/zero_one_bfs.py) | Graphs | Shortest distances in directed graphs with zero-or-one edge costs |
 | [percentile](algorithm_lab/percentile.py) | Statistics | Linearly interpolated sample quantiles |
 | [weighted_median](algorithm_lab/weighted_median.py) | Statistics | Lower weighted medians with exact integer weights |
+| [entropy](algorithm_lab/entropy.py) | Statistics | Shannon entropy in bits from nonnegative weights |
 
 ## Validation
 
