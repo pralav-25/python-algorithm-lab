@@ -33,7 +33,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (102 algorithms)
+## Catalog (103 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -139,6 +139,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [weighted_interval_scheduling](algorithm_lab/weighted_interval_scheduling.py) | Optimization | Maximum-value compatible intervals with original-index reconstruction |
 | [modular_inverse](algorithm_lab/modular_inverse.py) | Number theory | Extended-Euclidean modular inverses |
 | [euler_totient](algorithm_lab/euler_totient.py) | Number theory | Count coprime residues by prime factorization |
+| [mobius_sieve](algorithm_lab/mobius_sieve.py) | Number theory | Linear sieve of the Mobius function |
 
 ## Validation
 
