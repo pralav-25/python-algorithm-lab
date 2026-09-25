@@ -33,7 +33,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (105 algorithms)
+## Catalog (106 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -142,6 +142,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [mobius_sieve](algorithm_lab/mobius_sieve.py) | Number theory | Linear sieve of the Mobius function |
 | [divisor_sieve](algorithm_lab/divisor_sieve.py) | Number theory | Compute every positive divisor list through a bound |
 | [segmented_sieve](algorithm_lab/segmented_sieve.py) | Number theory | Find primes in a half-open interval with segmented marking |
+| [integer_nth_root](algorithm_lab/integer_nth_root.py) | Number theory | Exact floor roots using integer binary search |
 
 ## Validation
 
