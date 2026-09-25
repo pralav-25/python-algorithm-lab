@@ -33,7 +33,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (110 algorithms)
+## Catalog (111 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -147,6 +147,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [continued_fraction_convergents](algorithm_lab/continued_fraction_convergents.py) | Number theory | Build exact rational convergents with a two-term recurrence |
 | [stern_brocot_path](algorithm_lab/stern_brocot_path.py) | Number theory | Run-length paths to positive rationals in the Stern-Brocot tree |
 | [multiplicative_order](algorithm_lab/multiplicative_order.py) | Number theory | Find the order of an invertible residue |
+| [polynomial_evaluate](algorithm_lab/polynomial_evaluate.py) | Algebra | Horner evaluation of integer polynomials |
 
 ## Validation
 
