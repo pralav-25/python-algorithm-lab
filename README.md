@@ -33,7 +33,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (138 algorithms)
+## Catalog (139 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -175,6 +175,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [maximal_square](algorithm_lab/maximal_square.py) | Dynamic programming | Largest all-one square with deterministic coordinates |
 | [triangle_min_path](algorithm_lab/triangle_min_path.py) | Dynamic programming | Minimum sum down an integer triangle with path reconstruction |
 | [sliding_window_min](algorithm_lab/sliding_window_min.py) | Sequences | Window minima with a monotonic deque |
+| [subarray_sum_count](algorithm_lab/subarray_sum_count.py) | Sequences | Count contiguous target-sum slices using prefix frequencies |
 
 ## Validation
 
