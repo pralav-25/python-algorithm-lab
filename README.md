@@ -33,7 +33,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (129 algorithms)
+## Catalog (130 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -166,6 +166,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [subset_mobius_transform](algorithm_lab/subset_mobius_transform.py) | Combinatorics | Invert subset sums by Mobius inversion on bit masks |
 | [edit_script](algorithm_lab/edit_script.py) | Strings | Reconstruct a minimum-cost Levenshtein alignment |
 | [shortest_common_supersequence](algorithm_lab/shortest_common_supersequence.py) | Strings | Reconstruct a shortest string containing two subsequences |
+| [longest_palindromic_subsequence](algorithm_lab/longest_palindromic_subsequence.py) | Strings | Reconstruct a longest palindromic subsequence |
 
 ## Validation
 
