@@ -2,6 +2,9 @@
 
 [![Tests](https://github.com/pralav-25/python-algorithm-lab/actions/workflows/ci.yml/badge.svg)](https://github.com/pralav-25/python-algorithm-lab/actions/workflows/ci.yml)
 
+[![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-blue)](pyproject.toml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+
 Readable implementations of core algorithms, with executable examples and
 independent regression tests. Python 3.11+; no runtime dependencies.
 
@@ -30,7 +33,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (100 algorithms)
+## Catalog (127 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -134,6 +137,33 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [n_queens](algorithm_lab/n_queens.py) | Backtracking | Lazy nonattacking queen placements using bit masks |
 | [fractional_knapsack](algorithm_lab/fractional_knapsack.py) | Optimization | Exact rational fractional-knapsack value and item fractions |
 | [weighted_interval_scheduling](algorithm_lab/weighted_interval_scheduling.py) | Optimization | Maximum-value compatible intervals with original-index reconstruction |
+| [modular_inverse](algorithm_lab/modular_inverse.py) | Number theory | Extended-Euclidean modular inverses |
+| [euler_totient](algorithm_lab/euler_totient.py) | Number theory | Count coprime residues by prime factorization |
+| [mobius_sieve](algorithm_lab/mobius_sieve.py) | Number theory | Linear sieve of the Mobius function |
+| [divisor_sieve](algorithm_lab/divisor_sieve.py) | Number theory | Compute every positive divisor list through a bound |
+| [segmented_sieve](algorithm_lab/segmented_sieve.py) | Number theory | Find primes in a half-open interval with segmented marking |
+| [integer_nth_root](algorithm_lab/integer_nth_root.py) | Number theory | Exact floor roots using integer binary search |
+| [continued_fraction](algorithm_lab/continued_fraction.py) | Number theory | Canonical finite continued fractions for rational inputs |
+| [continued_fraction_convergents](algorithm_lab/continued_fraction_convergents.py) | Number theory | Build exact rational convergents with a two-term recurrence |
+| [stern_brocot_path](algorithm_lab/stern_brocot_path.py) | Number theory | Run-length paths to positive rationals in the Stern-Brocot tree |
+| [multiplicative_order](algorithm_lab/multiplicative_order.py) | Number theory | Find the order of an invertible residue |
+| [polynomial_evaluate](algorithm_lab/polynomial_evaluate.py) | Algebra | Horner evaluation of integer polynomials |
+| [polynomial_multiply](algorithm_lab/polynomial_multiply.py) | Algebra | Exact dense polynomial convolution |
+| [polynomial_divmod](algorithm_lab/polynomial_divmod.py) | Algebra | Exact polynomial long division over rational coefficients |
+| [lagrange_interpolation](algorithm_lab/lagrange_interpolation.py) | Algebra | Evaluate the interpolating polynomial with exact rationals |
+| [gaussian_elimination](algorithm_lab/gaussian_elimination.py) | Algebra | Solve square rational linear systems by pivoted elimination |
+| [determinant](algorithm_lab/determinant.py) | Algebra | Compute exact determinants by elimination |
+| [matrix_power](algorithm_lab/matrix_power.py) | Algebra | Integer matrix powers by repeated squaring |
+| [linear_recurrence](algorithm_lab/linear_recurrence.py) | Algebra | Evaluate integer recurrences with a companion matrix |
+| [stirling_second](algorithm_lab/stirling_second.py) | Combinatorics | Count partitions into a specified number of nonempty blocks |
+| [combination_rank](algorithm_lab/combination_rank.py) | Combinatorics | Lexicographic ranking of fixed-size combinations |
+| [combination_unrank](algorithm_lab/combination_unrank.py) | Combinatorics | Select a lexicographic combination without enumerating predecessors |
+| [permutation_rank](algorithm_lab/permutation_rank.py) | Combinatorics | Lehmer-code ranking of permutations of range(n) |
+| [permutation_unrank](algorithm_lab/permutation_unrank.py) | Combinatorics | Factoradic selection of a lexicographic permutation |
+| [multiset_permutations](algorithm_lab/multiset_permutations.py) | Combinatorics | Generate distinct integer permutations in lexicographic order |
+| [bounded_compositions](algorithm_lab/bounded_compositions.py) | Combinatorics | Enumerate fixed-sum tuples under per-position upper bounds |
+| [subset_zeta_transform](algorithm_lab/subset_zeta_transform.py) | Combinatorics | Sum values over every subset of each bit mask |
+| [subset_mobius_transform](algorithm_lab/subset_mobius_transform.py) | Combinatorics | Invert subset sums by Mobius inversion on bit masks |
 
 ## Validation
 
