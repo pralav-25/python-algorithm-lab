@@ -33,7 +33,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (132 algorithms)
+## Catalog (133 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -169,6 +169,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [longest_palindromic_subsequence](algorithm_lab/longest_palindromic_subsequence.py) | Strings | Reconstruct a longest palindromic subsequence |
 | [count_distinct_subsequences](algorithm_lab/count_distinct_subsequences.py) | Strings | Count distinct subsequence strings including the empty string |
 | [coin_change_count](algorithm_lab/coin_change_count.py) | Dynamic programming | Count unordered ways to make change with unlimited coins |
+| [bounded_knapsack](algorithm_lab/bounded_knapsack.py) | Dynamic programming | Maximum integer value with bounded item quantities |
 
 ## Validation
 
