@@ -33,7 +33,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (121 algorithms)
+## Catalog (122 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -158,6 +158,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [stirling_second](algorithm_lab/stirling_second.py) | Combinatorics | Count partitions into a specified number of nonempty blocks |
 | [combination_rank](algorithm_lab/combination_rank.py) | Combinatorics | Lexicographic ranking of fixed-size combinations |
 | [combination_unrank](algorithm_lab/combination_unrank.py) | Combinatorics | Select a lexicographic combination without enumerating predecessors |
+| [permutation_rank](algorithm_lab/permutation_rank.py) | Combinatorics | Lehmer-code ranking of permutations of range(n) |
 
 ## Validation
 
