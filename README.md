@@ -33,7 +33,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (108 algorithms)
+## Catalog (109 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -145,6 +145,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [integer_nth_root](algorithm_lab/integer_nth_root.py) | Number theory | Exact floor roots using integer binary search |
 | [continued_fraction](algorithm_lab/continued_fraction.py) | Number theory | Canonical finite continued fractions for rational inputs |
 | [continued_fraction_convergents](algorithm_lab/continued_fraction_convergents.py) | Number theory | Build exact rational convergents with a two-term recurrence |
+| [stern_brocot_path](algorithm_lab/stern_brocot_path.py) | Number theory | Run-length paths to positive rationals in the Stern-Brocot tree |
 
 ## Validation
 
