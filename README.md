@@ -33,7 +33,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (156 algorithms)
+## Catalog (157 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -193,6 +193,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [isotonic_regression](algorithm_lab/isotonic_regression.py) | Statistics | Exact unweighted isotonic regression with pooled adjacent violators |
 | [kendall_tau](algorithm_lab/kendall_tau.py) | Statistics | Tie-adjusted Kendall rank correlation tau-b |
 | [online_covariance](algorithm_lab/online_covariance.py) | Statistics | One-pass covariance for paired numeric observations |
+| [convex_hull](algorithm_lab/convex_hull.py) | Geometry | Exact monotone-chain convex hulls of integer points |
 
 ## Validation
 
