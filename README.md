@@ -33,7 +33,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (159 algorithms)
+## Catalog (160 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -196,6 +196,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [convex_hull](algorithm_lab/convex_hull.py) | Geometry | Exact monotone-chain convex hulls of integer points |
 | [polygon_area](algorithm_lab/polygon_area.py) | Geometry | Exact polygon areas using the shoelace formula |
 | [segments_intersect](algorithm_lab/segments_intersect.py) | Geometry | Closed segment intersection with exact orientation predicates |
+| [point_in_polygon](algorithm_lab/point_in_polygon.py) | Geometry | Exact ray-crossing polygon membership with boundary control |
 
 ## Validation
 
