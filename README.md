@@ -33,7 +33,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (164 algorithms)
+## Catalog (165 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -201,6 +201,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [multi_source_bfs](algorithm_lab/multi_source_bfs.py) | Graphs | Shortest directed distances from multiple sources in one traversal |
 | [widest_path](algorithm_lab/widest_path.py) | Graphs | Maximum bottleneck capacities using a priority queue |
 | [tree_centroids](algorithm_lab/tree_centroids.py) | Graphs | Tree centroids from iterative subtree accumulation |
+| [huffman_codes](algorithm_lab/huffman_codes.py) | Compression | Optimal binary prefix codes with deterministic tie handling |
 
 ## Validation
 
