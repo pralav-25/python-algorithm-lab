@@ -33,7 +33,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (167 algorithms)
+## Catalog (168 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -204,6 +204,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [huffman_codes](algorithm_lab/huffman_codes.py) | Compression | Optimal binary prefix codes with deterministic tie handling |
 | [quick_sort](algorithm_lab/quick_sort.py) | Sorting | Iterative three-way partition sorting with duplicate handling |
 | [longest_valid_parentheses](algorithm_lab/longest_valid_parentheses.py) | Strings | Earliest longest balanced parentheses substring |
+| [word_break](algorithm_lab/word_break.py) | Dynamic programming | Minimum-word dictionary segmentation with reconstruction |
 
 ## Validation
 
