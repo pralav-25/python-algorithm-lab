@@ -33,7 +33,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (163 algorithms)
+## Catalog (164 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -200,6 +200,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [rectangle_union_area](algorithm_lab/rectangle_union_area.py) | Geometry | Union area of axis-aligned rectangles using vertical slabs |
 | [multi_source_bfs](algorithm_lab/multi_source_bfs.py) | Graphs | Shortest directed distances from multiple sources in one traversal |
 | [widest_path](algorithm_lab/widest_path.py) | Graphs | Maximum bottleneck capacities using a priority queue |
+| [tree_centroids](algorithm_lab/tree_centroids.py) | Graphs | Tree centroids from iterative subtree accumulation |
 
 ## Validation
 
