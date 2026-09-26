@@ -33,7 +33,7 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
-## Catalog (157 algorithms)
+## Catalog (158 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -194,6 +194,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 | [kendall_tau](algorithm_lab/kendall_tau.py) | Statistics | Tie-adjusted Kendall rank correlation tau-b |
 | [online_covariance](algorithm_lab/online_covariance.py) | Statistics | One-pass covariance for paired numeric observations |
 | [convex_hull](algorithm_lab/convex_hull.py) | Geometry | Exact monotone-chain convex hulls of integer points |
+| [polygon_area](algorithm_lab/polygon_area.py) | Geometry | Exact polygon areas using the shoelace formula |
 
 ## Validation
 
