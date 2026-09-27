@@ -45,6 +45,7 @@ These guides were prepared with AI assistance and verified against executable ex
 ## Searching
 
 - [Locate the first repeated timestamp](guides/binary_search.md)
+- [Count repeated keys with two binary boundaries](guides/equal_range.md)
 
 ## Selection
 
