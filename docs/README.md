@@ -119,6 +119,7 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Exclude each factor without dividing by it](guides/product_except_self.md)
 - [Track rolling peak measurements](guides/sliding_window_max.md)
 - [Track rolling low measurements](guides/sliding_window_min.md)
+- [Count every target-sum slice, including overlapping ones](guides/subarray_sum_count.md)
 - [Compute the volume between retaining walls](guides/trapped_water.md)
 - [Match a pair to a fixed budget](guides/two_sum.md)
 
