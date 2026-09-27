@@ -59,6 +59,7 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Record square-free factor parity](guides/mobius_sieve.md)
 - [Undo multiplication in modular arithmetic](guides/modular_inverse.md)
 - [Exponentiate while keeping intermediate values bounded](guides/modular_power.md)
+- [Find the cycle length of repeated modular multiplication](guides/multiplicative_order.md)
 - [Decompose an integer into prime multiplicities](guides/prime_factorization.md)
 - [Enumerate primes by crossing out composites](guides/prime_sieve.md)
 - [Find primes inside a narrow interval](guides/segmented_sieve.md)
