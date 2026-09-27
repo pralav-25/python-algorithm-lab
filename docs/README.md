@@ -61,6 +61,7 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Separate a majority from a mere plurality](guides/majority_element.md)
 - [Find the strongest contiguous run](guides/max_subarray.md)
 - [Answer repeated totals over fixed data](guides/prefix_sum.md)
+- [Exclude each factor without dividing by it](guides/product_except_self.md)
 - [Track rolling peak measurements](guides/sliding_window_max.md)
 - [Match a pair to a fixed budget](guides/two_sum.md)
 
