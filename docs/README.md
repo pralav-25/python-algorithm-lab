@@ -33,6 +33,7 @@ These guides were prepared with AI assistance and verified against executable ex
 ## Combinatorics
 
 - [Count teams without enumerating them](guides/binomial_coefficient.md)
+- [Allocate a fixed total under individual caps](guides/bounded_compositions.md)
 - [Count valid balanced structures without listing them](guides/catalan_number.md)
 - [Locate a selection in lexicographic enumeration](guides/combination_rank.md)
 - [Jump directly to a ranked selection](guides/combination_unrank.md)
