@@ -78,5 +78,6 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Keep shared content while allowing skipped characters](guides/longest_common_subsequence.md)
 - [Find an uninterrupted shared text fragment](guides/longest_common_substring.md)
 - [Expand around the center of a mirror](guides/longest_palindrome.md)
+- [Maintain a window with no repeated characters](guides/longest_unique_substring.md)
 - [Use rolling hashes without trusting collisions](guides/rabin_karp.md)
 - [Compress runs without ambiguous digit parsing](guides/run_length_encoding.md)
