@@ -107,6 +107,7 @@ These guides were prepared with AI assistance and verified against executable ex
 
 ## Sequences
 
+- [Allow a best run to cross the sequence boundary](guides/circular_max_subarray.md)
 - [Find a rectangle spanning several bars](guides/histogram_area.md)
 - [Measure how far a ranking is from sorted](guides/inversion_count.md)
 - [Recover an increasing progression with gaps](guides/longest_increasing_subsequence.md)
