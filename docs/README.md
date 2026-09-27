@@ -20,6 +20,7 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Count teams without enumerating them](guides/binomial_coefficient.md)
 - [Split a total into unordered positive pieces](guides/integer_partitions.md)
 - [Advance one step in lexicographic order](guides/next_permutation.md)
+- [Divide distinct positions into unlabeled groups](guides/set_partitions.md)
 
 ## Dynamic programming
 
