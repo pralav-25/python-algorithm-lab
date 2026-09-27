@@ -20,6 +20,7 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Count teams without enumerating them](guides/binomial_coefficient.md)
 - [Count valid balanced structures without listing them](guides/catalan_number.md)
 - [Count assignments where nobody keeps their own item](guides/derangements.md)
+- [Enumerate bit patterns with one-bit transitions](guides/gray_code.md)
 - [Split a total into unordered positive pieces](guides/integer_partitions.md)
 - [Relabel a shrinking elimination circle](guides/josephus.md)
 - [Advance one step in lexicographic order](guides/next_permutation.md)
