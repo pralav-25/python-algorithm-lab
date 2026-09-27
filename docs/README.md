@@ -15,6 +15,10 @@ python -m doctest docs/guides/binary_search.md
 
 These guides were prepared with AI assistance and verified against executable examples.
 
+## Intervals
+
+- [Combine closed coverage ranges](guides/merge_intervals.md)
+
 ## Searching
 
 - [Locate the first repeated timestamp](guides/binary_search.md)
