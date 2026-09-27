@@ -33,6 +33,11 @@ python -m doctest algorithm_lab/*.py
 Optional installation: `python -m pip install -e .`. For linting and formatting,
 install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 
+## Learn through worked examples
+
+The [study guides](docs/README.md) explain algorithm invariants, practical uses,
+and boundaries with examples checked by the test suite.
+
 ## Catalog (168 algorithms)
 
 | Module | Topic | What it demonstrates |
