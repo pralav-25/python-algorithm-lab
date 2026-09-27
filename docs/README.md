@@ -86,6 +86,7 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Expand around the center of a mirror](guides/longest_palindrome.md)
 - [Maintain a window with no repeated characters](guides/longest_unique_substring.md)
 - [Reuse mirrored palindrome radii](guides/manacher.md)
+- [Allow one adjacent-character transposition](guides/optimal_string_alignment.md)
 - [Use rolling hashes without trusting collisions](guides/rabin_karp.md)
 - [Compress runs without ambiguous digit parsing](guides/run_length_encoding.md)
 - [Index suffixes without storing every substring](guides/suffix_array.md)
