@@ -78,6 +78,7 @@ These guides were prepared with AI assistance and verified against executable ex
 
 ## Strings
 
+- [Search many patterns in a single pass](guides/aho_corasick.md)
 - [Group words by character multiplicity](guides/anagram_groups.md)
 - [Check nested bracket structure with a stack](guides/balanced_brackets.md)
 - [Find overlapping text matches without rescanning](guides/kmp_search.md)
