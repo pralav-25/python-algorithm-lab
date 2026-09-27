@@ -150,6 +150,7 @@ These guides were prepared with AI assistance and verified against executable ex
 ## Statistics
 
 - [State the interpolation convention behind a quantile](guides/percentile.md)
+- [Choose a center under unequal observation counts](guides/weighted_median.md)
 
 ## Strings
 
