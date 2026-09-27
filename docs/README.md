@@ -112,6 +112,7 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Recover an increasing progression with gaps](guides/longest_increasing_subsequence.md)
 - [Find a longest target-sum slice with signed values](guides/longest_subarray_sum.md)
 - [Separate a majority from a mere plurality](guides/majority_element.md)
+- [Keep both extremes when signs can flip](guides/max_product_subarray.md)
 - [Find the strongest contiguous run](guides/max_subarray.md)
 - [Advance through layers of reachable positions](guides/minimum_jumps.md)
 - [Find the first later improvement for every position](guides/next_greater.md)
