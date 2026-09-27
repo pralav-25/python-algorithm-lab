@@ -140,6 +140,7 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Allow one adjacent-character transposition](guides/optimal_string_alignment.md)
 - [Use rolling hashes without trusting collisions](guides/rabin_karp.md)
 - [Compress runs without ambiguous digit parsing](guides/run_length_encoding.md)
+- [Merge two ordered sequences with minimal repetition](guides/shortest_common_supersequence.md)
 - [Index suffixes without storing every substring](guides/suffix_array.md)
 - [Match an entire name with star and question mark](guides/wildcard_match.md)
 - [Reuse a prefix-match window across a string](guides/z_function.md)
