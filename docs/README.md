@@ -15,6 +15,10 @@ python -m doctest docs/guides/binary_search.md
 
 These guides were prepared with AI assistance and verified against executable examples.
 
+## Backtracking
+
+- [Prune a board search with occupied lines](guides/n_queens.md)
+
 ## Combinatorics
 
 - [Count teams without enumerating them](guides/binomial_coefficient.md)
