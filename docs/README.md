@@ -18,6 +18,7 @@ These guides were prepared with AI assistance and verified against executable ex
 ## Algebra
 
 - [Evaluate coefficients with Horner’s rule](guides/polynomial_evaluate.md)
+- [Multiply polynomials by combining degree pairs](guides/polynomial_multiply.md)
 
 ## Backtracking
 
