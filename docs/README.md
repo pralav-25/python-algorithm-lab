@@ -147,6 +147,10 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Separate equal keys during partition sorting](guides/quick_sort.md)
 - [Sort signed identifiers one byte at a time](guides/radix_sort.md)
 
+## Statistics
+
+- [State the interpolation convention behind a quantile](guides/percentile.md)
+
 ## Strings
 
 - [Search many patterns in a single pass](guides/aho_corasick.md)
