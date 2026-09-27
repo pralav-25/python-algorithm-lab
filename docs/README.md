@@ -30,6 +30,7 @@ These guides were prepared with AI assistance and verified against executable ex
 
 ## Sequences
 
+- [Measure how far a ranking is from sorted](guides/inversion_count.md)
 - [Recover an increasing progression with gaps](guides/longest_increasing_subsequence.md)
 - [Find the strongest contiguous run](guides/max_subarray.md)
 - [Answer repeated totals over fixed data](guides/prefix_sum.md)
