@@ -69,6 +69,7 @@ These guides were prepared with AI assistance and verified against executable ex
 
 - [Fit the greatest number of appointments](guides/interval_scheduling.md)
 - [Combine closed coverage ranges](guides/merge_intervals.md)
+- [Cover a target range using the fewest available spans](guides/minimum_interval_cover.md)
 
 ## Number theory
 
