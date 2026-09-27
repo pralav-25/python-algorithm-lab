@@ -48,4 +48,5 @@ These guides were prepared with AI assistance and verified against executable ex
 
 - [Find overlapping text matches without rescanning](guides/kmp_search.md)
 - [Count insertions, deletions, and substitutions](guides/levenshtein.md)
+- [Keep shared content while allowing skipped characters](guides/longest_common_subsequence.md)
 - [Use rolling hashes without trusting collisions](guides/rabin_karp.md)
