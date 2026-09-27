@@ -55,6 +55,10 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Decompose an integer into prime multiplicities](guides/prime_factorization.md)
 - [Enumerate primes by crossing out composites](guides/prime_sieve.md)
 
+## Optimization
+
+- [Allocate capacity by value density](guides/fractional_knapsack.md)
+
 ## Searching
 
 - [Locate the first repeated timestamp](guides/binary_search.md)
