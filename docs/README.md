@@ -127,6 +127,7 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Search many patterns in a single pass](guides/aho_corasick.md)
 - [Group words by character multiplicity](guides/anagram_groups.md)
 - [Check nested bracket structure with a stack](guides/balanced_brackets.md)
+- [Count unique strings rather than index selections](guides/count_distinct_subsequences.md)
 - [Return the operations behind an edit distance](guides/edit_script.md)
 - [Find overlapping text matches without rescanning](guides/kmp_search.md)
 - [Measure shared prefixes between neighboring suffixes](guides/lcp_array.md)
