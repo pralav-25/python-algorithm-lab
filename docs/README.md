@@ -47,3 +47,4 @@ These guides were prepared with AI assistance and verified against executable ex
 ## Strings
 
 - [Find overlapping text matches without rescanning](guides/kmp_search.md)
+- [Use rolling hashes without trusting collisions](guides/rabin_karp.md)
