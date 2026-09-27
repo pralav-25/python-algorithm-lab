@@ -22,3 +22,7 @@ These guides were prepared with AI assistance and verified against executable ex
 ## Selection
 
 - [Select a median without sorting everything](guides/quickselect.md)
+
+## Sorting
+
+- [Sort priorities while preserving arrival order](guides/merge_sort.md)
