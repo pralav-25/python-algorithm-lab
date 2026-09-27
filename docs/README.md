@@ -31,6 +31,7 @@ These guides were prepared with AI assistance and verified against executable ex
 ## Number theory
 
 - [Recover a certificate for the greatest common divisor](guides/extended_gcd.md)
+- [Bound a square root without floating-point rounding](guides/integer_sqrt.md)
 - [Exponentiate while keeping intermediate values bounded](guides/modular_power.md)
 - [Decompose an integer into prime multiplicities](guides/prime_factorization.md)
 - [Enumerate primes by crossing out composites](guides/prime_sieve.md)
