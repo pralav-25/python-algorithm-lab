@@ -46,6 +46,7 @@ These guides were prepared with AI assistance and verified against executable ex
 
 ## Strings
 
+- [Check nested bracket structure with a stack](guides/balanced_brackets.md)
 - [Find overlapping text matches without rescanning](guides/kmp_search.md)
 - [Count insertions, deletions, and substitutions](guides/levenshtein.md)
 - [Keep shared content while allowing skipped characters](guides/longest_common_subsequence.md)
