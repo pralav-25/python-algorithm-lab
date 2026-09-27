@@ -26,6 +26,7 @@ These guides were prepared with AI assistance and verified against executable ex
 ## Sequences
 
 - [Find the strongest contiguous run](guides/max_subarray.md)
+- [Answer repeated totals over fixed data](guides/prefix_sum.md)
 - [Match a pair to a fixed budget](guides/two_sum.md)
 
 ## Sorting
