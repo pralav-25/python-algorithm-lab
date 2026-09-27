@@ -79,6 +79,7 @@ These guides were prepared with AI assistance and verified against executable ex
 
 - [Check nested bracket structure with a stack](guides/balanced_brackets.md)
 - [Find overlapping text matches without rescanning](guides/kmp_search.md)
+- [Measure shared prefixes between neighboring suffixes](guides/lcp_array.md)
 - [Count insertions, deletions, and substitutions](guides/levenshtein.md)
 - [Keep shared content while allowing skipped characters](guides/longest_common_subsequence.md)
 - [Find an uninterrupted shared text fragment](guides/longest_common_substring.md)
