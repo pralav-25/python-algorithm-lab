@@ -134,6 +134,7 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Keep shared content while allowing skipped characters](guides/longest_common_subsequence.md)
 - [Find an uninterrupted shared text fragment](guides/longest_common_substring.md)
 - [Expand around the center of a mirror](guides/longest_palindrome.md)
+- [Keep a mirror while allowing deleted characters](guides/longest_palindromic_subsequence.md)
 - [Maintain a window with no repeated characters](guides/longest_unique_substring.md)
 - [Reuse mirrored palindrome radii](guides/manacher.md)
 - [Cover a required multiset in the shortest span](guides/minimum_window.md)
