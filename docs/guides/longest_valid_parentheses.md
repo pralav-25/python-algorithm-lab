@@ -12,13 +12,13 @@ Run these statements from the repository root.
 
 ```pycon
 >>> from algorithm_lab.longest_valid_parentheses import longest_valid_parentheses
->>> text = '(()())('
+>>> text = "(()())("
 >>> start, stop = longest_valid_parentheses(text)
 >>> start, stop, text[start:stop]
 (0, 6, '(()())')
->>> longest_valid_parentheses(')))')
+>>> longest_valid_parentheses(")))")
 (0, 0)
->>> longest_valid_parentheses('()(()')
+>>> longest_valid_parentheses("()(()")
 (0, 2)
 
 ```

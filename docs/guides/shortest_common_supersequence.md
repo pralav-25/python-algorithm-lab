@@ -12,14 +12,14 @@ Run these statements from the repository root.
 
 ```pycon
 >>> from algorithm_lab.shortest_common_supersequence import shortest_common_supersequence
->>> answer = shortest_common_supersequence('ab', 'ba')
+>>> answer = shortest_common_supersequence("ab", "ba")
 >>> answer
 'aba'
 >>> def contains_subsequence(whole, part):
 ...     remaining = iter(whole)
 ...     return all(any(item == wanted for item in remaining) for wanted in part)
->>> assert contains_subsequence(answer, 'ab') and contains_subsequence(answer, 'ba')
->>> shortest_common_supersequence('', 'task')
+>>> assert contains_subsequence(answer, "ab") and contains_subsequence(answer, "ba")
+>>> shortest_common_supersequence("", "task")
 'task'
 
 ```

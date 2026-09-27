@@ -12,11 +12,11 @@ Run these statements from the repository root.
 
 ```pycon
 >>> from algorithm_lab.anagram_groups import anagram_groups
->>> anagram_groups(['stop', 'pots', 'tops', 'spot', 'cat'])
+>>> anagram_groups(["stop", "pots", "tops", "spot", "cat"])
 [['stop', 'pots', 'tops', 'spot'], ['cat']]
->>> anagram_groups(['ab', 'aab', 'ba', 'ab'])
+>>> anagram_groups(["ab", "aab", "ba", "ab"])
 [['ab', 'ba', 'ab'], ['aab']]
->>> anagram_groups(['', ''])
+>>> anagram_groups(["", ""])
 [['', '']]
 >>> anagram_groups([])
 []

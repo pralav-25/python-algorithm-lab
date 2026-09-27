@@ -16,7 +16,7 @@ Run these statements from the repository root.
 >>> solution = gaussian_elimination(matrix, rhs)
 >>> solution
 [Fraction(1, 1), Fraction(2, 1)]
->>> assert [sum(a*x for a, x in zip(row, solution)) for row in matrix] == rhs
+>>> assert [sum(a * x for a, x in zip(row, solution)) for row in matrix] == rhs
 >>> assert matrix == [[0, 2], [3, 1]]
 >>> gaussian_elimination([], [])
 []

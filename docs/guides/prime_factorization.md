@@ -16,7 +16,7 @@ Run these statements from the repository root.
 >>> factors = prime_factorization(300)
 >>> factors
 {2: 2, 3: 1, 5: 2}
->>> assert prod(prime ** exponent for prime, exponent in factors.items()) == 300
+>>> assert prod(prime**exponent for prime, exponent in factors.items()) == 300
 >>> prime_factorization(1)
 {}
 

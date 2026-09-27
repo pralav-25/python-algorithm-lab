@@ -12,15 +12,15 @@ Run these statements from the repository root.
 
 ```pycon
 >>> from algorithm_lab.wildcard_match import wildcard_match
->>> wildcard_match('image-07.png', 'image-??.png')
+>>> wildcard_match("image-07.png", "image-??.png")
 True
->>> wildcard_match('image-007.png', 'image-??.png')
+>>> wildcard_match("image-007.png", "image-??.png")
 False
->>> wildcard_match('notes.txt', '*.txt')
+>>> wildcard_match("notes.txt", "*.txt")
 True
->>> wildcard_match('a', '[ab]')
+>>> wildcard_match("a", "[ab]")
 False
->>> wildcard_match('', '*')
+>>> wildcard_match("", "*")
 True
 
 ```

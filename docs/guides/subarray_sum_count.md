@@ -15,7 +15,11 @@ Run these statements from the repository root.
 >>> values, target = [1, -1, 1, -1], 0
 >>> subarray_sum_count(values, target)
 4
->>> brute = sum(sum(values[start:stop]) == target for start in range(len(values)) for stop in range(start+1, len(values)+1))
+>>> brute = sum(
+...     sum(values[start:stop]) == target
+...     for start in range(len(values))
+...     for stop in range(start + 1, len(values) + 1)
+... )
 >>> assert subarray_sum_count(values, target) == brute
 >>> subarray_sum_count([0, 0], 0)
 3

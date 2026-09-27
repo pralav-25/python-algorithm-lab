@@ -14,7 +14,7 @@ Run these statements from the repository root.
 >>> from algorithm_lab.stirling_second import stirling_second
 >>> stirling_second(4, 2)
 7
->>> assert all(stirling_second(n, 2) == 2**(n-1) - 1 for n in range(2, 9))
+>>> assert all(stirling_second(n, 2) == 2 ** (n - 1) - 1 for n in range(2, 9))
 >>> sum(stirling_second(4, k) for k in range(5))
 15
 >>> stirling_second(0, 0), stirling_second(3, 4)

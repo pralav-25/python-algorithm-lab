@@ -13,13 +13,13 @@ Run these statements from the repository root.
 ```pycon
 >>> from algorithm_lab.suffix_array import suffix_array
 >>> from algorithm_lab.lcp_array import lcp_array
->>> text = 'caba'
+>>> text = "caba"
 >>> order = suffix_array(text)
 >>> lcp_array(text, order)
 [0, 1, 0, 0]
->>> lcp_array('aaaa', suffix_array('aaaa'))
+>>> lcp_array("aaaa", suffix_array("aaaa"))
 [0, 1, 2, 3]
->>> lcp_array('', [])
+>>> lcp_array("", [])
 []
 
 ```

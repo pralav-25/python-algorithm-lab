@@ -12,12 +12,12 @@ Run these statements from the repository root.
 
 ```pycon
 >>> from algorithm_lab.levenshtein import levenshtein
->>> levenshtein('plane', 'plans')
+>>> levenshtein("plane", "plans")
 1
->>> levenshtein('ab', 'ba')
+>>> levenshtein("ab", "ba")
 2
->>> assert levenshtein('book', 'back') == levenshtein('back', 'book') == 2
->>> levenshtein('', 'hello')
+>>> assert levenshtein("book", "back") == levenshtein("back", "book") == 2
+>>> levenshtein("", "hello")
 5
 
 ```

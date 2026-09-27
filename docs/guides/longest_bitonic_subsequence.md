@@ -16,8 +16,8 @@ Run these statements from the repository root.
 >>> len(result)
 5
 >>> peak = result.index(max(result))
->>> assert all(a < b for a, b in zip(result[:peak], result[1:peak+1]))
->>> assert all(a > b for a, b in zip(result[peak:], result[peak+1:]))
+>>> assert all(a < b for a, b in zip(result[:peak], result[1 : peak + 1]))
+>>> assert all(a > b for a, b in zip(result[peak:], result[peak + 1 :]))
 >>> longest_bitonic_subsequence([2, 2, 2])
 [2]
 

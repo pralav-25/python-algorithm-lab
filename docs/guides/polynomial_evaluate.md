@@ -15,7 +15,9 @@ Run these statements from the repository root.
 >>> coefficients, x = [2, 0, -3, 1], 4
 >>> polynomial_evaluate(coefficients, x)
 18
->>> assert polynomial_evaluate(coefficients, x) == sum(c * x**degree for degree, c in enumerate(coefficients))
+>>> assert polynomial_evaluate(coefficients, x) == sum(
+...     c * x**degree for degree, c in enumerate(coefficients)
+... )
 >>> polynomial_evaluate([], 4), polynomial_evaluate(coefficients, 0)
 (0, 2)
 

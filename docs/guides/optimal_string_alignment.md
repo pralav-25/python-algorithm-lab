@@ -13,13 +13,13 @@ Run these statements from the repository root.
 ```pycon
 >>> from algorithm_lab.optimal_string_alignment import optimal_string_alignment
 >>> from algorithm_lab.levenshtein import levenshtein
->>> optimal_string_alignment('form', 'from')
+>>> optimal_string_alignment("form", "from")
 1
->>> levenshtein('form', 'from')
+>>> levenshtein("form", "from")
 2
->>> optimal_string_alignment('CA', 'ABC')
+>>> optimal_string_alignment("CA", "ABC")
 3
->>> optimal_string_alignment('', 'abc')
+>>> optimal_string_alignment("", "abc")
 3
 
 ```

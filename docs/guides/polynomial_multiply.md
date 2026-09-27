@@ -17,7 +17,10 @@ Run these statements from the repository root.
 >>> product = polynomial_multiply(left, right)
 >>> product
 [1, 0, -1]
->>> assert all(polynomial_evaluate(product, x) == polynomial_evaluate(left, x) * polynomial_evaluate(right, x) for x in [-2, 0, 3])
+>>> assert all(
+...     polynomial_evaluate(product, x) == polynomial_evaluate(left, x) * polynomial_evaluate(right, x)
+...     for x in [-2, 0, 3]
+... )
 >>> polynomial_multiply([0], [1, 2])
 []
 

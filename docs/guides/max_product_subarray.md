@@ -16,7 +16,9 @@ Run these statements from the repository root.
 >>> values = [-3, 2, -5, 0, 4]
 >>> max_product_subarray(values)
 30
->>> assert max_product_subarray(values) == max(prod(values[i:j]) for i in range(len(values)) for j in range(i+1, len(values)+1))
+>>> assert max_product_subarray(values) == max(
+...     prod(values[i:j]) for i in range(len(values)) for j in range(i + 1, len(values) + 1)
+... )
 >>> max_product_subarray([-7])
 -7
 

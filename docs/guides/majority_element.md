@@ -12,7 +12,7 @@ Run these statements from the repository root.
 
 ```pycon
 >>> from algorithm_lab.majority_element import majority_element
->>> votes = ['yes', 'no', 'yes', 'yes', 'abstain']
+>>> votes = ["yes", "no", "yes", "yes", "abstain"]
 >>> majority_element(votes)
 'yes'
 >>> assert votes.count(majority_element(votes)) > len(votes) / 2

@@ -12,14 +12,14 @@ Run these statements from the repository root.
 
 ```pycon
 >>> from algorithm_lab.minimum_window import minimum_window
->>> minimum_window('AAABBC', 'AABC')
+>>> minimum_window("AAABBC", "AABC")
 'AABBC'
 >>> from collections import Counter
->>> result = minimum_window('CABABAC', 'AABC')
->>> assert not (Counter('AABC') - Counter(result))
->>> minimum_window('abc', 'zz')
+>>> result = minimum_window("CABABAC", "AABC")
+>>> assert not (Counter("AABC") - Counter(result))
+>>> minimum_window("abc", "zz")
 ''
->>> minimum_window('abc', '')
+>>> minimum_window("abc", "")
 ''
 
 ```

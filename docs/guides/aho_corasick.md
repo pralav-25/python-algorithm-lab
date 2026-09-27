@@ -12,7 +12,7 @@ Run these statements from the repository root.
 
 ```pycon
 >>> from algorithm_lab.aho_corasick import AhoCorasick
->>> patterns, text = ['aba', 'ba', 'aba'], 'ababa'
+>>> patterns, text = ["aba", "ba", "aba"], "ababa"
 >>> matches = AhoCorasick(patterns).find_all(text)
 >>> len(matches)
 6

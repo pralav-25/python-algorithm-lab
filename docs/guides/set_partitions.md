@@ -15,7 +15,9 @@ Run these statements from the repository root.
 >>> groups = list(set_partitions(3))
 >>> len(groups)
 5
->>> assert all(sorted(item for block in partition for item in block) == [0, 1, 2] for partition in groups)
+>>> assert all(
+...     sorted(item for block in partition for item in block) == [0, 1, 2] for partition in groups
+... )
 >>> assert len(set(groups)) == len(groups)
 >>> list(set_partitions(0))
 [()]

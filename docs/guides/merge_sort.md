@@ -12,11 +12,11 @@ Run these statements from the repository root.
 
 ```pycon
 >>> from algorithm_lab.merge_sort import merge_sort
->>> jobs = [('first', 2), ('urgent', 1), ('second', 2)]
+>>> jobs = [("first", 2), ("urgent", 1), ("second", 2)]
 >>> merge_sort(jobs, key=lambda job: job[1])
 [('urgent', 1), ('first', 2), ('second', 2)]
 >>> assert merge_sort(jobs, key=lambda job: job[1]) == sorted(jobs, key=lambda job: job[1])
->>> assert jobs[0] == ('first', 2)
+>>> assert jobs[0] == ("first", 2)
 >>> merge_sort([])
 []
 

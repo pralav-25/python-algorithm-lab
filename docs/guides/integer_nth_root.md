@@ -16,7 +16,7 @@ Run these statements from the repository root.
 (4, 3)
 >>> value, degree = 10**120 + 123, 7
 >>> root = integer_nth_root(value, degree)
->>> assert root**degree <= value < (root + 1)**degree
+>>> assert root**degree <= value < (root + 1) ** degree
 >>> integer_nth_root(123, 1)
 123
 

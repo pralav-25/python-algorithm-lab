@@ -15,7 +15,7 @@ Run these statements from the repository root.
 >>> readings = [5, 2, 4, 1, 3]
 >>> sliding_window_min(readings, 3)
 [2, 1, 1]
->>> assert sliding_window_min(readings, 2) == [min(readings[i:i+2]) for i in range(4)]
+>>> assert sliding_window_min(readings, 2) == [min(readings[i : i + 2]) for i in range(4)]
 >>> sliding_window_min(readings, 1) == readings
 True
 >>> sliding_window_min(readings, 5)

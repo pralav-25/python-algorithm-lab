@@ -12,13 +12,13 @@ Run these statements from the repository root.
 
 ```pycon
 >>> from algorithm_lab.rabin_karp import rabin_karp
->>> text, pattern = 'mississippi', 'issi'
+>>> text, pattern = "mississippi", "issi"
 >>> rabin_karp(text, pattern)
 [1, 4]
 >>> assert rabin_karp(text, pattern) == [i for i in range(len(text)) if text.startswith(pattern, i)]
->>> rabin_karp('abc', 'xyz')
+>>> rabin_karp("abc", "xyz")
 []
->>> rabin_karp('', '')
+>>> rabin_karp("", "")
 [0]
 
 ```

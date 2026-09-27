@@ -15,7 +15,7 @@ Run these statements from the repository root.
 >>> from itertools import product
 >>> coin_change_count([2, 3, 5], 10)
 4
->>> brute = sum(2*a + 3*b + 5*c == 10 for a, b, c in product(range(6), range(4), range(3)))
+>>> brute = sum(2 * a + 3 * b + 5 * c == 10 for a, b, c in product(range(6), range(4), range(3)))
 >>> assert coin_change_count([2, 3, 5], 10) == brute
 >>> coin_change_count([2, 2], 4), coin_change_count([], 0)
 (1, 1)

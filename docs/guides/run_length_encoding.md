@@ -12,7 +12,7 @@ Run these statements from the repository root.
 
 ```pycon
 >>> from algorithm_lab.run_length_encoding import encode_runs, decode_runs
->>> text = '11100🙂🙂🙂'
+>>> text = "11100🙂🙂🙂"
 >>> runs = encode_runs(text)
 >>> runs
 [('1', 3), ('0', 2), ('🙂', 3)]

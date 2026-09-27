@@ -12,13 +12,13 @@ Run these statements from the repository root.
 
 ```pycon
 >>> from algorithm_lab.longest_common_substring import longest_common_substring
->>> longest_common_substring('pre-token-post', 'a-token-b')
+>>> longest_common_substring("pre-token-post", "a-token-b")
 '-token-'
->>> fragment = longest_common_substring('ABXCD', 'ABYCD')
+>>> fragment = longest_common_substring("ABXCD", "ABYCD")
 >>> fragment
 'AB'
->>> assert fragment in 'ABXCD' and fragment in 'ABYCD'
->>> longest_common_substring('abc', 'XYZ')
+>>> assert fragment in "ABXCD" and fragment in "ABYCD"
+>>> longest_common_substring("abc", "XYZ")
 ''
 
 ```

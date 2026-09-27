@@ -15,7 +15,7 @@ Run these statements from the repository root.
 >>> ranks = [4, 1, 3, 2]
 >>> inversion_count(ranks)
 4
->>> brute = sum(ranks[i] > ranks[j] for i in range(len(ranks)) for j in range(i+1, len(ranks)))
+>>> brute = sum(ranks[i] > ranks[j] for i in range(len(ranks)) for j in range(i + 1, len(ranks)))
 >>> assert inversion_count(ranks) == brute
 >>> inversion_count([2, 2, 2])
 0

@@ -16,7 +16,7 @@ Run these statements from the repository root.
 >>> counts = inversion_vector(values)
 >>> counts
 [3, 1, 1, 0]
->>> assert counts == [sum(other < value for other in values[i+1:]) for i, value in enumerate(values)]
+>>> assert counts == [sum(other < value for other in values[i + 1 :]) for i, value in enumerate(values)]
 >>> inversion_vector([])
 []
 

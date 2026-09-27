@@ -12,14 +12,14 @@ Run these statements from the repository root.
 
 ```pycon
 >>> from algorithm_lab.palindrome_partition import palindrome_partition
->>> text = 'aabcc'
+>>> text = "aabcc"
 >>> pieces = palindrome_partition(text)
 >>> pieces
 ['aa', 'b', 'cc']
->>> assert ''.join(pieces) == text and all(piece == piece[::-1] for piece in pieces)
->>> palindrome_partition('radar')
+>>> assert "".join(pieces) == text and all(piece == piece[::-1] for piece in pieces)
+>>> palindrome_partition("radar")
 ['radar']
->>> palindrome_partition('')
+>>> palindrome_partition("")
 []
 
 ```

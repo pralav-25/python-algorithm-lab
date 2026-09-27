@@ -16,7 +16,7 @@ Run these statements from the repository root.
 >>> revenue, pieces = rod_cutting(prices)
 >>> revenue, pieces
 (10, [2, 2])
->>> assert sum(pieces) == len(prices) and sum(prices[length-1] for length in pieces) == revenue
+>>> assert sum(pieces) == len(prices) and sum(prices[length - 1] for length in pieces) == revenue
 >>> rod_cutting([-2, -3])
 (-3, [2])
 >>> rod_cutting([])

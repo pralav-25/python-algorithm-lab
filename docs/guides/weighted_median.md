@@ -16,7 +16,7 @@ Run these statements from the repository root.
 >>> center = weighted_median(values, weights)
 >>> center
 8
->>> cost = lambda point: sum(weight * abs(value-point) for value, weight in zip(values, weights))
+>>> cost = lambda point: sum(weight * abs(value - point) for value, weight in zip(values, weights))
 >>> assert cost(center) == min(cost(point) for point in range(2, 21))
 >>> weighted_median([2, 8], [1, 1])
 2

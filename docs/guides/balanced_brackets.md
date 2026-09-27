@@ -12,13 +12,13 @@ Run these statements from the repository root.
 
 ```pycon
 >>> from algorithm_lab.balanced_brackets import balanced_brackets
->>> balanced_brackets('call({key: [1, 2]})')
+>>> balanced_brackets("call({key: [1, 2]})")
 True
->>> balanced_brackets('[(])')
+>>> balanced_brackets("[(])")
 False
->>> balanced_brackets('unfinished(')
+>>> balanced_brackets("unfinished(")
 False
->>> balanced_brackets('ordinary text')
+>>> balanced_brackets("ordinary text")
 True
 
 ```

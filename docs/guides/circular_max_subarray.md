@@ -15,7 +15,11 @@ Run these statements from the repository root.
 >>> circular_max_subarray([8, -10, 7])
 15
 >>> values = [4, -1, 2, -5]
->>> brute = max(sum(values[(start + offset) % len(values)] for offset in range(length)) for start in range(len(values)) for length in range(1, len(values)+1))
+>>> brute = max(
+...     sum(values[(start + offset) % len(values)] for offset in range(length))
+...     for start in range(len(values))
+...     for length in range(1, len(values) + 1)
+... )
 >>> assert circular_max_subarray(values) == brute
 >>> circular_max_subarray([-4, -2, -7])
 -2

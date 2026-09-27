@@ -16,7 +16,9 @@ Run these statements from the repository root.
 >>> len(placements)
 2
 >>> assert all(len(set(p)) == len(p) for p in placements)
->>> assert all(abs(a-b) != abs(p[a]-p[b]) for p in placements for a in range(4) for b in range(a+1, 4))
+>>> assert all(
+...     abs(a - b) != abs(p[a] - p[b]) for p in placements for a in range(4) for b in range(a + 1, 4)
+... )
 >>> list(n_queens(2)), list(n_queens(0))
 ([], [()])
 

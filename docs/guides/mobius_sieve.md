@@ -15,7 +15,7 @@ Run these statements from the repository root.
 >>> mu = mobius_sieve(12)
 >>> mu[1], mu[6], mu[12]
 (1, 1, 0)
->>> assert all(sum(mu[d] for d in range(1, n+1) if n % d == 0) == int(n == 1) for n in range(1, 13))
+>>> assert all(sum(mu[d] for d in range(1, n + 1) if n % d == 0) == int(n == 1) for n in range(1, 13))
 >>> mobius_sieve(0)
 [0]
 

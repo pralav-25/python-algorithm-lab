@@ -15,7 +15,7 @@ Run these statements from the repository root.
 >>> from itertools import product
 >>> caps = [1, 2, 2]
 >>> allocations = list(bounded_compositions(3, caps))
->>> expected = [row for row in product(*(range(cap+1) for cap in caps)) if sum(row) == 3]
+>>> expected = [row for row in product(*(range(cap + 1) for cap in caps)) if sum(row) == 3]
 >>> assert allocations == expected
 >>> list(bounded_compositions(0, [])), list(bounded_compositions(1, []))
 ([()], [])

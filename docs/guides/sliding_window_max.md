@@ -15,7 +15,7 @@ Run these statements from the repository root.
 >>> readings = [8, 2, 8, 1, 3]
 >>> sliding_window_max(readings, 3)
 [8, 8, 8]
->>> assert sliding_window_max(readings, 2) == [max(readings[i:i+2]) for i in range(4)]
+>>> assert sliding_window_max(readings, 2) == [max(readings[i : i + 2]) for i in range(4)]
 >>> sliding_window_max(readings, 1) == readings
 True
 >>> sliding_window_max(readings, len(readings))

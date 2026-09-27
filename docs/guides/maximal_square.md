@@ -16,7 +16,9 @@ Run these statements from the repository root.
 >>> side, top, left = maximal_square(matrix)
 >>> side, top, left
 (2, 0, 1)
->>> assert all(matrix[row][col] == 1 for row in range(top, top+side) for col in range(left, left+side))
+>>> assert all(
+...     matrix[row][col] == 1 for row in range(top, top + side) for col in range(left, left + side)
+... )
 >>> maximal_square([[0, 0]])
 (0, None, None)
 

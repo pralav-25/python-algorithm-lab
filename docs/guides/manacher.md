@@ -12,14 +12,14 @@ Run these statements from the repository root.
 
 ```pycon
 >>> from algorithm_lab.manacher import manacher
->>> manacher('xabccbay')
+>>> manacher("xabccbay")
 'abccba'
->>> manacher('a#b#b#a')
+>>> manacher("a#b#b#a")
 'a#b#b#a'
->>> text = 'levelxnoon'
+>>> text = "levelxnoon"
 >>> answer = manacher(text)
->>> assert answer == 'level' and answer == answer[::-1]
->>> manacher('')
+>>> assert answer == "level" and answer == answer[::-1]
+>>> manacher("")
 ''
 
 ```

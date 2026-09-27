@@ -12,14 +12,14 @@ Run these statements from the repository root.
 
 ```pycon
 >>> from algorithm_lab.word_break import word_break
->>> dictionary = ['cats', 'cat', 'sand', 'dog', 'catsand']
->>> pieces = word_break('catsanddog', dictionary)
+>>> dictionary = ["cats", "cat", "sand", "dog", "catsand"]
+>>> pieces = word_break("catsanddog", dictionary)
 >>> pieces
 ['catsand', 'dog']
->>> assert ''.join(pieces) == 'catsanddog' and all(piece in dictionary for piece in pieces)
->>> word_break('bird', dictionary) is None
+>>> assert "".join(pieces) == "catsanddog" and all(piece in dictionary for piece in pieces)
+>>> word_break("bird", dictionary) is None
 True
->>> word_break('', dictionary)
+>>> word_break("", dictionary)
 []
 
 ```

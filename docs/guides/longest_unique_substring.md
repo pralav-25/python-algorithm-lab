@@ -12,13 +12,13 @@ Run these statements from the repository root.
 
 ```pycon
 >>> from algorithm_lab.longest_unique_substring import longest_unique_substring
->>> longest_unique_substring('abcaef')
+>>> longest_unique_substring("abcaef")
 'bcaef'
->>> text = 'dvdf'
+>>> text = "dvdf"
 >>> answer = longest_unique_substring(text)
 >>> answer, len(set(answer)) == len(answer)
 ('vdf', True)
->>> longest_unique_substring('')
+>>> longest_unique_substring("")
 ''
 
 ```

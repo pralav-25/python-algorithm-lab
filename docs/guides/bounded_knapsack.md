@@ -16,7 +16,7 @@ Run these statements from the repository root.
 >>> items = [(2, 3, 2), (3, 6, 1)]
 >>> bounded_knapsack(items, 7)
 12
->>> brute = max(3*a + 6*b for a, b in product(range(3), range(2)) if 2*a + 3*b <= 7)
+>>> brute = max(3 * a + 6 * b for a, b in product(range(3), range(2)) if 2 * a + 3 * b <= 7)
 >>> assert bounded_knapsack(items, 7) == brute
 >>> bounded_knapsack([(1, -3, 10)], 5)
 0

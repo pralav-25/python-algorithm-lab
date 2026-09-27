@@ -16,7 +16,10 @@ Run these statements from the repository root.
 >>> totals = subset_zeta_transform(values)
 >>> totals
 [2, 5, 7, 17]
->>> assert all(totals[mask] == sum(value for sub, value in enumerate(values) if sub & mask == sub) for mask in range(4))
+>>> assert all(
+...     totals[mask] == sum(value for sub, value in enumerate(values) if sub & mask == sub)
+...     for mask in range(4)
+... )
 >>> assert values == [2, 3, 5, 7]
 
 ```

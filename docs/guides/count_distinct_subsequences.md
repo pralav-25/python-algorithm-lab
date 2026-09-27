@@ -12,12 +12,15 @@ Run these statements from the repository root.
 
 ```pycon
 >>> from algorithm_lab.count_distinct_subsequences import count_distinct_subsequences
->>> text = 'abab'
->>> strings = {''.join(char for i, char in enumerate(text) if mask & (1 << i)) for mask in range(1 << len(text))}
+>>> text = "abab"
+>>> strings = {
+...     "".join(char for i, char in enumerate(text) if mask & (1 << i))
+...     for mask in range(1 << len(text))
+... }
 >>> count_distinct_subsequences(text)
 12
 >>> assert count_distinct_subsequences(text) == len(strings)
->>> count_distinct_subsequences('aaaa'), count_distinct_subsequences('')
+>>> count_distinct_subsequences("aaaa"), count_distinct_subsequences("")
 (5, 1)
 
 ```

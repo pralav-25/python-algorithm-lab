@@ -15,7 +15,7 @@ Run these statements from the repository root.
 >>> from math import comb
 >>> catalan_number(4)
 14
->>> assert all(catalan_number(n) == comb(2*n, n) // (n+1) for n in range(9))
+>>> assert all(catalan_number(n) == comb(2 * n, n) // (n + 1) for n in range(9))
 >>> catalan_number(0)
 1
 

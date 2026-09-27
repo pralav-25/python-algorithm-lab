@@ -12,12 +12,12 @@ Run these statements from the repository root.
 
 ```pycon
 >>> from algorithm_lab.z_function import z_function
->>> z_function('ababx')
+>>> z_function("ababx")
 [0, 0, 2, 0, 0]
->>> text = 'aaabaaab'
+>>> text = "aaabaaab"
 >>> values = z_function(text)
->>> assert all(text[:length] == text[i:i+length] for i, length in enumerate(values))
->>> z_function('')
+>>> assert all(text[:length] == text[i : i + length] for i, length in enumerate(values))
+>>> z_function("")
 []
 
 ```

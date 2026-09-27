@@ -12,12 +12,12 @@ Run these statements from the repository root.
 
 ```pycon
 >>> from algorithm_lab.suffix_array import suffix_array
->>> text = 'caba'
+>>> text = "caba"
 >>> order = suffix_array(text)
 >>> [text[i:] for i in order]
 ['a', 'aba', 'ba', 'caba']
 >>> assert order == sorted(range(len(text)), key=lambda i: text[i:])
->>> suffix_array('')
+>>> suffix_array("")
 []
 
 ```

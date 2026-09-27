@@ -12,13 +12,13 @@ Run these statements from the repository root.
 
 ```pycon
 >>> from algorithm_lab.edit_script import edit_script
->>> source, target = 'stone', 'tones'
+>>> source, target = "stone", "tones"
 >>> distance, operations = edit_script(source, target)
 >>> distance
 2
->>> assert ''.join(left for kind, left, right in operations) == source
->>> assert ''.join(right for kind, left, right in operations) == target
->>> assert sum(kind != 'equal' for kind, left, right in operations) == distance
+>>> assert "".join(left for kind, left, right in operations) == source
+>>> assert "".join(right for kind, left, right in operations) == target
+>>> assert sum(kind != "equal" for kind, left, right in operations) == distance
 
 ```
 

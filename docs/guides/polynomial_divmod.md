@@ -17,7 +17,10 @@ Run these statements from the repository root.
 >>> quotient, remainder
 ([Fraction(2, 1), Fraction(1, 1)], [Fraction(1, 1)])
 >>> evaluate = lambda coefficients, x: sum(c * x**i for i, c in enumerate(coefficients))
->>> assert all(evaluate(dividend, x) == evaluate(quotient, x) * evaluate(divisor, x) + evaluate(remainder, x) for x in [-2, 0, 3])
+>>> assert all(
+...     evaluate(dividend, x) == evaluate(quotient, x) * evaluate(divisor, x) + evaluate(remainder, x)
+...     for x in [-2, 0, 3]
+... )
 
 ```
 

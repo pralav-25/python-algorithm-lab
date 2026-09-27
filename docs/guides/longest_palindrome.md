@@ -12,13 +12,13 @@ Run these statements from the repository root.
 
 ```pycon
 >>> from algorithm_lab.longest_palindrome import longest_palindrome
->>> longest_palindrome('xracecary')
+>>> longest_palindrome("xracecary")
 'racecar'
->>> longest_palindrome('zabbaq')
+>>> longest_palindrome("zabbaq")
 'abba'
->>> result = longest_palindrome('noonthenlevel')
->>> assert result == result[::-1] and result in 'noonthenlevel'
->>> longest_palindrome('')
+>>> result = longest_palindrome("noonthenlevel")
+>>> assert result == result[::-1] and result in "noonthenlevel"
+>>> longest_palindrome("")
 ''
 
 ```

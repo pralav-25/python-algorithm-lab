@@ -17,7 +17,7 @@ Run these statements from the repository root.
 >>> trapped_water([0, 1, 2, 3])
 0
 >>> heights = [2, 0, 1, 0, 3]
->>> expected = sum(min(max(heights[:i+1]), max(heights[i:])) - h for i, h in enumerate(heights))
+>>> expected = sum(min(max(heights[: i + 1]), max(heights[i:])) - h for i, h in enumerate(heights))
 >>> assert trapped_water(heights) == expected == 5
 
 ```

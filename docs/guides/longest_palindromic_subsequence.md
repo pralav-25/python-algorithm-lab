@@ -12,13 +12,13 @@ Run these statements from the repository root.
 
 ```pycon
 >>> from algorithm_lab.longest_palindromic_subsequence import longest_palindromic_subsequence
->>> text = 'character'
+>>> text = "character"
 >>> answer = longest_palindromic_subsequence(text)
 >>> len(answer), answer == answer[::-1]
 (5, True)
 >>> remaining = iter(text)
 >>> assert all(any(item == wanted for item in remaining) for wanted in answer)
->>> longest_palindromic_subsequence('')
+>>> longest_palindromic_subsequence("")
 ''
 
 ```

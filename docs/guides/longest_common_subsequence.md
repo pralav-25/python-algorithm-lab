@@ -12,14 +12,14 @@ Run these statements from the repository root.
 
 ```pycon
 >>> from algorithm_lab.longest_common_subsequence import longest_common_subsequence
->>> longest_common_subsequence('AXBYCZ', 'ABC')
+>>> longest_common_subsequence("AXBYCZ", "ABC")
 'ABC'
->>> answer = longest_common_subsequence('schedule', 'school')
+>>> answer = longest_common_subsequence("schedule", "school")
 >>> def is_subsequence(part, whole):
 ...     items = iter(whole)
 ...     return all(any(value == wanted for value in items) for wanted in part)
->>> assert is_subsequence(answer, 'schedule') and is_subsequence(answer, 'school')
->>> longest_common_subsequence('', 'ABC')
+>>> assert is_subsequence(answer, "schedule") and is_subsequence(answer, "school")
+>>> longest_common_subsequence("", "ABC")
 ''
 
 ```

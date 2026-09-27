@@ -12,13 +12,13 @@ Run these statements from the repository root.
 
 ```pycon
 >>> from algorithm_lab.kmp_search import kmp_search
->>> text, pattern = 'abababa', 'aba'
+>>> text, pattern = "abababa", "aba"
 >>> kmp_search(text, pattern)
 [0, 2, 4]
 >>> assert kmp_search(text, pattern) == [i for i in range(len(text)) if text.startswith(pattern, i)]
->>> kmp_search('xy', '')
+>>> kmp_search("xy", "")
 [0, 1, 2]
->>> kmp_search('short', 'longer')
+>>> kmp_search("short", "longer")
 []
 
 ```

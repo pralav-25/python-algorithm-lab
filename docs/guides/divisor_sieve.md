@@ -15,7 +15,7 @@ Run these statements from the repository root.
 >>> divisors = divisor_sieve(12)
 >>> divisors[12]
 [1, 2, 3, 4, 6, 12]
->>> assert all(divisors[n] == [d for d in range(1, n+1) if n % d == 0] for n in range(1, 13))
+>>> assert all(divisors[n] == [d for d in range(1, n + 1) if n % d == 0] for n in range(1, 13))
 >>> divisors[0], divisors[1]
 ([], [1])
 
