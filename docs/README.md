@@ -49,6 +49,7 @@ These guides were prepared with AI assistance and verified against executable ex
 
 - [Combine repeating schedules with compatible offsets](guides/chinese_remainder.md)
 - [Express an exact rational through Euclidean quotients](guides/continued_fraction.md)
+- [Build rational approximations from successive prefixes](guides/continued_fraction_convergents.md)
 - [Build divisor lists for a whole interval](guides/divisor_sieve.md)
 - [Count the invertible residue classes](guides/euler_totient.md)
 - [Recover a certificate for the greatest common divisor](guides/extended_gcd.md)
