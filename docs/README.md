@@ -23,6 +23,10 @@ These guides were prepared with AI assistance and verified against executable ex
 
 - [Select a median without sorting everything](guides/quickselect.md)
 
+## Sequences
+
+- [Match a pair to a fixed budget](guides/two_sum.md)
+
 ## Sorting
 
 - [Sort measurements in a compact integer range](guides/counting_sort.md)
