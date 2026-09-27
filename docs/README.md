@@ -42,6 +42,7 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Relabel a shrinking elimination circle](guides/josephus.md)
 - [Advance one step in lexicographic order](guides/next_permutation.md)
 - [Generate all fixed-size subset counts for one set](guides/pascal_row.md)
+- [Encode a permutation with skipped factorial blocks](guides/permutation_rank.md)
 - [Divide distinct positions into unlabeled groups](guides/set_partitions.md)
 - [Count partitions with a fixed number of groups](guides/stirling_second.md)
 
