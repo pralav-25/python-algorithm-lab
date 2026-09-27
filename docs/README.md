@@ -18,3 +18,7 @@ These guides were prepared with AI assistance and verified against executable ex
 ## Searching
 
 - [Locate the first repeated timestamp](guides/binary_search.md)
+
+## Selection
+
+- [Select a median without sorting everything](guides/quickselect.md)
