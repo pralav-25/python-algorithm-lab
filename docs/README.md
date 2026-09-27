@@ -71,6 +71,7 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Keep only the outermost points of a cloud](guides/convex_hull.md)
 - [Classify points with a boundary-aware crossing test](guides/point_in_polygon.md)
 - [Sum signed edge contributions to an exact area](guides/polygon_area.md)
+- [Count overlapping rectangular coverage only once](guides/rectangle_union_area.md)
 - [Distinguish crossings, contact, and collinear overlap](guides/segments_intersect.md)
 
 ## Intervals
