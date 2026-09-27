@@ -63,6 +63,7 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Use the fewest palindromic pieces](guides/palindrome_partition.md)
 - [Choose cuts that sell the entire rod](guides/rod_cutting.md)
 - [Track reachable totals with a bitset](guides/subset_sum.md)
+- [Choose a cheapest route down a triangle](guides/triangle_min_path.md)
 
 ## Intervals
 
