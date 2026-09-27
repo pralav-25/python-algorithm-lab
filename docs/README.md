@@ -54,6 +54,7 @@ These guides were prepared with AI assistance and verified against executable ex
 ## Dynamic programming
 
 - [Find a minimum-coin payment when greed fails](guides/coin_change.md)
+- [Count payments without counting coin order](guides/coin_change_count.md)
 - [Count right-and-down routes around obstacles](guides/grid_paths.md)
 - [Choose a valuable subset under a capacity limit](guides/knapsack.md)
 - [Choose multiplication parentheses before multiplying](guides/matrix_chain.md)
