@@ -62,6 +62,7 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Decompose an integer into prime multiplicities](guides/prime_factorization.md)
 - [Enumerate primes by crossing out composites](guides/prime_sieve.md)
 - [Find primes inside a narrow interval](guides/segmented_sieve.md)
+- [Locate a positive fraction by mediant comparisons](guides/stern_brocot_path.md)
 
 ## Optimization
 
