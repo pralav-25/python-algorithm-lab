@@ -18,6 +18,7 @@ These guides were prepared with AI assistance and verified against executable ex
 ## Dynamic programming
 
 - [Find a minimum-coin payment when greed fails](guides/coin_change.md)
+- [Choose a valuable subset under a capacity limit](guides/knapsack.md)
 
 ## Intervals
 
