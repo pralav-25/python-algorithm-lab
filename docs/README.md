@@ -31,6 +31,7 @@ These guides were prepared with AI assistance and verified against executable ex
 ## Number theory
 
 - [Recover a certificate for the greatest common divisor](guides/extended_gcd.md)
+- [Exponentiate while keeping intermediate values bounded](guides/modular_power.md)
 
 ## Searching
 
