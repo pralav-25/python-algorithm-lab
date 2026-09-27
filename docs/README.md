@@ -58,6 +58,7 @@ These guides were prepared with AI assistance and verified against executable ex
 ## Optimization
 
 - [Allocate capacity by value density](guides/fractional_knapsack.md)
+- [Optimize appointment value instead of appointment count](guides/weighted_interval_scheduling.md)
 
 ## Searching
 
