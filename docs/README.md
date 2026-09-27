@@ -15,6 +15,10 @@ python -m doctest docs/guides/binary_search.md
 
 These guides were prepared with AI assistance and verified against executable examples.
 
+## Dynamic programming
+
+- [Find a minimum-coin payment when greed fails](guides/coin_change.md)
+
 ## Intervals
 
 - [Fit the greatest number of appointments](guides/interval_scheduling.md)
