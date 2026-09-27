@@ -17,6 +17,7 @@ These guides were prepared with AI assistance and verified against executable ex
 
 ## Intervals
 
+- [Fit the greatest number of appointments](guides/interval_scheduling.md)
 - [Combine closed coverage ranges](guides/merge_intervals.md)
 
 ## Searching
