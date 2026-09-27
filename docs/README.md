@@ -52,6 +52,7 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Count the invertible residue classes](guides/euler_totient.md)
 - [Recover a certificate for the greatest common divisor](guides/extended_gcd.md)
 - [Advance a recurrence by doubling its index](guides/fast_fibonacci.md)
+- [Certify an exact floor root of any positive degree](guides/integer_nth_root.md)
 - [Bound a square root without floating-point rounding](guides/integer_sqrt.md)
 - [Record square-free factor parity](guides/mobius_sieve.md)
 - [Undo multiplication in modular arithmetic](guides/modular_inverse.md)
