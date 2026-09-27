@@ -67,6 +67,7 @@ These guides were prepared with AI assistance and verified against executable ex
 
 ## Intervals
 
+- [Intersect two sorted coverage maps](guides/interval_intersection.md)
 - [Find the busiest coordinate with endpoint events](guides/interval_overlap_peak.md)
 - [Fit the greatest number of appointments](guides/interval_scheduling.md)
 - [Combine closed coverage ranges](guides/merge_intervals.md)
