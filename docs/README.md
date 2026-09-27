@@ -28,3 +28,4 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Sort measurements in a compact integer range](guides/counting_sort.md)
 - [Extract maxima into their final sorted positions](guides/heap_sort.md)
 - [Sort priorities while preserving arrival order](guides/merge_sort.md)
+- [Sort signed identifiers one byte at a time](guides/radix_sort.md)
