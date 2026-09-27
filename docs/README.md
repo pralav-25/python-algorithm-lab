@@ -20,6 +20,7 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Track volume scaling through elimination](guides/determinant.md)
 - [Solve linear equations and verify the substitution](guides/gaussian_elimination.md)
 - [Evaluate the unique low-degree curve through exact points](guides/lagrange_interpolation.md)
+- [Count repeated transitions with matrix powers](guides/matrix_power.md)
 - [Divide a polynomial while retaining an exact remainder](guides/polynomial_divmod.md)
 - [Evaluate coefficients with Horner’s rule](guides/polynomial_evaluate.md)
 - [Multiply polynomials by combining degree pairs](guides/polynomial_multiply.md)
