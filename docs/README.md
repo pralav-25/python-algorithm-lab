@@ -60,6 +60,7 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Choose a valuable subset under a capacity limit](guides/knapsack.md)
 - [Choose multiplication parentheses before multiplying](guides/matrix_chain.md)
 - [Use the fewest palindromic pieces](guides/palindrome_partition.md)
+- [Choose cuts that sell the entire rod](guides/rod_cutting.md)
 - [Track reachable totals with a bitset](guides/subset_sum.md)
 
 ## Intervals
