@@ -19,6 +19,7 @@ These guides were prepared with AI assistance and verified against executable ex
 
 - [Find a minimum-coin payment when greed fails](guides/coin_change.md)
 - [Choose a valuable subset under a capacity limit](guides/knapsack.md)
+- [Track reachable totals with a bitset](guides/subset_sum.md)
 
 ## Intervals
 
