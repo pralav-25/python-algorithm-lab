@@ -48,6 +48,7 @@ These guides were prepared with AI assistance and verified against executable ex
 ## Number theory
 
 - [Combine repeating schedules with compatible offsets](guides/chinese_remainder.md)
+- [Count the invertible residue classes](guides/euler_totient.md)
 - [Recover a certificate for the greatest common divisor](guides/extended_gcd.md)
 - [Advance a recurrence by doubling its index](guides/fast_fibonacci.md)
 - [Bound a square root without floating-point rounding](guides/integer_sqrt.md)
