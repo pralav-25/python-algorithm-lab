@@ -53,6 +53,7 @@ These guides were prepared with AI assistance and verified against executable ex
 
 ## Dynamic programming
 
+- [Respect limited quantities while maximizing value](guides/bounded_knapsack.md)
 - [Find a minimum-coin payment when greed fails](guides/coin_change.md)
 - [Count payments without counting coin order](guides/coin_change_count.md)
 - [Count right-and-down routes around obstacles](guides/grid_paths.md)
