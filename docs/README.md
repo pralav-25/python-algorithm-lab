@@ -87,4 +87,5 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Reuse mirrored palindrome radii](guides/manacher.md)
 - [Use rolling hashes without trusting collisions](guides/rabin_karp.md)
 - [Compress runs without ambiguous digit parsing](guides/run_length_encoding.md)
+- [Index suffixes without storing every substring](guides/suffix_array.md)
 - [Reuse a prefix-match window across a string](guides/z_function.md)
