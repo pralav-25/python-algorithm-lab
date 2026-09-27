@@ -153,6 +153,7 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Expand around the center of a mirror](guides/longest_palindrome.md)
 - [Keep a mirror while allowing deleted characters](guides/longest_palindromic_subsequence.md)
 - [Maintain a window with no repeated characters](guides/longest_unique_substring.md)
+- [Locate a longest balanced parentheses span](guides/longest_valid_parentheses.md)
 - [Reuse mirrored palindrome radii](guides/manacher.md)
 - [Cover a required multiset in the shortest span](guides/minimum_window.md)
 - [Allow one adjacent-character transposition](guides/optimal_string_alignment.md)
