@@ -59,6 +59,7 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Count right-and-down routes around obstacles](guides/grid_paths.md)
 - [Choose a valuable subset under a capacity limit](guides/knapsack.md)
 - [Choose multiplication parentheses before multiplying](guides/matrix_chain.md)
+- [Locate the largest all-one square](guides/maximal_square.md)
 - [Use the fewest palindromic pieces](guides/palindrome_partition.md)
 - [Choose cuts that sell the entire rod](guides/rod_cutting.md)
 - [Track reachable totals with a bitset](guides/subset_sum.md)
