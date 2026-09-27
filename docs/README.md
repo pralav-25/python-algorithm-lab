@@ -64,6 +64,7 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Choose cuts that sell the entire rod](guides/rod_cutting.md)
 - [Track reachable totals with a bitset](guides/subset_sum.md)
 - [Choose a cheapest route down a triangle](guides/triangle_min_path.md)
+- [Segment text using the fewest dictionary words](guides/word_break.md)
 
 ## Intervals
 
