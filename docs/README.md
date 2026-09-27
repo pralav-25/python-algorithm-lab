@@ -15,6 +15,10 @@ python -m doctest docs/guides/binary_search.md
 
 These guides were prepared with AI assistance and verified against executable examples.
 
+## Combinatorics
+
+- [Count teams without enumerating them](guides/binomial_coefficient.md)
+
 ## Dynamic programming
 
 - [Find a minimum-coin payment when greed fails](guides/coin_change.md)
