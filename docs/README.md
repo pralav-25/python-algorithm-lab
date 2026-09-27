@@ -110,6 +110,7 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Allow a best run to cross the sequence boundary](guides/circular_max_subarray.md)
 - [Find a rectangle spanning several bars](guides/histogram_area.md)
 - [Measure how far a ranking is from sorted](guides/inversion_count.md)
+- [Explain each position’s contribution to ranking disorder](guides/inversion_vector.md)
 - [Recover an increasing progression with gaps](guides/longest_increasing_subsequence.md)
 - [Find a longest target-sum slice with signed values](guides/longest_subarray_sum.md)
 - [Separate a majority from a mere plurality](guides/majority_element.md)
