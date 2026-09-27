@@ -22,6 +22,7 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Count assignments where nobody keeps their own item](guides/derangements.md)
 - [Split a total into unordered positive pieces](guides/integer_partitions.md)
 - [Advance one step in lexicographic order](guides/next_permutation.md)
+- [Generate all fixed-size subset counts for one set](guides/pascal_row.md)
 - [Divide distinct positions into unlabeled groups](guides/set_partitions.md)
 
 ## Dynamic programming
