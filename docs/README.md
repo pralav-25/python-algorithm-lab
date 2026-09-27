@@ -48,6 +48,7 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Decode a rank into one ordered arrangement](guides/permutation_unrank.md)
 - [Divide distinct positions into unlabeled groups](guides/set_partitions.md)
 - [Count partitions with a fixed number of groups](guides/stirling_second.md)
+- [Recover exact mask values from subset totals](guides/subset_mobius_transform.md)
 - [Aggregate a value over every subset of a mask](guides/subset_zeta_transform.md)
 
 ## Dynamic programming
