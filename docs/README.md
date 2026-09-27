@@ -66,6 +66,10 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Choose a cheapest route down a triangle](guides/triangle_min_path.md)
 - [Segment text using the fewest dictionary words](guides/word_break.md)
 
+## Geometry
+
+- [Keep only the outermost points of a cloud](guides/convex_hull.md)
+
 ## Intervals
 
 - [Intersect two sorted coverage maps](guides/interval_intersection.md)
