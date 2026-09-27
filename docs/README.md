@@ -69,6 +69,7 @@ These guides were prepared with AI assistance and verified against executable ex
 ## Geometry
 
 - [Keep only the outermost points of a cloud](guides/convex_hull.md)
+- [Sum signed edge contributions to an exact area](guides/polygon_area.md)
 
 ## Intervals
 
