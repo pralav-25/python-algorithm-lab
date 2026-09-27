@@ -28,6 +28,10 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Fit the greatest number of appointments](guides/interval_scheduling.md)
 - [Combine closed coverage ranges](guides/merge_intervals.md)
 
+## Number theory
+
+- [Recover a certificate for the greatest common divisor](guides/extended_gcd.md)
+
 ## Searching
 
 - [Locate the first repeated timestamp](guides/binary_search.md)
