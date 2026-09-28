@@ -34,3 +34,24 @@ class MatchingTests(unittest.TestCase):
         self.assertEqual(len(result), 2)
         self.assertEqual(set(result.values()), {None, "x"})
         self.assertEqual(bipartite_matching({}), {})
+
+    def test_long_augmenting_path_reassigns_every_previous_match(self):
+        # The last left vertex forces an alternating path beyond recursion depth.
+        size = 1500
+        graph = {left: [left, left + 1] for left in range(size)}
+        graph[size] = [0]
+        result = bipartite_matching(graph)
+        self.assertEqual(result, {**dict(enumerate(range(1, size + 1))), size: 0})
+        self.assertEqual(graph[0], [0, 1])
+        self.assertEqual(graph[size], [0])
+
+    def test_neighbor_iterators_and_repeated_calls(self):
+        graph = {"a": [1, 1, 2], "b": [1], "c": []}
+        before = {left: rows[:] for left, rows in graph.items()}
+        expected = {"a": 2, "b": 1}
+        self.assertEqual(bipartite_matching(graph), expected)
+        self.assertEqual(bipartite_matching(graph), expected)
+        self.assertEqual(graph, before)
+        self.assertEqual(
+            bipartite_matching({left: iter(rows) for left, rows in graph.items()}), expected
+        )
