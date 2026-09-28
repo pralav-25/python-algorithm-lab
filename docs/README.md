@@ -116,6 +116,7 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Schedule every dependency before its dependents](guides/topological_sort.md)
 - [Precompute which destinations every vertex can reach](guides/transitive_closure.md)
 - [Choose a vertex that balances the remaining components](guides/tree_centroids.md)
+- [Find a longest tree route with two breadth-first searches](guides/tree_diameter.md)
 
 ## Intervals
 
