@@ -40,3 +40,23 @@ class FlowTests(unittest.TestCase):
         ]:
             with self.assertRaises(ValueError):
                 max_flow(graph, source, sink)
+
+    def test_residual_reverse_edge_reroutes_an_earlier_augmentation(self):
+        # First path is s-a-x-t; reaching value 2 requires undoing a-x.
+        for unit in (1, 10**100):
+            graph = {
+                "s": {"a": unit, "b": unit},
+                "a": {"x": unit, "y": unit},
+                "b": {"x": unit},
+                "x": {"t": unit},
+                "y": {"t": unit},
+            }
+            before = {node: rows.copy() for node, rows in graph.items()}
+            value, cut = max_flow(graph, "s", "t")
+            self.assertEqual(value, 2 * unit)
+            self.assertEqual(cut, {"s"})
+            self.assertEqual(graph, before)
+
+    def test_zero_capacity_neighbor_only_sink_and_isolated_components(self):
+        graph = {None: {"t": 0, "a": 4}, "a": {None: 3}, "island": {"island": 9}}
+        self.assertEqual(max_flow(graph, None, "t"), (0, frozenset([None, "a"])))
