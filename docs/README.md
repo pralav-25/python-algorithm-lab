@@ -197,6 +197,10 @@ These guides were prepared with AI assistance and verified against executable ex
 - [State the interpolation convention behind a quantile](guides/percentile.md)
 - [Choose a center under unequal observation counts](guides/weighted_median.md)
 
+## Streaming statistics
+
+- [Track mean and variance without storing observations](guides/running_stats.md)
+
 ## Strings
 
 - [Search many patterns in a single pass](guides/aho_corasick.md)
