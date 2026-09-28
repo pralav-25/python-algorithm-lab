@@ -51,6 +51,10 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Recover exact mask values from subset totals](guides/subset_mobius_transform.md)
 - [Aggregate a value over every subset of a mask](guides/subset_zeta_transform.md)
 
+## Data structures
+
+- [Merge connectivity groups without enumerating them](guides/disjoint_set.md)
+
 ## Dynamic programming
 
 - [Respect limited quantities while maximizing value](guides/bounded_knapsack.md)
