@@ -68,6 +68,7 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Replace individual values and query interval totals](guides/segment_tree.md)
 - [Precompute overlapping blocks for constant-time minima](guides/sparse_table.md)
 - [Share word prefixes while preserving whole-word membership](guides/trie.md)
+- [Reverse incoming items only when the front stack empties](guides/two_stack_queue.md)
 
 ## Dynamic programming
 
