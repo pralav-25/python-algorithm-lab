@@ -95,6 +95,7 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Traverse every directed edge exactly once](guides/eulerian_trail.md)
 - [Return a concrete witness of cyclic dependencies](guides/find_directed_cycle.md)
 - [Allow one more intermediate vertex at each stage](guides/floyd_warshall.md)
+- [Collapse mutually reachable groups into a DAG](guides/graph_condensation.md)
 
 ## Intervals
 
