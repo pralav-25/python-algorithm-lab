@@ -83,6 +83,7 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Split a network into two conflict-free sides](guides/bipartite_coloring.md)
 - [Reassign earlier choices to maximize compatible pairs](guides/bipartite_matching.md)
 - [Locate edges with no alternate connection](guides/bridges.md)
+- [Group vertices by undirected reachability](guides/connected_components.md)
 
 ## Intervals
 
