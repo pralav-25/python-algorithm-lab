@@ -65,6 +65,7 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Track sorted values with duplicate-aware ranks](guides/ordered_multiset.md)
 - [Reuse bounded storage as a queue wraps around](guides/ring_buffer.md)
 - [Undo connectivity merges at a saved boundary](guides/rollback_disjoint_set.md)
+- [Replace individual values and query interval totals](guides/segment_tree.md)
 
 ## Dynamic programming
 
