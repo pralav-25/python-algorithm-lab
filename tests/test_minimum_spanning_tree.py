@@ -45,3 +45,21 @@ class MSTTests(unittest.TestCase):
         for edges in [[(0, 2, 1)], [(0, 1, math.nan)], [(True, 1, 2)]]:
             with self.assertRaises(ValueError):
                 minimum_spanning_tree(2, edges)
+
+    def test_equal_weight_ties_retain_input_order_with_iterators(self):
+        edges = [(2, 3, 1), (0, 2, 1), (0, 1, 1), (1, 3, 1), (0, 3, 1)]
+        self.assertEqual(minimum_spanning_tree(4, iter(edges)), (3, edges[:3]))
+        reversed_edges = list(reversed(edges))
+        self.assertEqual(
+            minimum_spanning_tree(4, iter(reversed_edges)),
+            (3, [(0, 3, 1), (1, 3, 1), (0, 2, 1)]),
+        )
+
+    def test_forest_spans_each_component_and_retains_isolates(self):
+        edges = [(0, 1, 5), (1, 2, -1), (0, 2, 3), (3, 4, 8), (3, 4, 2), (5, 5, -99)]
+        before = edges[:]
+        self.assertEqual(
+            minimum_spanning_tree(7, edges, require_connected=False),
+            (4, [(1, 2, -1), (3, 4, 2), (0, 2, 3)]),
+        )
+        self.assertEqual(edges, before)
