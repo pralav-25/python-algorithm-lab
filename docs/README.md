@@ -94,6 +94,7 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Expand the cheapest unsettled route first](guides/dijkstra.md)
 - [Traverse every directed edge exactly once](guides/eulerian_trail.md)
 - [Return a concrete witness of cyclic dependencies](guides/find_directed_cycle.md)
+- [Allow one more intermediate vertex at each stage](guides/floyd_warshall.md)
 
 ## Intervals
 
