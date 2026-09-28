@@ -43,3 +43,22 @@ class Tests(unittest.TestCase):
         ]:
             with self.assertRaises(ValueError):
                 tree_centroids(graph)
+
+    def test_centroid_is_not_necessarily_a_diameter_midpoint(self):
+        # Five leaves outweigh a long thin arm: the centroid remains the hub.
+        graph = {
+            "hub": ["a", "b", "c", "d", "e", 1],
+            1: [2],
+            2: [3],
+            3: [4],
+        }
+        self.assertEqual(tree_centroids(graph), ["hub"])
+
+    def test_two_centroids_follow_normalized_input_order(self):
+        graph = {"right": ["left", 2, 2], "left": [None, None]}
+        before = {node: rows[:] for node, rows in graph.items()}
+        self.assertEqual(tree_centroids(graph), ["right", "left"])
+        self.assertEqual(graph, before)
+        self.assertEqual(
+            tree_centroids({node: iter(rows) for node, rows in graph.items()}), ["right", "left"]
+        )
