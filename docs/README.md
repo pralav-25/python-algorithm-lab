@@ -74,6 +74,10 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Count overlapping rectangular coverage only once](guides/rectangle_union_area.md)
 - [Distinguish crossings, contact, and collinear overlap](guides/segments_intersect.md)
 
+## Graphs
+
+- [Find single vertices that disconnect a network](guides/articulation_points.md)
+
 ## Intervals
 
 - [Intersect two sorted coverage maps](guides/interval_intersection.md)
