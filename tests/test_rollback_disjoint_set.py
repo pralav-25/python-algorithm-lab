@@ -35,3 +35,44 @@ class RollbackTests(unittest.TestCase):
                 groups.find(vertex)
         with self.assertRaises(ValueError):
             RollbackDisjointSet(-1)
+
+    def test_branching_history_against_explicit_partition_model(self):
+        rng = random.Random(928)
+        size = 9
+        groups = RollbackDisjointSet(size)
+        states = [[{v} for v in range(size)]]
+        for _ in range(300):
+            if rng.randrange(3):
+                a, b = rng.randrange(size), rng.randrange(size)
+                partition = states[-1]
+                first = next(group for group in partition if a in group)
+                second = next(group for group in partition if b in group)
+                merged = first != second
+                self.assertEqual(groups.union(a, b), merged)
+                if merged:
+                    states.append(
+                        [group for group in partition if group != first and group != second]
+                        + [first | second]
+                    )
+            else:
+                token = rng.randrange(len(states))
+                groups.rollback(token)
+                states = states[: token + 1]
+            self.assertEqual(groups.snapshot(), len(states) - 1)
+            self.assertEqual(groups.components, len(states[-1]))
+            for a in range(size):
+                for b in range(size):
+                    expected = any(a in group and b in group for group in states[-1])
+                    self.assertEqual(groups.find(a) == groups.find(b), expected)
+
+    def test_rejected_rollback_preserves_current_history(self):
+        groups = RollbackDisjointSet(3)
+        groups.union(0, 1)
+        for token in (-1, 2, 0.0, True, None):
+            with self.assertRaises(ValueError):
+                groups.rollback(token)
+            self.assertEqual(groups.snapshot(), 1)
+            self.assertEqual(groups.components, 2)
+            self.assertEqual(groups.find(0), groups.find(1))
+        groups.rollback(0)
+        self.assertEqual(groups.components, 3)
