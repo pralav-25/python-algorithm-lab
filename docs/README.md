@@ -54,6 +54,7 @@ These guides were prepared with AI assistance and verified against executable ex
 ## Data structures
 
 - [Merge connectivity groups without enumerating them](guides/disjoint_set.md)
+- [Adjust measurements while keeping fast prefix totals](guides/fenwick_tree.md)
 
 ## Dynamic programming
 
