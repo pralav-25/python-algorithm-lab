@@ -101,6 +101,7 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Return a concrete witness of cyclic dependencies](guides/find_directed_cycle.md)
 - [Allow one more intermediate vertex at each stage](guides/floyd_warshall.md)
 - [Collapse mutually reachable groups into a DAG](guides/graph_condensation.md)
+- [Increase network throughput through residual routes](guides/max_flow.md)
 
 ## Intervals
 
