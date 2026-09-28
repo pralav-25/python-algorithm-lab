@@ -59,6 +59,7 @@ These guides were prepared with AI assistance and verified against executable ex
 
 - [Merge connectivity groups without enumerating them](guides/disjoint_set.md)
 - [Adjust measurements while keeping fast prefix totals](guides/fenwick_tree.md)
+- [Evict the entry untouched for the longest time](guides/lru_cache.md)
 
 ## Dynamic programming
 
