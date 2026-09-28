@@ -81,6 +81,7 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Relax signed edges and detect reachable negative cycles](guides/bellman_ford.md)
 - [Recover the fewest-edge route through a directed graph](guides/bfs_shortest_path.md)
 - [Split a network into two conflict-free sides](guides/bipartite_coloring.md)
+- [Reassign earlier choices to maximize compatible pairs](guides/bipartite_matching.md)
 
 ## Intervals
 
