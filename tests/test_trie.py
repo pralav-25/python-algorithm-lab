@@ -36,3 +36,30 @@ class TrieTests(unittest.TestCase):
                 trie.words(limit=limit)
         with self.assertRaises(TypeError):
             trie.add(123)
+
+    def test_unicode_forms_case_and_null_characters_remain_distinct(self):
+        composed, decomposed = "\u00e9", "e\u0301"
+        values = ["", "e", composed, decomposed, "A", "a", "\0", "\0x", "\U0001f600"]
+        trie = Trie(values)
+        self.assertEqual(trie.words(), sorted(values))
+        self.assertEqual(trie.words("e"), ["e", decomposed])
+        self.assertTrue(trie.discard(composed))
+        self.assertIn(decomposed, trie)
+        self.assertNotIn(composed, trie)
+        self.assertTrue(trie.discard("\0"))
+        self.assertEqual(trie.words("\0"), ["\0x"])
+        self.assertTrue(trie.discard(""))
+        self.assertEqual(len(trie), len(values) - 3)
+        self.assertIn("\U0001f600", trie)
+
+    def test_every_prefix_limit_after_deleting_a_shared_branch(self):
+        values = {"", "a", "ab", "abc", "abd", "b", "ba"}
+        trie = Trie(values)
+        self.assertTrue(trie.discard("ab"))
+        values.remove("ab")
+        for prefix in ("", "a", "ab", "abc", "b", "missing"):
+            expected = sorted(word for word in values if word.startswith(prefix))
+            for limit in range(len(values) + 2):
+                self.assertEqual(trie.words(prefix, limit=limit), expected[:limit])
+        self.assertFalse(trie.discard("ab"))
+        self.assertEqual(trie.words(), sorted(values))
