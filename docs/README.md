@@ -119,6 +119,7 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Precompute which destinations every vertex can reach](guides/transitive_closure.md)
 - [Choose a vertex that balances the remaining components](guides/tree_centroids.md)
 - [Find a longest tree route with two breadth-first searches](guides/tree_diameter.md)
+- [Maximize the weakest edge along a route](guides/widest_path.md)
 
 ## Intervals
 
