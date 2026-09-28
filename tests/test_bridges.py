@@ -39,3 +39,31 @@ class BridgeTests(unittest.TestCase):
         self.assertEqual(
             {frozenset(e) for e in bridges({None: ["a", "a", None]})}, {frozenset([None, "a"])}
         )
+
+    def test_iterators_loops_and_disconnected_cycles(self):
+        graph = {
+            None: ["a", "a", None],
+            "a": [1, ("leaf",)],
+            1: [("leaf",)],
+            "x": ["y", "z"],
+            "y": ["z"],
+            "alone": [],
+        }
+        before = {node: rows[:] for node, rows in graph.items()}
+        expected = {frozenset([None, "a"])}
+        self.assertEqual({frozenset(edge) for edge in bridges(graph)}, expected)
+        self.assertEqual(graph, before)
+        self.assertEqual(
+            {
+                frozenset(edge)
+                for edge in bridges({node: iter(rows) for node, rows in graph.items()})
+            },
+            expected,
+        )
+
+    def test_symmetric_duplicate_listings_still_describe_one_edge(self):
+        graph = {0: [1, 1], 1: [0, 0, 2, 2], 2: [1, 1]}
+        self.assertEqual(
+            {frozenset(edge) for edge in bridges(graph)},
+            {frozenset({0, 1}), frozenset({1, 2})},
+        )
