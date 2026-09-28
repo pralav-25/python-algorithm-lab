@@ -86,6 +86,7 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Group vertices by undirected reachability](guides/connected_components.md)
 - [Settle signed path costs in dependency order](guides/dag_shortest_paths.md)
 - [Explore one branch before returning to alternatives](guides/depth_first_search.md)
+- [Expand the cheapest unsettled route first](guides/dijkstra.md)
 
 ## Intervals
 
