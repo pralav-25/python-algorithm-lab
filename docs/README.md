@@ -114,6 +114,7 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Resolve ranked preferences without blocking pairs](guides/stable_matching.md)
 - [Group vertices that can mutually reach one another](guides/strongly_connected_components.md)
 - [Schedule every dependency before its dependents](guides/topological_sort.md)
+- [Precompute which destinations every vertex can reach](guides/transitive_closure.md)
 
 ## Intervals
 
