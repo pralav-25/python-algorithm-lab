@@ -64,6 +64,7 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Store the minimum alongside each stack prefix](guides/min_stack.md)
 - [Track sorted values with duplicate-aware ranks](guides/ordered_multiset.md)
 - [Reuse bounded storage as a queue wraps around](guides/ring_buffer.md)
+- [Undo connectivity merges at a saved boundary](guides/rollback_disjoint_set.md)
 
 ## Dynamic programming
 
