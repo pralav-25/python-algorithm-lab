@@ -196,6 +196,7 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Compare rankings while accounting for ties](guides/kendall_tau.md)
 - [Accumulate paired variation in one pass](guides/online_covariance.md)
 - [State the interpolation convention behind a quantile](guides/percentile.md)
+- [Normalize large scores without exponential overflow](guides/softmax.md)
 - [Choose a center under unequal observation counts](guides/weighted_median.md)
 
 ## Streaming statistics
