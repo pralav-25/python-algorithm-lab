@@ -32,3 +32,32 @@ class LRUTests(unittest.TestCase):
         for capacity in [0, -1, True, 1.5]:
             with self.assertRaises(ValueError):
                 LRUCache(capacity)
+
+    def test_items_snapshot_does_not_mutate_entries_or_refresh_recency(self):
+        cache = LRUCache(2)
+        cache.put("a", 1)
+        cache.put("b", 2)
+        snapshot = cache.items()
+        snapshot.reverse()
+        snapshot.append(("injected", 3))
+        self.assertEqual(cache.items(), [("a", 1), ("b", 2)])
+        self.assertEqual(cache.put("c", 3), ("a", 1))
+        self.assertEqual(snapshot, [("b", 2), ("a", 1), ("injected", 3)])
+
+    def test_missing_get_leaves_eviction_order_unchanged(self):
+        cache = LRUCache(2)
+        cache.put(None, None)
+        cache.put("b", 2)
+        for key in ("missing", 7, ("absent",)):
+            with self.assertRaises(KeyError):
+                cache.get(key)
+            self.assertEqual(cache.items(), [(None, None), ("b", 2)])
+        self.assertEqual(cache.put("c", 3), (None, None))
+
+    def test_capacity_one_update_does_not_evict_itself(self):
+        cache = LRUCache(1)
+        self.assertIsNone(cache.put("key", 1))
+        self.assertIsNone(cache.put("key", None))
+        self.assertEqual(len(cache), 1)
+        self.assertIsNone(cache.get("key"))
+        self.assertEqual(cache.put("new", 2), ("key", None))
