@@ -186,6 +186,7 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Fit a monotone sequence by pooling violations](guides/isotonic_regression.md)
 - [Compare distributions through their shared mixture](guides/jensen_shannon_divergence.md)
 - [Compare rankings while accounting for ties](guides/kendall_tau.md)
+- [Accumulate paired variation in one pass](guides/online_covariance.md)
 - [State the interpolation convention behind a quantile](guides/percentile.md)
 - [Choose a center under unequal observation counts](guides/weighted_median.md)
 
