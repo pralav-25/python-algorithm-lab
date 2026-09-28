@@ -66,6 +66,7 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Reuse bounded storage as a queue wraps around](guides/ring_buffer.md)
 - [Undo connectivity merges at a saved boundary](guides/rollback_disjoint_set.md)
 - [Replace individual values and query interval totals](guides/segment_tree.md)
+- [Precompute overlapping blocks for constant-time minima](guides/sparse_table.md)
 
 ## Dynamic programming
 
