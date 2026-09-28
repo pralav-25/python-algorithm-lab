@@ -78,6 +78,7 @@ These guides were prepared with AI assistance and verified against executable ex
 
 - [Find single vertices that disconnect a network](guides/articulation_points.md)
 - [Guide a grid search with Manhattan distance](guides/astar_grid.md)
+- [Relax signed edges and detect reachable negative cycles](guides/bellman_ford.md)
 
 ## Intervals
 
