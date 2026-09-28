@@ -34,3 +34,31 @@ class CondensationTests(unittest.TestCase):
             self.assertEqual({(a, b) for a in dag for b in dag[a]}, expected_edges)
         components, dag = graph_condensation({None: iter(["x"])})
         self.assertEqual(set(components), {frozenset([None]), frozenset(["x"])})
+
+    def test_deep_cycle_with_a_tail_is_condensed_without_recursion(self):
+        size, tail = 1800, 40
+        graph = {i: [i + 1] for i in range(size + tail)}
+        graph[size - 1].append(0)
+        components, dag = graph_condensation(graph)
+        membership = {node: i for i, group in enumerate(components) for node in group}
+        cycle = membership[0]
+        self.assertEqual(components[cycle], frozenset(range(size)))
+        self.assertEqual(len(components), tail + 2)
+        self.assertEqual(dag[cycle], {membership[size]})
+        for node in range(size, size + tail):
+            self.assertEqual(dag[membership[node]], {membership[node + 1]})
+        self.assertEqual(dag[membership[size + tail]], set())
+
+    def test_internal_loops_and_duplicate_cross_edges_vanish(self):
+        graph = {None: [None, "a", "a"], "a": [None, 1, 1], 1: [1], "alone": []}
+        before = {node: rows[:] for node, rows in graph.items()}
+        components, dag = graph_condensation(graph)
+        membership = {node: i for i, group in enumerate(components) for node in group}
+        self.assertEqual(
+            set(components), {frozenset([None, "a"]), frozenset([1]), frozenset(["alone"])}
+        )
+        self.assertEqual(
+            {(a, b) for a, rows in dag.items() for b in rows},
+            {(membership[None], membership[1])},
+        )
+        self.assertEqual(graph, before)
