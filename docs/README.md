@@ -105,6 +105,7 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Collapse mutually reachable groups into a DAG](guides/graph_condensation.md)
 - [Increase network throughput through residual routes](guides/max_flow.md)
 - [Connect all vertices with minimum total edge weight](guides/minimum_spanning_tree.md)
+- [Find the nearest starting point in one traversal](guides/multi_source_bfs.md)
 
 ## Intervals
 
