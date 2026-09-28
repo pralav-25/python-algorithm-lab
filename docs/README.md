@@ -93,6 +93,7 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Explore one branch before returning to alternatives](guides/depth_first_search.md)
 - [Expand the cheapest unsettled route first](guides/dijkstra.md)
 - [Traverse every directed edge exactly once](guides/eulerian_trail.md)
+- [Return a concrete witness of cyclic dependencies](guides/find_directed_cycle.md)
 
 ## Intervals
 
