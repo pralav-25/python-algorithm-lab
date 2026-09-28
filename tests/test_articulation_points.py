@@ -40,3 +40,23 @@ class ArticulationTests(unittest.TestCase):
             articulation_points({i: [i + 1] for i in range(2000)}), set(range(1, 2000))
         )
         self.assertEqual(articulation_points({None: ["a", "b"]}), {None})
+
+    def test_normalization_preserves_cut_vertices_with_mixed_labels(self):
+        leaf = ("leaf", 1)
+        graph = {
+            None: [None, "hub", "hub"],
+            "hub": [1, 1, leaf, "hub"],
+            1: [leaf],
+            "isolated": ["isolated"],
+        }
+        before = {node: neighbors[:] for node, neighbors in graph.items()}
+        self.assertEqual(articulation_points(graph), {"hub"})
+        self.assertEqual(graph, before)
+        self.assertEqual(
+            articulation_points({node: iter(rows) for node, rows in graph.items()}), {"hub"}
+        )
+
+    def test_dfs_root_needs_two_independent_child_subtrees(self):
+        # The root has two neighbors, but they belong to a single DFS subtree.
+        self.assertEqual(articulation_points({0: [1, 2], 1: [2]}), set())
+        self.assertEqual(articulation_points({0: [1, 2], 3: []}), {0})
