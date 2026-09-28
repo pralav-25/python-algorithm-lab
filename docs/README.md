@@ -85,6 +85,7 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Locate edges with no alternate connection](guides/bridges.md)
 - [Group vertices by undirected reachability](guides/connected_components.md)
 - [Settle signed path costs in dependency order](guides/dag_shortest_paths.md)
+- [Explore one branch before returning to alternatives](guides/depth_first_search.md)
 
 ## Intervals
 
