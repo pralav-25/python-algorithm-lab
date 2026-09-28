@@ -62,6 +62,7 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Evict the entry untouched for the longest time](guides/lru_cache.md)
 - [Keep an exact median between two balanced heaps](guides/median_stream.md)
 - [Store the minimum alongside each stack prefix](guides/min_stack.md)
+- [Track sorted values with duplicate-aware ranks](guides/ordered_multiset.md)
 
 ## Dynamic programming
 
