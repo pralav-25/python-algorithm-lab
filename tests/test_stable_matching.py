@@ -33,3 +33,29 @@ class Tests(unittest.TestCase):
         for a, b in [([[0]], []), ([[True]], [[0]]), ([[0, 0], [0, 1]], [[0, 1], [1, 0]])]:
             with self.assertRaises(ValueError):
                 stable_matching(a, b)
+
+    def test_repeated_displacements_with_one_pass_preference_rows(self):
+        size = 40
+        proposers = [list(range(size)) for _ in range(size)]
+        receivers = [list(reversed(range(size))) for _ in range(size)]
+        before = ([row[:] for row in proposers], [row[:] for row in receivers])
+        expected = list(reversed(range(size)))
+        self.assertEqual(stable_matching(proposers, receivers), expected)
+        self.assertEqual((proposers, receivers), before)
+        self.assertEqual(
+            stable_matching((iter(row) for row in proposers), (iter(row) for row in receivers)),
+            expected,
+        )
+
+    def test_invalid_preference_domains_on_either_side(self):
+        valid = [[0, 1], [1, 0]]
+        for malformed in [
+            [[0], [1, 0]],
+            [[0, 2], [1, 0]],
+            [[0, -1], [1, 0]],
+            [[0, 1.0], [1, 0]],
+            [[0, 1], [True, 0]],
+        ]:
+            for a, b in ((valid, malformed), (malformed, valid)):
+                with self.subTest(a=a, b=b), self.assertRaises(ValueError):
+                    stable_matching(a, b)
