@@ -77,6 +77,7 @@ These guides were prepared with AI assistance and verified against executable ex
 ## Graphs
 
 - [Find single vertices that disconnect a network](guides/articulation_points.md)
+- [Guide a grid search with Manhattan distance](guides/astar_grid.md)
 
 ## Intervals
 
