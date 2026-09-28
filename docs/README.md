@@ -141,6 +141,10 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Allocate capacity by value density](guides/fractional_knapsack.md)
 - [Optimize appointment value instead of appointment count](guides/weighted_interval_scheduling.md)
 
+## Sampling
+
+- [Choose uniformly from a stream of unknown length](guides/reservoir_sample.md)
+
 ## Searching
 
 - [Locate the first repeated timestamp](guides/binary_search.md)
