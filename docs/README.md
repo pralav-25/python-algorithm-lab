@@ -113,6 +113,7 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Find the nearest starting point in one traversal](guides/multi_source_bfs.md)
 - [Resolve ranked preferences without blocking pairs](guides/stable_matching.md)
 - [Group vertices that can mutually reach one another](guides/strongly_connected_components.md)
+- [Schedule every dependency before its dependents](guides/topological_sort.md)
 
 ## Intervals
 
