@@ -5,6 +5,14 @@ from algorithm_lab.count_distinct_subsequences import count_distinct_subsequence
 
 
 class Tests(unittest.TestCase):
+    def test_counts_larger_than_machine_integers(self):
+        unique = "".join(chr(0x400 + i) for i in range(100))
+        self.assertEqual(count_distinct_subsequences(unique), 2**100)
+        self.assertEqual(count_distinct_subsequences(unique + unique[0]), 2**101 - 1)
+        # Choosing a prefix length independently in each disjoint run gives this product.
+        self.assertEqual(count_distinct_subsequences("🙂" * 20 + "é" * 30 + "x" * 40), 21 * 31 * 41)
+        self.assertEqual(count_distinct_subsequences("ée\u0301"), 8)
+
     def test_set_oracle(self):
         for n in range(8):
             for text in product("ab", repeat=n):
