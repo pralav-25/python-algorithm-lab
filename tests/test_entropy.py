@@ -5,6 +5,14 @@ from algorithm_lab.entropy import entropy
 
 
 class Tests(unittest.TestCase):
+    def test_independent_product_entropy_is_additive(self):
+        for left, right in [([1, 3], [2, 0, 5]), ([0, 7, 2], [1, 4, 9]), ([5], [1, 1])]:
+            with self.subTest(left=left, right=right):
+                joint = [a * b for a in left for b in right]
+                self.assertAlmostEqual(entropy(iter(joint)), entropy(left) + entropy(right))
+                self.assertAlmostEqual(entropy([0, *joint, 0]), entropy(joint))
+                self.assertAlmostEqual(entropy(reversed(joint)), entropy(joint))
+
     def test_known_distributions_and_scaling(self):
         for n in range(1, 30):
             self.assertAlmostEqual(entropy([1] * n), math.log2(n))
