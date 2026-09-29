@@ -5,6 +5,17 @@ from algorithm_lab.maximal_square import maximal_square
 
 
 class Tests(unittest.TestCase):
+    def test_wide_and_tall_square_ties(self):
+        wide = [[0, 1, 1, 0, 1, 1], [0, 1, 1, 0, 1, 1]]
+        tall = [list(row) for row in zip(*wide, strict=True)]
+        for matrix, expected in [(wide, (2, 0, 1)), (tall, (2, 1, 0)), ([[1, 1, 1, 1]], (1, 0, 0))]:
+            original = [row[:] for row in matrix]
+            self.assertEqual(maximal_square(iter(iter(row) for row in matrix)), expected)
+            self.assertEqual(maximal_square(matrix), expected)
+            self.assertEqual(matrix, original)
+        self.assertEqual(maximal_square([[1, 1], [1, 1], [0, 0], [1, 1], [1, 1]]), (2, 0, 0))
+        self.assertEqual(maximal_square([[], [], []]), (0, None, None))
+
     def test_enumerate_squares(self):
         for values in product(range(2), repeat=9):
             matrix = [list(values[i : i + 3]) for i in range(0, 9, 3)]
