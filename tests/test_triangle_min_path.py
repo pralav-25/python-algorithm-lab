@@ -6,6 +6,20 @@ from algorithm_lab.triangle_min_path import triangle_min_path
 
 
 class Tests(unittest.TestCase):
+    def test_tie_paths_prefer_left_at_every_row(self):
+        rows = [[5], [2, 2], [-3, -3, -3], [8, 8, 8, 8]]
+        original = [row[:] for row in rows]
+        self.assertEqual(triangle_min_path(iter(iter(row) for row in rows)), (12, [0, 0, 0, 0]))
+        score, path = triangle_min_path(rows)
+        path[0] = 99
+        self.assertEqual(score, 12)
+        self.assertEqual(rows, original)
+
+    def test_large_signed_costs_preserve_exact_path(self):
+        huge = 10**100
+        rows = [[huge], [huge, -huge], [huge, huge, -huge], [huge, huge, huge, -huge]]
+        self.assertEqual(triangle_min_path(rows), (-2 * huge, [0, 1, 2, 3]))
+
     def test_path_enumeration(self):
         rng = random.Random(238)
         self.assertEqual(triangle_min_path([]), (0, []))
