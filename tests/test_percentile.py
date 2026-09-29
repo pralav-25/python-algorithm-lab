@@ -6,6 +6,23 @@ from algorithm_lab.percentile import percentile
 
 
 class Tests(unittest.TestCase):
+    def test_reflection_at_repeated_values_and_fractional_positions(self):
+        values = [-30, -2, -2, 5, 19, 19, 47]
+        original = values[:]
+        for q in [0, 0.125, 0.25, 0.375, 0.5, 0.75, 1]:
+            with self.subTest(q=q):
+                self.assertAlmostEqual(
+                    percentile(iter([-x for x in values]), q),
+                    -percentile(values, 1 - q),
+                )
+                self.assertAlmostEqual(percentile(reversed(values), q), percentile(values, q))
+        self.assertEqual(values, original)
+
+    def test_reject_nonfinite_quantile_even_for_singleton(self):
+        for q in [math.nan, math.inf, -math.inf]:
+            with self.subTest(q=q), self.assertRaises(ValueError):
+                percentile([3], q)
+
     def test_standard_library_quantiles(self):
         values = [9, -2, 7, 4, 4, 11, 1]
         expected = statistics.quantiles(values, n=100, method="inclusive")
