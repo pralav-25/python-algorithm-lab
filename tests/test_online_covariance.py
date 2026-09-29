@@ -2,11 +2,30 @@ import math
 import random
 import statistics
 import unittest
+from fractions import Fraction
 
 from algorithm_lab.online_covariance import online_covariance
 
 
 class Tests(unittest.TestCase):
+    def test_affine_transforms_against_exact_covariance(self):
+        pairs = [(-4, 8), (1, -3), (7, 2), (0, 6), (5, -9)]
+        n = len(pairs)
+        x_mean = Fraction(sum(x for x, _ in pairs), n)
+        y_mean = Fraction(sum(y for _, y in pairs), n)
+        moment = sum((x - x_mean) * (y - y_mean) for x, y in pairs)
+        for sample in [False, True]:
+            for scale_x, scale_y in [(3, -2), (0, 4), (-1, -7)]:
+                transformed = [(scale_x * x + 1000, scale_y * y - 2000) for x, y in pairs]
+                expected = float(scale_x * scale_y * moment / (n - int(sample)))
+                with self.subTest(sample=sample, scale_x=scale_x, scale_y=scale_y):
+                    self.assertAlmostEqual(
+                        online_covariance(iter(transformed), sample=sample), expected
+                    )
+                    self.assertAlmostEqual(
+                        online_covariance(reversed(transformed), sample=sample), expected
+                    )
+
     def test_exact_covariance_at_large_offsets(self):
         # The centered observations are (-1, -1), (1, 1): sum products = 2.
         for offset in [1e16, -1e16]:
