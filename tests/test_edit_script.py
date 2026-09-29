@@ -6,6 +6,21 @@ from algorithm_lab.levenshtein import levenshtein
 
 
 class Tests(unittest.TestCase):
+    def test_diagonal_ties_preserve_replace_alignment(self):
+        self.assertEqual(
+            edit_script("ab", "ba"), (2, [("replace", "a", "b"), ("replace", "b", "a")])
+        )
+        self.assertEqual(edit_script("aa", "a"), (1, [("delete", "a", ""), ("equal", "a", "a")]))
+        self.assertEqual(edit_script("a", "aa"), (1, [("insert", "", "a"), ("equal", "a", "a")]))
+
+    def test_composed_and_decomposed_unicode_remain_distinct(self):
+        source, target = "é", "e\u0301"
+        distance, operations = edit_script(source, target)
+        self.assertEqual(distance, 2)
+        self.assertEqual(operations, [("insert", "", "e"), ("replace", "é", "\u0301")])
+        self.assertEqual(edit_script("🙂", ""), (1, [("delete", "🙂", "")]))
+        self.assertEqual(edit_script("", "🙂"), (1, [("insert", "", "🙂")]))
+
     def test_alignment_and_distance(self):
         words = ["".join(p) for n in range(4) for p in product("ab", repeat=n)] + ["é🙂"]
         for a in words:
