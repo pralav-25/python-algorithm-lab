@@ -5,6 +5,22 @@ from algorithm_lab.linear_recurrence import linear_recurrence
 
 
 class Tests(unittest.TestCase):
+    def test_sparse_periodic_recurrence_at_large_indices(self):
+        initial = [10**80, -7, 3, 19]
+        coefficients = [0, 0, 0, 1]
+        for n in [0, 3, 4, 5, 10**12 + 1, 10**12 + 3]:
+            self.assertEqual(
+                linear_recurrence(iter(initial), iter(coefficients), n), initial[n % 4]
+            )
+        self.assertEqual(linear_recurrence([9], [-1], 10**12 + 1), -9)
+        self.assertEqual(linear_recurrence(initial, [0] * 4, 4), 0)
+        self.assertEqual(initial, [10**80, -7, 3, 19])
+
+    def test_initial_term_still_validates_all_coefficients(self):
+        for coefficients in [[1, True], [1, 1.5]]:
+            with self.assertRaises(ValueError):
+                linear_recurrence([2, 3], coefficients, 0)
+
     def test_direct_recurrence_oracle(self):
         rng = random.Random(219)
         for k in range(1, 6):
