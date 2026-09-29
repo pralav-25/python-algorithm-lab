@@ -6,6 +6,31 @@ from algorithm_lab.kendall_tau import kendall_tau
 
 
 class Tests(unittest.TestCase):
+    def test_mixed_ties_and_axis_reversal(self):
+        pairs = [(0, 0), (0, 0), (0, 2), (1, 1), (2, 1), (3, 3)]
+        concordant = discordant = tied_left = tied_right = 0
+        for i, (x, y) in enumerate(pairs):
+            for u, v in pairs[i + 1 :]:
+                if x == u and y == v:
+                    continue
+                if x == u:
+                    tied_left += 1
+                elif y == v:
+                    tied_right += 1
+                elif (x < u) == (y < v):
+                    concordant += 1
+                else:
+                    discordant += 1
+        untied = concordant + discordant
+        expected = (concordant - discordant) / math.sqrt(
+            (untied + tied_left) * (untied + tied_right)
+        )
+        x, y = zip(*pairs, strict=True)
+        self.assertAlmostEqual(kendall_tau(iter(x), iter(y)), expected)
+        self.assertAlmostEqual(kendall_tau(y, x), expected)
+        self.assertAlmostEqual(kendall_tau([-v for v in x], y), -expected)
+        self.assertAlmostEqual(kendall_tau(reversed(x), reversed(y)), expected)
+
     def test_permutation_inversion_oracle(self):
         for n in range(2, 7):
             pairs = n * (n - 1) // 2
