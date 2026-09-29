@@ -11,6 +11,19 @@ def subsequences(text):
 
 
 class Tests(unittest.TestCase):
+    def test_first_string_ties_and_unicode_suffixes(self):
+        for left, right, expected in [
+            ("ab", "ba", "aba"),
+            ("ba", "ab", "bab"),
+            ("🙂a", "🙂b", "🙂ab"),
+            ("é", "e\u0301", "ée\u0301"),
+            ("", "🙂e\u0301", "🙂e\u0301"),
+            ("🙂e\u0301", "", "🙂e\u0301"),
+            ("🙂🙂", "🙂", "🙂🙂"),
+        ]:
+            with self.subTest(left=left, right=right):
+                self.assertEqual(shortest_common_supersequence(left, right), expected)
+
     def test_exhaustive_length_and_witness(self):
         words = ["".join(p) for n in range(4) for p in product("ab", repeat=n)]
         for a in words:
