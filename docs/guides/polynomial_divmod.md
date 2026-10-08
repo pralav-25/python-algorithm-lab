@@ -27,3 +27,25 @@ Run these statements from the repository root.
 ## Boundary to remember
 
 Inputs use increasing-degree coefficients and reject floats. The identity dividend = quotient*divisor + remainder is the main correctness certificate; a zero remainder is represented by an empty list.
+
+## Practice exercise
+
+Divide `x**2 + 1` by `2*x + 1`, accepting unused high-degree zero
+coefficients and reconstructing the dividend coefficient by coefficient.
+
+```pycon
+>>> from algorithm_lab.polynomial_divmod import polynomial_divmod
+>>> from fractions import Fraction
+>>> quotient, remainder = polynomial_divmod([1, 0, 1, 0], [1, 2, 0])
+>>> quotient, remainder
+([Fraction(-1, 4), Fraction(1, 2)], [Fraction(5, 4)])
+>>> assert quotient == [Fraction(-1, 4), Fraction(1, 2)]
+>>> reconstructed = [quotient[0] + remainder[0], 2 * quotient[0] + quotient[1], 2 * quotient[1]]
+>>> assert reconstructed == [1, 0, 1]
+>>> assert len(remainder) < 2
+
+```
+
+Cancelling the quadratic term requires one-half of `x`, and cancelling
+the remaining linear term requires negative one-quarter. Integer division
+would lose those coefficients; trimming terminal zeroes gives canonical degrees.
