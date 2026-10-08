@@ -27,3 +27,22 @@ Run these statements from the repository root.
 ## Boundary to remember
 
 Coefficient order is newest preceding term first, while the initial values are given in forward sequence order. Reversing either convention silently describes a different recurrence.
+
+## Practice exercise
+
+Count ways to climb seven steps using jumps of one, two, or three. Verify the recurrence result by enumerating every possible jump sequence.
+
+```pycon
+>>> from itertools import product
+>>> from algorithm_lab.linear_recurrence import linear_recurrence
+>>> ways = linear_recurrence([1, 1, 2], [1, 1, 1], 7)
+>>> ways
+44
+>>> enumerated = sum(
+...     sum(jumps) == 7 for length in range(8) for jumps in product((1, 2, 3), repeat=length)
+... )
+>>> assert ways == enumerated
+
+```
+
+Classifying a route by its last jump gives the sum of the previous three counts. Heights zero, one, and two have one, one, and two routes respectively, including the empty route at zero. The exhaustive check counts ordered jump sequences, so (1, 2) and (2, 1) remain distinct.
