@@ -27,3 +27,19 @@ Run these statements from the repository root.
 ## Boundary to remember
 
 Pattern indices distinguish duplicate patterns. Matches with the same end position have no promised tie order, so sort results when a presentation requires a stable tuple ordering.
+
+## Practice exercise
+
+A log viewer highlights both whole error messages and warning prefixes. Find every highlight in `error warning error`, preserving the identity of the matched keyword.
+
+```pycon
+>>> from algorithm_lab.aho_corasick import AhoCorasick
+>>> keywords = ["error", "warn"]
+>>> highlights = sorted(AhoCorasick(keywords).find_all("error warning error"))
+>>> highlights
+[(0, 5, 0), (6, 10, 1), (14, 19, 0)]
+>>> assert [keywords[index] for _, _, index in highlights] == ["error", "warn", "error"]
+
+```
+
+The stop offsets are excluded. Matching `warn` inside `warning` is intentional: the automaton finds substrings, so whole-word filtering belongs in the caller.
