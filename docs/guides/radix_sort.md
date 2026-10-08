@@ -25,3 +25,25 @@ True
 ## Boundary to remember
 
 This is an integer algorithm, not a comparison sort for arbitrary records. Extremely wide integers need more byte passes even when the input list is short.
+
+## Practice exercise
+
+Sort signed values whose normalized range spans three bytes, checking
+that low-byte ordering survives subsequent passes.
+
+```pycon
+>>> from algorithm_lab.radix_sort import radix_sort
+>>> values = [-65536, 65537, 256, 255, -1, 0, 65536]
+>>> result = radix_sort(iter(values))
+>>> result
+[-65536, -1, 0, 255, 256, 65536, 65537]
+>>> assert result == sorted(values)
+>>> spread = max(values) - min(values)
+>>> assert (spread.bit_length() + 7) // 8 == 3
+>>> assert radix_sort([-17] * 4) == [-17] * 4
+
+```
+
+Subtracting the minimum gives nonnegative keys, but their spread still
+requires three passes. Stable buckets preserve earlier byte decisions;
+when all values match, the zero spread needs no passes at all.
