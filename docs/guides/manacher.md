@@ -27,3 +27,26 @@ Run these statements from the repository root.
 ## Boundary to remember
 
 The algorithm finds a contiguous substring, with earliest-start ties. Its linear running time requires extra radius arrays, trading space for the faster bound compared with simple center expansion.
+
+## Practice exercise
+
+Find a palindrome containing null code points and punctuation. Verify its length by direct substring reversal so no reserved-separator assumption can slip into the result.
+
+```pycon
+>>> from algorithm_lab.manacher import manacher
+>>> text = "\x00a##a\x00|noon"
+>>> answer = manacher(text)
+>>> assert answer == "\x00a##a\x00"
+>>> len(answer)
+6
+>>> candidates = [
+...     text[start:stop]
+...     for start in range(len(text))
+...     for stop in range(start + 1, len(text) + 1)
+...     if text[start:stop] == text[start:stop][::-1]
+... ]
+>>> assert len(answer) == max(map(len, candidates))
+
+```
+
+The null code point and hash characters are ordinary input characters. Separate odd and even radius arrays avoid treating either as a synthetic delimiter. The winning span has an even center between the two hashes, while the competing noon span is shorter.
