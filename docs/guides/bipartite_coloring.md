@@ -34,3 +34,22 @@ Listed edges are interpreted as undirected. A self-loop is already a
 conflict. Each disconnected component starts independently, so color numbers
 across components do not imply any relationship. None denotes failure; an
 empty dictionary is the valid coloring of an empty graph.
+
+## Practice exercise
+
+Assign two colors to a square conflict graph, then add one diagonal and determine whether the assignment is still possible.
+
+```pycon
+>>> from algorithm_lab.bipartite_coloring import bipartite_coloring
+>>> square = {0: [1, 3], 1: [2], 2: [3]}
+>>> coloring = bipartite_coloring(square)
+>>> assert all(
+...     coloring[node] != coloring[neighbor] for node, edges in square.items() for neighbor in edges
+... )
+>>> with_diagonal = {0: [1, 2, 3], 1: [2], 2: [3]}
+>>> bipartite_coloring(with_diagonal) is None
+True
+
+```
+
+The square has an even cycle. Its diagonal creates a triangle, whose final edge demands opposite colors from two vertices already forced to share a color.
