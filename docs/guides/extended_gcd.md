@@ -26,3 +26,21 @@ Run these statements from the repository root.
 ## Boundary to remember
 
 The coefficient pair is not unique; verify the identity instead of expecting a particular pair. The returned gcd is nonnegative even when an input is negative.
+
+## Practice exercise
+
+Find an integer solution to `18*x + 30*y = 12`, then derive another solution using the homogeneous step and verify both certificates.
+
+```pycon
+>>> from algorithm_lab.extended_gcd import extended_gcd
+>>> a, b, target = 18, 30, 12
+>>> divisor, x, y = extended_gcd(a, b)
+>>> assert target % divisor == 0
+>>> x, y = x * (target // divisor), y * (target // divisor)
+>>> assert a * x + b * y == target
+>>> another = (x + b // divisor, y - a // divisor)
+>>> assert a * another[0] + b * another[1] == target
+
+```
+
+Scaling the Bezout coefficients solves any target divisible by the gcd. The added step contributes `a*(b/g) - b*(a/g) = 0`, yielding a family of integer solutions; positivity constraints would need a separate check.
