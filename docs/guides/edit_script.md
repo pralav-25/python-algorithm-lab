@@ -25,3 +25,21 @@ Run these statements from the repository root.
 ## Boundary to remember
 
 Operation tuples describe aligned characters rather than mutable-string offsets. Applying them as index edits to a changing buffer would require a separate cursor convention.
+
+## Practice exercise
+
+Align a three-letter tag with its two-letter abbreviation. Build an alignment display and verify that deleting the gap reconstructs each original string.
+
+```pycon
+>>> from algorithm_lab.edit_script import edit_script
+>>> distance, operations = edit_script("tag", "tg")
+>>> source_line = "".join(left or "-" for _, left, _ in operations)
+>>> target_line = "".join(right or "-" for _, _, right in operations)
+>>> distance, source_line, target_line
+(1, 'tag', 't-g')
+>>> assert source_line.replace("-", "") == "tag"
+>>> assert target_line.replace("-", "") == "tg"
+
+```
+
+The deleted `a` occupies an alignment column with an empty target character. The display's hyphen is only a rendering choice; use a different gap marker or structured columns when literal hyphens can occur in the input.
