@@ -36,3 +36,31 @@ None is a stored value, not a missing-entry marker; a miss raises KeyError.
 Updating a key refreshes recency without growing the cache. items returns a
 snapshot list in eviction order, and reading that snapshot does not refresh
 entries. Capacity must be a positive integer.
+
+## Practice exercise
+
+Simulate a three-page cache, including a missed read. Verify that the miss leaves recency untouched and that an earlier snapshot remains unchanged after eviction.
+
+```pycon
+>>> from algorithm_lab.lru_cache import LRUCache
+>>> pages = LRUCache(3)
+>>> for key, value in [("index", "/"), ("help", "/help"), ("about", "/about")]:
+...     _ = pages.put(key, value)
+>>> snapshot = pages.items()
+>>> pages.get("index")
+'/'
+>>> before_miss = pages.items()
+>>> try:
+...     pages.get("missing")
+... except KeyError:
+...     pass
+>>> assert pages.items() == before_miss
+>>> pages.put("search", "/search")
+('help', '/help')
+>>> pages.items()
+[('about', '/about'), ('index', '/'), ('search', '/search')]
+>>> assert snapshot == [("index", "/"), ("help", "/help"), ("about", "/about")]
+
+```
+
+A successful read protects index by making it most recent; a missing key has no entry to refresh. Help therefore becomes the next eviction candidate. The snapshot is a detached list, so inspecting or retaining it does not alter future eviction decisions.
