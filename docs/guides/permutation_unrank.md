@@ -25,3 +25,27 @@ Run these statements from the repository root.
 ## Boundary to remember
 
 The output is a permutation of range(n), not the caller’s own labels. Map indices back to labels afterward if the application uses named objects.
+
+## Practice exercise
+
+Recover the task ordering at rank thirty-one in a five-label alphabet,
+checking it with a lazy standard-library permutation iterator.
+
+```pycon
+>>> from algorithm_lab.permutation_unrank import permutation_unrank
+>>> from itertools import islice, permutations
+>>> labels = ["audit", "build", "check", "deploy", "email"]
+>>> rank = 31
+>>> indices = permutation_unrank(len(labels), rank)
+>>> indices
+[1, 2, 0, 4, 3]
+>>> ordering = tuple(labels[index] for index in indices)
+>>> ordering
+('build', 'check', 'audit', 'email', 'deploy')
+>>> assert ordering == next(islice(permutations(labels), rank, rank + 1))
+
+```
+
+The first index selects the second block of twenty-four arrangements;
+the remainder selects a block of six among the unused labels. Mapping
+indices back through the same alphabet preserves the rank's meaning.
