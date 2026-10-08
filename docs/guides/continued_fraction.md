@@ -25,3 +25,22 @@ Run these statements from the repository root.
 ## Boundary to remember
 
 For negative rationals, floor is different from truncation toward zero. Only the first coefficient may be negative; later coefficients describe positive reciprocal remainders.
+
+## Practice exercise
+
+Expand the negative rational minus seven thirds, then reconstruct it from the resulting terms with exact arithmetic.
+
+```pycon
+>>> from fractions import Fraction
+>>> from algorithm_lab.continued_fraction import continued_fraction
+>>> terms = continued_fraction(-7, 3)
+>>> terms
+[-3, 1, 2]
+>>> reconstructed = Fraction(terms[-1])
+>>> for term in reversed(terms[:-1]):
+...     reconstructed = term + 1 / reconstructed
+>>> assert reconstructed == Fraction(-7, 3)
+
+```
+
+The leading term uses floor division, so it is minus three rather than truncating toward zero to minus two. Later terms remain positive, retaining the canonical continued-fraction convention for a negative input.
