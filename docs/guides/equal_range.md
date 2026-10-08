@@ -26,3 +26,21 @@ Run these statements from the repository root.
 ## Boundary to remember
 
 An absent target produces equal boundaries at its insertion point, not -1. The input must already be sorted according to the same ordering used for the search.
+
+## Practice exercise
+
+Insert a new score immediately after all existing copies of the same score. Use the upper boundary and confirm that the table remains sorted.
+
+```pycon
+>>> from algorithm_lab.equal_range import equal_range
+>>> scores = [3, 7, 7, 7, 12]
+>>> start, stop = equal_range(scores, 7)
+>>> scores.insert(stop, 7)
+>>> scores
+[3, 7, 7, 7, 7, 12]
+>>> assert stop - start == 3
+>>> assert equal_range(scores, 7) == (1, 5)
+
+```
+
+The original stop is the first index greater than seven, so inserting there places the new item after the existing equal block. The count before insertion uses the old boundaries, which must be recomputed after changing the sequence.
