@@ -33,3 +33,22 @@ Public indices are zero-based, and stop is excluded from a query. add
 applies a delta rather than replacing the old value. Values and deltas must
 be integers, excluding booleans. For a replacement API compare
 [segment trees](segment_tree.md); for immutable data compare prefix sums.
+
+## Practice exercise
+
+Replace a daily sales figure in a delta-based tree. Compute the required delta from a retained source list and compare each prefix with direct summation.
+
+```pycon
+>>> from algorithm_lab.fenwick_tree import FenwickTree
+>>> sales = [5, 9, 2, 6, 3]
+>>> tree = FenwickTree(sales)
+>>> day, replacement = 2, 11
+>>> tree.add(day, replacement - sales[day])
+>>> sales[day] = replacement
+>>> assert all(tree.prefix_sum(stop) == sum(sales[:stop]) for stop in range(len(sales) + 1))
+>>> tree.range_sum(1, 4)
+26
+
+```
+
+Calling `add(day, replacement)` would increase the old value instead of replacing it. Retaining the source list supplies the old value needed for the delta, and the stop-exclusive prefix checks include the empty prefix.
