@@ -26,3 +26,28 @@ Run these statements from the repository root.
 ## Boundary to remember
 
 The structure is a snapshot. Later edits to the original list do not update its totals; choose a Fenwick or segment tree when updates and queries must be interleaved.
+
+## Practice exercise
+
+Construct totals from a generator and audit every valid half-open slice
+of a small ledger, including empty ranges and the complete input.
+
+```pycon
+>>> from algorithm_lab.prefix_sum import PrefixSum
+>>> ledger = [6, -9, 4, 7, -2, 5]
+>>> totals = PrefixSum(value for value in ledger)
+>>> totals.sum(2, 5)
+9
+>>> assert len(totals) == len(ledger)
+>>> assert all(
+...     totals.sum(start, stop) == sum(ledger[start:stop])
+...     for start in range(len(ledger) + 1)
+...     for stop in range(start, len(ledger) + 1)
+... )
+>>> assert totals.sum(0, 3) + totals.sum(3, 6) == totals.sum(0, 6) == 11
+
+```
+
+The initial zero permits a query starting at zero and makes any empty
+range subtract identical totals. Adjacent half-open ranges compose
+without counting their shared boundary twice.
