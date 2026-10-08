@@ -35,3 +35,19 @@ Weights must be finite nonnegative integers or floats, excluding booleans.
 All edges are checked, including disconnected ones. The return value contains
 distances rather than predecessor paths. For signed weights use
 [Bellman-Ford](bellman_ford.md), or the faster DAG-specific routine when applicable.
+
+## Practice exercise
+
+A toll-free connection makes a three-step route cheaper than a direct toll road. Verify distances when a later relaxation replaces an earlier heap entry.
+
+```pycon
+>>> from algorithm_lab.dijkstra import dijkstra
+>>> roads = {"s": [("t", 20), ("a", 3)], "a": [("b", 0)], "b": [("t", 2)]}
+>>> distances = dijkstra(roads, "s")
+>>> distances["a"], distances["b"], distances["t"]
+(3, 3, 5)
+>>> assert distances["t"] == 3 + 0 + 2
+
+```
+
+Zero-cost edges satisfy Dijkstra's nonnegative-weight requirement. The twenty-unit entry for the destination becomes stale after the five-unit route is found; a stale heap entry must never overwrite the improved distance.
