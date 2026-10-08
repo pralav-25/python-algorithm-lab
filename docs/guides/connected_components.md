@@ -33,3 +33,19 @@ Edges are symmetrized even when listed once; neighbor-only vertices are
 included. Components follow first-seen vertex order, while vertices inside
 each frozenset have no ordering. For mutual reachability that respects edge
 direction, use [strongly connected components](strongly_connected_components.md).
+
+## Practice exercise
+
+A monitoring network contains two linked pairs and a standalone sensor. Connect the pairs, then check that the standalone sensor still forms its own component.
+
+```pycon
+>>> from algorithm_lab.connected_components import connected_components
+>>> network = {"a": ["b"], "c": ["d"], "solo": []}
+>>> assert len(connected_components(network)) == 3
+>>> joined = {"a": ["b"], "b": ["c"], "c": ["d"], "solo": []}
+>>> components = set(connected_components(joined))
+>>> assert components == {frozenset({"a", "b", "c", "d"}), frozenset({"solo"})}
+
+```
+
+A single cross-component edge merges two groups. Listing the standalone sensor explicitly retains it in the result even though it has no neighbors.
