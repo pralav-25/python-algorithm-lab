@@ -29,3 +29,26 @@ Run these statements from the repository root.
 ## Boundary to remember
 
 Coefficients are ordered from constant term upward. The zero polynomial is an empty list, so output length need not equal the sum of input lengths minus one.
+
+## Practice exercise
+
+Count the sum outcomes of two three-sided dice by multiplying their
+count-generating polynomials, then compare with explicit outcomes.
+
+```pycon
+>>> from algorithm_lab.polynomial_multiply import polynomial_multiply
+>>> from itertools import product
+>>> from collections import Counter
+>>> die = [0, 1, 1, 1]
+>>> counts = polynomial_multiply(die, die)
+>>> counts
+[0, 0, 1, 2, 3, 2, 1]
+>>> outcomes = Counter(a + b for a, b in product(range(1, 4), repeat=2))
+>>> assert counts == [outcomes[total] for total in range(7)]
+>>> assert sum(counts) == 3 * 3
+
+```
+
+A coefficient's degree represents the sum, while its value counts ways
+to obtain it. Low-degree zeroes remain necessary placeholders: removing
+them would relabel the outcomes rather than canonicalize the polynomial.
