@@ -26,3 +26,29 @@ True
 ## Boundary to remember
 
 Each number is a maximum jump length, so shorter jumps are permitted. A zero blocks progress only when no earlier position can jump beyond it.
+
+## Practice exercise
+
+Find the fewest jumps when always taking the longest available jump
+would land on a dead end. Compare against a small exhaustive reachability
+calculation.
+
+```pycon
+>>> from algorithm_lab.minimum_jumps import minimum_jumps
+>>> lengths = [2, 3, 0, 2, 0, 0]
+>>> minimum_jumps(lengths)
+3
+>>> distance = [0] + [None] * (len(lengths) - 1)
+>>> for index, length in enumerate(lengths):
+...     if distance[index] is not None:
+...         for landing in range(index + 1, min(len(lengths), index + length + 1)):
+...             candidate = distance[index] + 1
+...             if distance[landing] is None or candidate < distance[landing]:
+...                 distance[landing] = candidate
+>>> assert distance[-1] == minimum_jumps(lengths)
+
+```
+
+Jumping from zero straight to index two gets stuck. The three-jump route
+uses indices zero, one, three, and five; breadth layers retain every
+reachable landing, so a locally longest jump need not be selected.
