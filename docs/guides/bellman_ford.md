@@ -34,3 +34,22 @@ Unreachable vertices have infinite distance. All supplied weights must still be
 finite numbers, including weights in disconnected components; booleans are
 rejected. [DAG shortest paths](dag_shortest_paths.md) offers linear time when
 the entire graph is acyclic.
+
+## Practice exercise
+
+A delivery graph applies a rebate on its final connection. Compute the cheapest delivery, then check that doubling every charge and rebate doubles each reachable cost.
+
+```pycon
+>>> from algorithm_lab.bellman_ford import bellman_ford
+>>> delivery = {"depot": [("hub", 8), ("door", 11)], "hub": [("door", -5)]}
+>>> costs = bellman_ford(delivery, "depot")
+>>> costs["door"]
+3
+>>> doubled = {
+...     node: [(neighbor, 2 * cost) for neighbor, cost in edges] for node, edges in delivery.items()
+... }
+>>> assert bellman_ford(doubled, "depot") == {node: 2 * cost for node, cost in costs.items()}
+
+```
+
+Multiplication by a positive constant preserves route ordering. A negative edge can improve a delivery without creating a negative cycle in this acyclic graph.
