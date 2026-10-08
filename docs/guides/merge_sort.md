@@ -25,3 +25,26 @@ Run these statements from the repository root.
 ## Boundary to remember
 
 Equal keys preserve their input order, but the keys still need a consistent total order. The returned list is new; references to the records themselves are not deep copies.
+
+## Practice exercise
+
+Sort words without regard to case while checking stable ties and one key
+evaluation per input word.
+
+```pycon
+>>> from algorithm_lab.merge_sort import merge_sort
+>>> words = ["pear", "Apple", "PEAR", "apricot"]
+>>> calls = []
+>>> def folded(word):
+...     calls.append(word)
+...     return word.casefold()
+>>> merge_sort(words, key=folded)
+['Apple', 'apricot', 'pear', 'PEAR']
+>>> assert calls == words
+>>> assert words == ["pear", "Apple", "PEAR", "apricot"]
+
+```
+
+The two pear spellings have equal keys, so their arrival order survives.
+Comparing whole decorated tuples instead of only their keys could reorder
+them by spelling; evaluating keys while merging would also repeat calls.
