@@ -26,3 +26,25 @@ True
 ## Boundary to remember
 
 The descending arrangement has no successor and returns None. The function does not wrap around to the first arrangement, and it leaves the original input unchanged.
+
+## Practice exercise
+
+Advance a repeated-letter arrangement and confirm it is the immediate
+successor among all distinct arrangements.
+
+```pycon
+>>> from algorithm_lab.next_permutation import next_permutation
+>>> from itertools import permutations
+>>> letters = ["b", "a", "c", "c"]
+>>> successor = next_permutation(letters)
+>>> successor
+['b', 'c', 'a', 'c']
+>>> ordered = sorted(set(permutations(letters)))
+>>> assert tuple(successor) == ordered[ordered.index(tuple(letters)) + 1]
+>>> assert letters == ["b", "a", "c", "c"]
+
+```
+
+The rightmost increasing pivot is the `a`. Swapping it with a `c` raises
+that prefix minimally, then reversing the suffix puts `a` before `c`;
+only swapping without restoring the suffix can skip an arrangement.
