@@ -33,3 +33,21 @@ Representative identities are an implementation choice; compare connectivity
 or groups instead of expecting a particular root. Connections cannot be
 deleted here. [Rollback disjoint sets](rollback_disjoint_set.md) support undoing
 recent merges.
+
+## Practice exercise
+
+Apply a batch of network links containing redundant connections. Count only successful merges and relate that count to the final component count.
+
+```pycon
+>>> from algorithm_lab.disjoint_set import DisjointSet
+>>> network = DisjointSet(6)
+>>> links = [(0, 1), (1, 2), (0, 2), (3, 4), (4, 3)]
+>>> successful = sum(network.union(a, b) for a, b in links)
+>>> successful, network.components
+(3, 3)
+>>> assert network.components == 6 - successful
+>>> assert network.component_size(2) == 3 and network.component_size(5) == 1
+
+```
+
+Every true return from `union` combines exactly two components. Redundant links return false and do not reduce the count, while the untouched vertex retains its singleton component.
