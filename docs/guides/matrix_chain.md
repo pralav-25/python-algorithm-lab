@@ -25,3 +25,27 @@ Run these statements from the repository root.
 ## Boundary to remember
 
 The dimensions list has one more entry than the number of matrices. Reordering matrices is not allowed: only parentheses change. The result models dense scalar multiplication, not hardware-specific runtime.
+
+## Practice exercise
+
+Optimize a four-matrix chain with dimensions 8, 2, 7, 3, and 5. Check all five possible parenthesizations by their scalar multiplication counts.
+
+```pycon
+>>> from algorithm_lab.matrix_chain import matrix_chain
+>>> cost, order = matrix_chain([8, 2, 7, 3, 5])
+>>> cost, order
+(152, '(A1 @ ((A2 @ A3) @ A4))')
+>>> all_costs = [
+...     8 * 2 * 7 + 8 * 7 * 3 + 8 * 3 * 5,
+...     2 * 7 * 3 + 8 * 2 * 3 + 8 * 3 * 5,
+...     8 * 2 * 7 + 7 * 3 * 5 + 8 * 7 * 5,
+...     2 * 7 * 3 + 2 * 3 * 5 + 8 * 2 * 5,
+...     7 * 3 * 5 + 2 * 7 * 5 + 8 * 2 * 5,
+... ]
+>>> all_costs
+[400, 210, 497, 152, 255]
+>>> assert cost == min(all_costs)
+
+```
+
+Multiplying A2 and A3 first produces a 2-by-3 intermediate; combining it with A4 yields a 2-by-5 intermediate before the final product. Enumerating the five Catalan choices confirms the unique cheapest order. Always associating to the left would cost 400 instead.
