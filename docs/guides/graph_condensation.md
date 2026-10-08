@@ -35,3 +35,24 @@ Component indices follow the SCC traversal and are not sorted labels.
 Use the returned component list to map original vertices back to indices.
 Parallel inter-component edges collapse and internal edges disappear. Obtain
 an explicit processing order with [topological sort](topological_sort.md).
+
+## Practice exercise
+
+Collapse a fetch/parse feedback loop into one processing group while preserving its output dependency and an isolated health probe.
+
+```pycon
+>>> from algorithm_lab.graph_condensation import graph_condensation
+>>> pipeline = {"fetch": ["parse"], "parse": ["fetch", "emit"], "emit": [], "health": []}
+>>> groups, dependencies = graph_condensation(pipeline)
+>>> member = {task: i for i, group in enumerate(groups) for task in group}
+>>> sorted(map(len, groups))
+[1, 1, 2]
+>>> assert member["fetch"] == member["parse"]
+>>> assert dependencies[member["fetch"]] == frozenset({member["emit"]})
+>>> assert dependencies[member["health"]] == frozenset()
+>>> assert member["health"] != member["emit"]
+>>> assert sum(map(len, dependencies.values())) == 1
+
+```
+
+Internal fetch/parse edges vanish because their endpoints share one group. The health probe remains a separate vertex even though it has no edges. Component numbers are traversal-dependent, so membership checks express the desired structure without relying on arbitrary numeric labels.
