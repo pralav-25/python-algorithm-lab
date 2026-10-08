@@ -25,3 +25,19 @@ Run these statements from the repository root.
 ## Boundary to remember
 
 These are category weights, not raw continuous observations or signed scores. Zero-weight categories contribute nothing, and at least one category must carry positive mass.
+
+## Practice exercise
+
+Merge four equally likely categories into two equal groups. Determine the uncertainty before and after the merge, including a category with zero weight.
+
+```pycon
+>>> from math import isclose
+>>> from algorithm_lab.entropy import entropy
+>>> before = entropy([2, 2, 2, 2, 0])
+>>> after = entropy([4, 4])
+>>> assert isclose(before, 2.0) and isclose(after, 1.0)
+>>> assert isclose(before - after, 1.0)
+
+```
+
+The coarser label reveals only which pair a category belongs to. It loses one bit of information for this uniform distribution; a zero-weight category contributes no uncertainty.
