@@ -25,3 +25,22 @@ Run these statements from the repository root.
 ## Boundary to remember
 
 The input must be strictly increasing and drawn from range(n). The order is lexicographic, which differs from some combinatorial-number-system rank conventions.
+
+## Practice exercise
+
+Encode a selected three-person team from an alphabetically ordered roster. Compare its rank with a small explicit list of every possible team.
+
+```pycon
+>>> from itertools import combinations
+>>> from algorithm_lab.combination_rank import combination_rank
+>>> roster = ["Ada", "Bo", "Cy", "Dee", "Eli", "Fay"]
+>>> selected = ["Bo", "Dee", "Fay"]
+>>> indices = [roster.index(person) for person in selected]
+>>> rank = combination_rank(len(roster), indices)
+>>> all_teams = list(combinations(roster, 3))
+>>> assert all_teams[rank] == tuple(selected)
+>>> assert rank == list(combinations(range(6), 3)).index(tuple(indices))
+
+```
+
+The rank depends on roster order and team size. Store those conventions alongside the integer if it will be decoded later; the rank alone cannot identify names or distinguish catalogs of different sizes.
