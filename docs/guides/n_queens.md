@@ -27,3 +27,29 @@ Run these statements from the repository root.
 ## Boundary to remember
 
 The output tuple gives one column for each row; it is not a list of arbitrary coordinates. Counting and enumerating are different tasks, and storing all placements quickly becomes expensive.
+
+## Practice exercise
+
+Cross-check every five-queen solution against a bounded brute-force
+search over all column permutations.
+
+```pycon
+>>> from algorithm_lab.n_queens import n_queens
+>>> from itertools import permutations
+>>> size = 5
+>>> expected = [
+...     p
+...     for p in permutations(range(size))
+...     if len({row + column for row, column in enumerate(p)}) == size
+...     and len({row - column for row, column in enumerate(p)}) == size
+... ]
+>>> solutions = list(n_queens(size))
+>>> len(solutions)
+10
+>>> assert solutions == expected
+
+```
+
+A column permutation already guarantees one queen per row and column.
+Distinct sums and differences certify both diagonal directions, giving
+an independent check of the solver's shifted bit masks and output order.
