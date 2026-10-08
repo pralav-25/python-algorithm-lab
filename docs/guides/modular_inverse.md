@@ -25,3 +25,26 @@ Run these statements from the repository root.
 ## Boundary to remember
 
 Ordinary division is not valid modulo a number. If the multiplier and modulus share a factor, an inverse does not exist and this function raises ValueError.
+
+## Practice exercise
+
+Recover the residue in a modular affine equation: solve
+`9 * x + 2 == 7 (mod 28)`.
+
+```pycon
+>>> from algorithm_lab.modular_inverse import modular_inverse
+>>> multiplier, offset, encoded, modulus = 9, 2, 7, 28
+>>> inverse = modular_inverse(multiplier, modulus)
+>>> inverse
+25
+>>> decoded = (encoded - offset) * inverse % modulus
+>>> decoded
+13
+>>> assert (multiplier * decoded + offset) % modulus == encoded
+>>> assert [x for x in range(modulus) if (multiplier * x + offset) % modulus == encoded] == [decoded]
+
+```
+
+Subtract the offset before multiplying by the inverse. Coprimality of
+nine and twenty-eight makes the solution unique modulo twenty-eight;
+ordinary division would not preserve the modular equation.
