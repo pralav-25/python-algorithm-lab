@@ -26,3 +26,21 @@ Run these statements from the repository root.
 ## Boundary to remember
 
 Two observations a billion units apart still require a huge dense histogram. The max_range guard rejects that allocation; use a comparison sort when the range is sparse.
+
+## Practice exercise
+
+Sort tightly clustered large identifiers with a five-bucket allocation limit. Explain why their absolute magnitudes do not require huge storage.
+
+```pycon
+>>> from algorithm_lab.counting_sort import counting_sort
+>>> base = 10**30
+>>> identifiers = [base + 4, base, base + 2, base + 4]
+>>> ordered = counting_sort(identifiers, max_range=5)
+>>> assert ordered == sorted(identifiers)
+>>> [value - base for value in ordered]
+[0, 2, 4, 4]
+>>> assert identifiers[0] == base + 4
+
+```
+
+Buckets are offset by the minimum identifier. The inclusive span is five even when the identifiers have many digits, and the algorithm returns a new list without rearranging the caller's records.
