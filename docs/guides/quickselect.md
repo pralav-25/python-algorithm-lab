@@ -25,3 +25,25 @@ Run these statements from the repository root.
 ## Boundary to remember
 
 The rank is zero-based and duplicate observations each occupy a rank. Deterministic pivot selection can still take quadratic time on adverse inputs; it is not a worst-case linear selection algorithm.
+
+## Practice exercise
+
+Calculate an exact median for an even sample by selecting both central
+ranks, and verify every rank on the same duplicate-containing sample.
+
+```pycon
+>>> from algorithm_lab.quickselect import quickselect
+>>> from fractions import Fraction
+>>> readings = [10, -5, 2, 7, 2, 5]
+>>> middle = len(readings) // 2
+>>> median = Fraction(quickselect(readings, middle - 1) + quickselect(readings, middle), 2)
+>>> median
+Fraction(7, 2)
+>>> assert [quickselect(readings, rank) for rank in range(len(readings))] == sorted(readings)
+>>> assert readings == [10, -5, 2, 7, 2, 5]
+
+```
+
+For an even number of readings, one selected value is not the median;
+the two central values are averaged. Both copies of two occupy ranks,
+so deduplicating before selection would change those central positions.
