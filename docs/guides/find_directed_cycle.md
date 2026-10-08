@@ -35,3 +35,23 @@ The first vertex is repeated at the end so every consecutive pair is a
 cycle edge. An empty list means no cycle anywhere in the graph, including
 disconnected components. Adjacency order selects the first witness; the result
 does not enumerate all cycles.
+
+## Practice exercise
+
+Check a release workflow whose shipping chain is acyclic but whose disconnected audit tasks depend on each other. Return and validate the audit cycle, then remove its closing edge.
+
+```pycon
+>>> from algorithm_lab.find_directed_cycle import find_directed_cycle
+>>> workflow = {"prepare": ["ship"], "ship": [], "audit": ["review"], "review": ["audit"]}
+>>> witness = find_directed_cycle(workflow)
+>>> witness
+['audit', 'review', 'audit']
+>>> assert witness[0] == witness[-1]
+>>> assert all(target in workflow[source] for source, target in zip(witness, witness[1:]))
+>>> workflow["review"] = []
+>>> find_directed_cycle(workflow)
+[]
+
+```
+
+A search confined to the shipping tasks would miss this defect. The outer traversal starts a new DFS in every unexplored component, while the repeated endpoint makes the returned list a checkable closed walk.
