@@ -25,3 +25,25 @@ Run these statements from the repository root.
 ## Boundary to remember
 
 Swapping adjacent characters costs two edits in this model, not one. A distance is also not an alignment; use edit_script when you need the actual sequence of operations.
+
+## Practice exercise
+
+Suggest candidate labels within one edit of cart. Independently generate all permitted one-edit results to check the filter.
+
+```pycon
+>>> from algorithm_lab.levenshtein import levenshtein
+>>> source = "cart"
+>>> candidates = ["cat", "coat", "chart", "cast", "carpet"]
+>>> alphabet = set("".join(candidates))
+>>> neighbors = {source}
+>>> neighbors |= {source[:i] + source[i + 1 :] for i in range(len(source))}
+>>> neighbors |= {source[:i] + char + source[i + 1 :] for i in range(len(source)) for char in alphabet}
+>>> neighbors |= {source[:i] + char + source[i:] for i in range(len(source) + 1) for char in alphabet}
+>>> suggestions = [word for word in candidates if levenshtein(source, word) <= 1]
+>>> suggestions
+['cat', 'chart', 'cast']
+>>> assert suggestions == [word for word in candidates if word in neighbors]
+
+```
+
+The independent neighborhood contains deletions, substitutions, and insertions, plus the unchanged source. Its finite alphabet suffices because every candidate character is included. Adjacent transpositions are absent from both this neighborhood and the unit-cost edit model.
