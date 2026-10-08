@@ -35,3 +35,30 @@ Weights must be positive integers, excluding booleans. Equal weights use
 mapping insertion order, and a single symbol receives the nonempty code '0'.
 The returned strings are a codebook: this routine does not pack bits or store
 the codebook alongside encoded data.
+
+## Practice exercise
+
+Build a codebook for a short message, encode it, and decode the bit string using prefix recognition. Compare the encoded size with a fixed two-bit code for its four symbols.
+
+```pycon
+>>> from collections import Counter
+>>> from algorithm_lab.huffman_codes import huffman_codes
+>>> message = "mississippi"
+>>> book = huffman_codes(Counter(message))
+>>> encoded = "".join(book[letter] for letter in message)
+>>> reverse = {bits: letter for letter, bits in book.items()}
+>>> prefix, decoded = "", []
+>>> for bit in encoded:
+...     prefix += bit
+...     if prefix in reverse:
+...         decoded.append(reverse[prefix])
+...         prefix = ""
+>>> "".join(decoded)
+'mississippi'
+>>> assert prefix == ""
+>>> len(encoded), 2 * len(message)
+(21, 22)
+
+```
+
+A prefix-free code lets the decoder emit a symbol as soon as its complete code appears; it never needs to guess a longer interpretation. The one-bit saving counts payload only. A real file must also describe the codebook and account for byte packing.
