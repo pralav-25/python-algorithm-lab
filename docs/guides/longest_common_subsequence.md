@@ -27,3 +27,24 @@ Run these statements from the repository root.
 ## Boundary to remember
 
 Subsequences need not be contiguous. Equal-length traceback choices can yield different valid answers across implementations, so test witness validity and optimal length when a unique answer is not guaranteed.
+
+## Practice exercise
+
+Find how many insertion and deletion edits are needed to reconcile two character-order revisions. Independently enumerate their shared subsequences to verify the kept length.
+
+```pycon
+>>> from itertools import combinations
+>>> from algorithm_lab.longest_common_subsequence import longest_common_subsequence
+>>> old, new = "CABD", "ACBD"
+>>> kept = longest_common_subsequence(old, new)
+>>> def subsequences(text):
+...     return {"".join(chars) for size in range(len(text) + 1) for chars in combinations(text, size)}
+>>> shared = subsequences(old) & subsequences(new)
+>>> assert kept in shared
+>>> assert len(kept) == max(map(len, shared)) == 3
+>>> len(old) + len(new) - 2 * len(kept)
+2
+
+```
+
+Keep the common three-character subsequence, delete the one unmatched old character, and insert the unmatched new character. A longer shared witness would reduce this cost, but the exhaustive set rules one out. This metric counts substitutions as a deletion plus an insertion.
