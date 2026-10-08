@@ -24,3 +24,18 @@ Run these statements from the repository root.
 ## Boundary to remember
 
 Interior points along a straight hull edge are omitted. The first vertex is not repeated at the end, and fully collinear input reduces to its two extreme endpoints.
+
+## Practice exercise
+
+Translate a point cloud by a fixed integer vector. Check that the hull translates by the same vector and that an interior point stays off the boundary.
+
+```pycon
+>>> from algorithm_lab.convex_hull import convex_hull
+>>> cloud = [(0, 0), (4, 0), (4, 4), (0, 4), (2, 2)]
+>>> translated = [(x - 7, y + 3) for x, y in cloud]
+>>> assert convex_hull(translated) == [(x - 7, y + 3) for x, y in convex_hull(cloud)]
+>>> assert (-5, 5) not in convex_hull(translated)
+
+```
+
+Translation preserves orientation and lexicographic comparisons because every coordinate receives the same offset. It therefore changes neither which points are extreme nor the returned boundary order.
