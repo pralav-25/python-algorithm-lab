@@ -25,3 +25,19 @@ Run these statements from the repository root.
 ## Boundary to remember
 
 Ranks run from zero through C(n,k)-1. The empty combination is a real single result at rank zero, not an absence of combinations.
+
+## Practice exercise
+
+Build the second four-entry page of the lexicographic two-item catalog for five items, starting at zero-based rank four.
+
+```pycon
+>>> from itertools import combinations
+>>> from algorithm_lab.combination_unrank import combination_unrank
+>>> page = [combination_unrank(5, 2, rank) for rank in range(4, 8)]
+>>> page
+[[1, 2], [1, 3], [1, 4], [2, 3]]
+>>> assert page == [list(row) for row in list(combinations(range(5), 2))[4:8]]
+
+```
+
+Unranking reaches each requested selection directly, so a large catalog does not need to enumerate all preceding pages. The small explicit catalog here serves only as an independent check of the paging convention.
