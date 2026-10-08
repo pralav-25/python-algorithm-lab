@@ -33,3 +33,34 @@ The returned cut contains vertices reachable from the source in the final
 residual graph. Its outgoing capacity in the original graph certifies the
 maximum flow. Capacities are nonnegative integers; source and sink must be
 distinct existing vertices. The API returns a total and cut, not per-edge flows.
+
+## Practice exercise
+
+Route two unit jobs through two shared servers, even when the first chosen
+route must later be undone. Check both the throughput and its cut certificate.
+
+```pycon
+>>> from algorithm_lab.max_flow import max_flow
+>>> network = {
+...     "s": {"a": 1, "b": 1},
+...     "a": {"x": 1, "y": 1},
+...     "b": {"x": 1},
+...     "x": {"t": 1},
+...     "y": {"t": 1},
+...     "t": {},
+... }
+>>> before = {node: dict(edges) for node, edges in network.items()}
+>>> throughput, cut = max_flow(network, "s", "t")
+>>> throughput, cut == frozenset({"s"})
+(2, True)
+>>> assert (
+...     sum(cap for node in cut for neighbor, cap in network[node].items() if neighbor not in cut)
+...     == throughput
+... )
+>>> assert network == before
+
+```
+
+Sending `a` to `x` first leaves `b` blocked. The residual route can cancel
+that choice and send `a` to `y`; a method that only consumes forward
+capacities would miss this second unit of flow.
