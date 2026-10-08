@@ -35,3 +35,27 @@ discard removes one copy rather than all equal values. select uses
 nonnegative zero-based indices and rejects negative indexing. Values need a
 consistent total order. This implementation favors simplicity; frequent
 updates to a very large collection still cost linear time.
+
+## Practice exercise
+
+Count values in a half-open score band after adding a score and removing
+one duplicate. Use ranks even when a band endpoint is absent.
+
+```pycon
+>>> from algorithm_lab.ordered_multiset import OrderedMultiset
+>>> scores = OrderedMultiset([12, 7, 12, 5, 20])
+>>> scores.add(8)
+>>> scores.discard(12)
+True
+>>> [scores.select(i) for i in range(len(scores))]
+[5, 7, 8, 12, 20]
+>>> scores.rank(13) - scores.rank(7)
+3
+>>> assert scores.count(12) == 1
+>>> assert scores.select(len(scores) // 2) == 8
+
+```
+
+Subtracting the number strictly below seven from the number strictly
+below thirteen counts `[7, 13)`. Neither threshold needs to occur in the
+collection, and removing one twelve leaves the other in the band.
