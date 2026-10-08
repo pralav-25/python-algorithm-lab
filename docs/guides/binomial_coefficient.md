@@ -25,3 +25,18 @@ Run these statements from the repository root.
 ## Boundary to remember
 
 The count assumes distinct positions or people. Repeated values in a list are still distinct choices unless the application explicitly deduplicates them first.
+
+## Practice exercise
+
+Count every possible committee from six people, including the empty committee. Combine the counts for each size and explain the result.
+
+```pycon
+>>> from algorithm_lab.binomial_coefficient import binomial_coefficient
+>>> size_counts = [binomial_coefficient(6, size) for size in range(7)]
+>>> size_counts
+[1, 6, 15, 20, 15, 6, 1]
+>>> assert sum(size_counts) == 2**6
+
+```
+
+Each person independently joins or stays out, yielding 64 subsets. Summing the disjoint size categories counts the same subsets a second way.
