@@ -25,3 +25,24 @@ Run these statements from the repository root.
 ## Boundary to remember
 
 The objects are distinct. The empty permutation contributes one valid assignment, while a single object has no valid derangement.
+
+## Practice exercise
+
+Count five-person gift exchanges that forbid self-assignment. Check the recurrence against a bounded explicit enumeration of all recipient permutations.
+
+```pycon
+>>> from itertools import permutations
+>>> from algorithm_lab.derangements import derangements
+>>> assignments = [
+...     order
+...     for order in permutations(range(5))
+...     if all(person != recipient for person, recipient in enumerate(order))
+... ]
+>>> len(assignments)
+44
+>>> assert derangements(5) == len(assignments)
+>>> assert derangements(5) == 4 * (derangements(4) + derangements(3))
+
+```
+
+A recipient permutation also prevents two people from receiving the same gift. Checking only the no-self rule on arbitrary recipient lists would allow collisions and count a different exchange problem.
