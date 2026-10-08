@@ -24,3 +24,19 @@ Run these statements from the repository root.
 ## Boundary to remember
 
 The output includes a list for every index through the inclusive limit. Index zero is empty because the set of positive divisors of zero is not finite.
+
+## Practice exercise
+
+Use one divisor table to locate the perfect numbers up to thirty: numbers equal to the sum of their positive proper divisors.
+
+```pycon
+>>> from algorithm_lab.divisor_sieve import divisor_sieve
+>>> table = divisor_sieve(30)
+>>> perfect = [n for n in range(1, 31) if sum(table[n][:-1]) == n]
+>>> perfect
+[6, 28]
+>>> assert sum([1, 2, 3]) == 6 and sum([1, 2, 4, 7, 14]) == 28
+
+```
+
+Each positive divisor list ends with the number itself, so excluding that last entry gives its proper divisors. Starting at one avoids applying this definition to the special empty table entry for zero.
