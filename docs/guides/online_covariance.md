@@ -36,3 +36,28 @@ Observations must be finite numeric pairs, and sample must be a boolean.
 Population covariance needs at least one pair; sample covariance needs two.
 The result has the product of the input units and is not normalized correlation.
 An intermediate value outside floating-point range raises ValueError.
+
+## Practice exercise
+
+Measure inverse variation near large offsets and verify it against an
+exact covariance of the unshifted integer observations.
+
+```pycon
+>>> from algorithm_lab.online_covariance import online_covariance
+>>> from fractions import Fraction
+>>> from math import isclose
+>>> pairs = [(0, 10), (2, 4), (4, -2)]
+>>> mean_x = Fraction(sum(x for x, y in pairs), len(pairs))
+>>> mean_y = Fraction(sum(y for x, y in pairs), len(pairs))
+>>> expected = sum((x - mean_x) * (y - mean_y) for x, y in pairs) / (len(pairs) - 1)
+>>> shifted = [(10**12 + x, -(10**12) + y) for x, y in pairs]
+>>> online_covariance(iter(shifted), sample=True)
+-12.0
+>>> assert isclose(online_covariance(shifted, sample=True), float(expected))
+>>> assert online_covariance(shifted) == -8.0
+
+```
+
+Adding a constant to either coordinate does not change covariance.
+Shifting by the first pair preserves the small deviations; sample and
+population results still differ because their divisors are two and three.
