@@ -25,3 +25,27 @@ True
 ## Boundary to remember
 
 Intervals and the target are closed, so touching endpoints maintain continuous coverage. Returned indices refer to the original interval list, and None indicates a gap rather than an empty successful cover.
+
+## Practice exercise
+
+Cover a target whose start lies inside an interval, resolving equal
+farthest endpoints by original input index.
+
+```pycon
+>>> from algorithm_lab.minimum_interval_cover import minimum_interval_cover
+>>> spans = [(-2, 4), (0, 4), (3, 6), (4, 9), (7, 12)]
+>>> chosen = minimum_interval_cover(spans, 1, 10)
+>>> chosen
+[0, 3, 4]
+>>> cursor = 1
+>>> for index in chosen:
+...     start, stop = spans[index]
+...     assert start <= cursor < stop
+...     cursor = stop
+>>> assert cursor >= 10
+
+```
+
+Both first candidates reach four, so index zero wins despite starting
+before the target. At four, reaching nine dominates reaching six; the
+algorithm may overshoot the target's end while still using a minimum cover.
