@@ -33,3 +33,20 @@ Left and right labels occupy separate namespaces, so the same label can
 appear on both sides. Unmatched left vertices are omitted. Duplicate edges
 collapse, and traversal order resolves ties between maximum matchings.
 [Stable matching](stable_matching.md) solves a different preference-based task.
+
+## Practice exercise
+
+Three jobs compete for two compatible machines. Verify the maximum number scheduled and validate the returned assignments without fixing a tie winner.
+
+```pycon
+>>> from algorithm_lab.bipartite_matching import bipartite_matching
+>>> compatible = {"compile": ["cpu", "gpu"], "train": ["gpu"], "render": ["gpu"]}
+>>> scheduled = bipartite_matching(compatible)
+>>> len(scheduled)
+2
+>>> assert len(set(scheduled.values())) == 2
+>>> assert all(machine in compatible[job] for job, machine in scheduled.items())
+
+```
+
+Two machines bound the answer by two, and `compile` plus either GPU-only job attains that bound. The API returns a valid maximum assignment; which GPU-only job wins is a traversal choice rather than a fairness guarantee.
