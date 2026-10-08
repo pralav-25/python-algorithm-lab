@@ -26,3 +26,32 @@ Run these statements from the repository root.
 ## Boundary to remember
 
 Only opening and closing parentheses are accepted. Other bracket kinds or ordinary text require a different parser. A result of (0, 0) means no nonempty valid span exists.
+
+## Practice exercise
+
+Choose the earliest of two equally long balanced spans separated by an unmatched close. Check every candidate with an independent running-balance parser.
+
+```pycon
+>>> from algorithm_lab.longest_valid_parentheses import longest_valid_parentheses
+>>> text = ")((())))(()())("
+>>> bounds = longest_valid_parentheses(text)
+>>> bounds, text[bounds[0] : bounds[1]]
+((1, 7), '((()))')
+>>> def balanced(fragment):
+...     balance = 0
+...     for char in fragment:
+...         balance += 1 if char == "(" else -1
+...         if balance < 0:
+...             return False
+...     return balance == 0
+>>> spans = [
+...     (start, stop)
+...     for start in range(len(text))
+...     for stop in range(start + 1, len(text) + 1)
+...     if balanced(text[start:stop])
+... ]
+>>> assert bounds == min(spans, key=lambda span: (-(span[1] - span[0]), span[0]))
+
+```
+
+The extra close resets the usable start boundary, so the two six-character spans cannot be joined. A zero final balance alone is insufficient: an interval that becomes negative partway through is invalid. The independent parser checks that prefix condition and the earliest-start tie.
