@@ -25,3 +25,25 @@ Run these statements from the repository root.
 ## Boundary to remember
 
 The chosen slice is nonempty: an all-negative series returns its least-negative entry. Stop indices are exclusive, and this problem differs from selecting any disconnected profitable observations.
+
+## Practice exercise
+
+Choose a best run from a series with several equal totals, and verify the
+API's preference for the earliest start and then the earliest stop.
+
+```pycon
+>>> from algorithm_lab.max_subarray import max_subarray
+>>> changes = [0, 3, -3, 3]
+>>> max_subarray(changes)
+(3, 0, 2)
+>>> candidates = [
+...     (sum(changes[i:j]), i, j) for i in range(len(changes)) for j in range(i + 1, len(changes) + 1)
+... ]
+>>> expected = min(candidates, key=lambda row: (-row[0], row[1], row[2]))
+>>> assert max_subarray(changes) == expected
+
+```
+
+Keeping a zero prefix preserves the earlier starting index. Replacing the
+best result on an equal total would incorrectly favor a later stopping
+position, even though the numeric maximum stayed correct.
