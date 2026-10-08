@@ -33,3 +33,20 @@ not separate parallel connections. Self-loops are ignored. Pair orientation
 and result ordering are unspecified, so compare unordered endpoint sets when
 checking results. [Articulation points](articulation_points.md) instead model
 the loss of a whole vertex.
+
+## Practice exercise
+
+A triangular backbone has a two-edge branch. List its critical connections and predict the effect of reconnecting the branch endpoint to the backbone.
+
+```pycon
+>>> from algorithm_lab.bridges import bridges
+>>> network = {0: [1, 2], 1: [2], 2: [3], 3: [4]}
+>>> critical = {frozenset(edge) for edge in bridges(network)}
+>>> assert critical == {frozenset({2, 3}), frozenset({3, 4})}
+>>> reconnected = {0: [1, 2, 4], 1: [2], 2: [3], 3: [4]}
+>>> bridges(reconnected)
+[]
+
+```
+
+Every branch edge originally lies on the only route to its outer vertices. The reconnection places those edges on a cycle, so each gains an alternate route.
