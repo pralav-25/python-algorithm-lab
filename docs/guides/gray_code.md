@@ -25,3 +25,25 @@ Run these statements from the repository root.
 ## Boundary to remember
 
 A Gray ordering is not numeric sort order. There are still exponentially many states even though the generator stores only a small amount of working state.
+
+## Practice exercise
+
+Visit every subset of two goods while updating its total weight by changing just one good at a time. Compare the incremental totals with direct subset sums.
+
+```pycon
+>>> from algorithm_lab.gray_code import gray_code
+>>> weights = [5, 7]
+>>> masks = list(gray_code(len(weights)))
+>>> total, totals = 0, [0]
+>>> for previous, current in zip(masks, masks[1:]):
+...     changed = previous ^ current
+...     bit = changed.bit_length() - 1
+...     total += weights[bit] if current & changed else -weights[bit]
+...     totals.append(total)
+>>> totals
+[0, 5, 12, 7]
+>>> assert totals == [sum(w for bit, w in enumerate(weights) if mask & (1 << bit)) for mask in masks]
+
+```
+
+The XOR identifies the one toggled membership bit; its new state decides whether to add or subtract the corresponding weight. This application avoids recomputing each sum from scratch, although enumerating every subset still takes exponential time.
