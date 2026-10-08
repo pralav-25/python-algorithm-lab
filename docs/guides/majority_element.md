@@ -24,3 +24,27 @@ True
 ## Boundary to remember
 
 A majority occurs more than half the time, not merely more often than every competitor. None is valid data, so absence is signaled with ValueError rather than a sentinel value.
+
+## Practice exercise
+
+Distinguish a leading ballot option with exactly half the votes from a strict majority. Add one matching vote and verify the decision changes.
+
+```pycon
+>>> from collections import Counter
+>>> from algorithm_lab.majority_element import majority_element
+>>> ballots = ["approve", "reject", "approve", "defer", "reject", "approve"]
+>>> counts = Counter(ballots)
+>>> max(counts, key=counts.get), counts["approve"], len(ballots)
+('approve', 3, 6)
+>>> majority_element(ballots)
+Traceback (most recent call last):
+...
+ValueError: no strict majority
+>>> ballots.append("approve")
+>>> majority_element(ballots)
+'approve'
+>>> assert 2 * ballots.count("approve") > len(ballots)
+
+```
+
+Three of six votes are exactly half, even though approve leads every other option. Candidate cancellation may still end with approve, so verification must reject it. The added ballot makes four of seven votes, crossing the strict threshold.
