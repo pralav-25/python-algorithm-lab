@@ -29,3 +29,23 @@ Run these statements from the repository root.
 ## Boundary to remember
 
 A run may use each position at most once. All-negative input needs special handling so removing the entire minimum slice does not incorrectly produce an empty zero-sum answer.
+
+## Practice exercise
+
+Choose the most profitable contiguous run of days on a repeating four-day schedule, using each day at most once. Check every possible circular run independently.
+
+```pycon
+>>> from algorithm_lab.circular_max_subarray import circular_max_subarray
+>>> profit = [8, -9, 4, 3]
+>>> candidates = [
+...     sum(profit[(start + step) % 4] for step in range(length))
+...     for start in range(4)
+...     for length in range(1, 5)
+... ]
+>>> circular_max_subarray(profit)
+15
+>>> assert circular_max_subarray(profit) == max(candidates)
+
+```
+
+The winning run takes the final two days and then the first day, skipping the loss of nine. Bounding the length by four prevents counting profitable days twice.
