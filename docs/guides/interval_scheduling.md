@@ -25,3 +25,28 @@ Run these statements from the repository root.
 ## Boundary to remember
 
 The objective is count, not revenue or total occupied time. Every interval has positive duration and half-open endpoints; weighted interval scheduling solves a different optimization problem.
+
+## Practice exercise
+
+Select as many short workshops as possible from five competing slots. Prove the returned count is optimal by checking every subset of this small schedule.
+
+```pycon
+>>> from itertools import combinations
+>>> from algorithm_lab.interval_scheduling import interval_scheduling
+>>> slots = [(0, 4), (0, 2), (2, 3), (3, 5), (4, 6)]
+>>> selected = interval_scheduling(slots)
+>>> selected
+[(0, 2), (2, 3), (3, 5)]
+>>> def compatible(group):
+...     ordered = sorted(group)
+...     return all(left[1] <= right[0] for left, right in zip(ordered, ordered[1:]))
+>>> optimum = max(
+...     size
+...     for size in range(len(slots) + 1)
+...     if any(compatible(group) for group in combinations(slots, size))
+... )
+>>> assert len(selected) == optimum == 3
+
+```
+
+The exhaustive oracle tests feasibility without copying the earliest-finish rule. More than one optimal schedule can exist; the implementation's specific selection is valid, while optimality concerns its count. Adjacent endpoints remain compatible because the intervals are half-open.
