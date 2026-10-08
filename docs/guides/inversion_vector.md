@@ -25,3 +25,21 @@ Run these statements from the repository root.
 ## Boundary to remember
 
 Equal values do not count as smaller. Compression must preserve order, not numeric distance, because the query concerns relative rank rather than arithmetic gaps.
+
+## Practice exercise
+
+Explain the disorder in a sequence containing enormous signed values and a duplicate. Show that rescaling values without changing their order preserves every position's contribution.
+
+```pycon
+>>> from algorithm_lab.inversion_vector import inversion_vector
+>>> from algorithm_lab.inversion_count import inversion_count
+>>> values = [10**30, -(10**30), 10**30, 0]
+>>> contributions = inversion_vector(values)
+>>> contributions
+[2, 0, 1, 0]
+>>> assert inversion_vector([7 * value + 11 for value in values]) == contributions
+>>> assert sum(contributions) == inversion_count(values) == 3
+
+```
+
+Position 0 exceeds the negative value and zero, but not its equal copy. A strictly increasing affine transformation changes numeric gaps while preserving all comparisons. The vector sum also agrees with the separate merge-based inversion counter, checking a different algorithm against the same three pairs.
