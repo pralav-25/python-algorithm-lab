@@ -26,3 +26,27 @@ Run these statements from the repository root.
 ## Boundary to remember
 
 The zeroth power is the identity, representing no transition. This routine uses dense integer matrices; the size of exact walk counts can grow even when the matrix dimensions stay small.
+
+## Practice exercise
+
+Count three-edge walks from vertex 0 to vertex 2 and verify the count by enumerating vertex sequences. Include walks that revisit vertices.
+
+```pycon
+>>> from itertools import product
+>>> from algorithm_lab.matrix_power import matrix_power
+>>> edges = [[0, 1, 1], [0, 0, 1], [1, 0, 0]]
+>>> counts = matrix_power(edges, 3)
+>>> counts
+[[1, 1, 1], [0, 1, 1], [1, 0, 1]]
+>>> walks = [
+...     path
+...     for path in product(range(3), repeat=4)
+...     if path[0] == 0 and path[-1] == 2 and all(edges[a][b] for a, b in zip(path, path[1:]))
+... ]
+>>> walks
+[(0, 2, 0, 2)]
+>>> assert counts[0][2] == len(walks) == 1
+
+```
+
+Three edges require four vertex positions. The counted walk revisits vertex 0 and uses the 0-to-2 edge twice; matrix powers count walks rather than only simple paths. Enumerating all four-position sequences is an independent small-graph check of that interpretation.
