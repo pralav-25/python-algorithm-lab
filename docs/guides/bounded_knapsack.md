@@ -26,3 +26,18 @@ Run these statements from the repository root.
 ## Boundary to remember
 
 Each item is a (weight, value, count) triple, and this API returns only the optimal value. Taking nothing is allowed, so negative-valued inventory need not be used.
+
+## Practice exercise
+
+A warehouse has effectively unlimited two-unit boxes worth seven each and one three-unit box worth twelve. Find the best load under capacity seven.
+
+```pycon
+>>> from algorithm_lab.bounded_knapsack import bounded_knapsack
+>>> inventory = [(2, 7, 10**12), (3, 12, 1)]
+>>> bounded_knapsack(inventory, 7)
+26
+>>> assert bounded_knapsack(inventory, 7) == bounded_knapsack([(2, 7, 3), (3, 12, 1)], 7)
+
+```
+
+Only three two-unit boxes could fit even without the other item. Two such boxes plus the three-unit box earn 26; three two-unit boxes earn only 21. Stock beyond the capacity-imposed bound cannot improve the result.
