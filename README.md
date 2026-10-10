@@ -38,7 +38,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 The [study guides](docs/README.md) explain algorithm invariants, practical uses,
 and boundaries with examples checked by the test suite.
 
-## Catalog (181 algorithms)
+## Catalog (182 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -223,6 +223,7 @@ and boundaries with examples checked by the test suite.
 | [double_factorial](algorithm_lab/double_factorial.py) | Combinatorics | Evaluate exact double factorials including the empty products |
 | [falling_factorial](algorithm_lab/falling_factorial.py) | Combinatorics | Evaluate falling factorials for any integer starting value |
 | [rising_factorial](algorithm_lab/rising_factorial.py) | Combinatorics | Evaluate rising factorials for any integer starting value |
+| [primitive_root](algorithm_lab/primitive_root.py) | Number theory | Find the least generator of coprime residues or report none |
 
 ## Validation
 
