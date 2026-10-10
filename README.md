@@ -38,7 +38,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 The [study guides](docs/README.md) explain algorithm invariants, practical uses,
 and boundaries with examples checked by the test suite.
 
-## Catalog (176 algorithms)
+## Catalog (177 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -218,6 +218,7 @@ and boundaries with examples checked by the test suite.
 | [composition_count](algorithm_lab/composition_count.py) | Combinatorics | Count ordered positive compositions, optionally by exact length |
 | [partition_count](algorithm_lab/partition_count.py) | Combinatorics | Count unordered positive integer partitions |
 | [distinct_partition_count](algorithm_lab/distinct_partition_count.py) | Combinatorics | Count integer partitions whose positive parts are distinct |
+| [rencontres_number](algorithm_lab/rencontres_number.py) | Combinatorics | Count permutations with an exact number of fixed points |
 
 ## Validation
 
