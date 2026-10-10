@@ -38,7 +38,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 The [study guides](docs/README.md) explain algorithm invariants, practical uses,
 and boundaries with examples checked by the test suite.
 
-## Catalog (221 algorithms)
+## Catalog (222 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -263,6 +263,7 @@ and boundaries with examples checked by the test suite.
 | [max_sum_fixed_window](algorithm_lab/max_sum_fixed_window.py) | Sequences | Maximum fixed-size window with earliest ties |
 | [minimum_pair_difference](algorithm_lab/minimum_pair_difference.py) | Sequences | Minimum absolute pair difference |
 | [boyer_moore_horspool](algorithm_lab/boyer_moore_horspool.py) | Strings | Overlapping substring matches with Horspool bad-character shifts |
+| [sunday_search](algorithm_lab/sunday_search.py) | Strings | Overlapping substring matches with Sunday look-ahead shifts |
 
 ## Validation
 
