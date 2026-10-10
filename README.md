@@ -38,7 +38,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 The [study guides](docs/README.md) explain algorithm invariants, practical uses,
 and boundaries with examples checked by the test suite.
 
-## Catalog (213 algorithms)
+## Catalog (214 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -255,6 +255,7 @@ and boundaries with examples checked by the test suite.
 | [smallest_missing_positive](algorithm_lab/smallest_missing_positive.py) | Sequences | Linear-time smallest missing positive integer |
 | [minimum_swaps_sort](algorithm_lab/minimum_swaps_sort.py) | Sequences | Minimum swaps for distinct integer sorting |
 | [rotate_sequence](algorithm_lab/rotate_sequence.py) | Sequences | Non-mutating sequence rotation |
+| [merge_sorted](algorithm_lab/merge_sorted.py) | Sequences | Stable merging of sorted iterables |
 
 ## Validation
 
