@@ -38,7 +38,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 The [study guides](docs/README.md) explain algorithm invariants, practical uses,
 and boundaries with examples checked by the test suite.
 
-## Catalog (215 algorithms)
+## Catalog (216 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -257,6 +257,7 @@ and boundaries with examples checked by the test suite.
 | [rotate_sequence](algorithm_lab/rotate_sequence.py) | Sequences | Non-mutating sequence rotation |
 | [merge_sorted](algorithm_lab/merge_sorted.py) | Sequences | Stable merging of sorted iterables |
 | [subarray_xor_count](algorithm_lab/subarray_xor_count.py) | Sequences | Prefix-XOR subarray counting |
+| [longest_balanced_binary](algorithm_lab/longest_balanced_binary.py) | Sequences | Longest balanced binary subarray with earliest ties |
 
 ## Validation
 
