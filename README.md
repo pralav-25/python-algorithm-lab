@@ -38,7 +38,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 The [study guides](docs/README.md) explain algorithm invariants, practical uses,
 and boundaries with examples checked by the test suite.
 
-## Catalog (218 algorithms)
+## Catalog (219 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -260,6 +260,7 @@ and boundaries with examples checked by the test suite.
 | [longest_balanced_binary](algorithm_lab/longest_balanced_binary.py) | Sequences | Longest balanced binary subarray with earliest ties |
 | [dutch_partition](algorithm_lab/dutch_partition.py) | Sequences | Non-mutating Dutch three-way integer partition |
 | [min_length_subarray_sum](algorithm_lab/min_length_subarray_sum.py) | Sequences | Shortest qualifying sum window with earliest ties |
+| [max_sum_fixed_window](algorithm_lab/max_sum_fixed_window.py) | Sequences | Maximum fixed-size window with earliest ties |
 
 ## Validation
 
