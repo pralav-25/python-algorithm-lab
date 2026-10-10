@@ -38,7 +38,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 The [study guides](docs/README.md) explain algorithm invariants, practical uses,
 and boundaries with examples checked by the test suite.
 
-## Catalog (186 algorithms)
+## Catalog (187 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -228,6 +228,7 @@ and boundaries with examples checked by the test suite.
 | [trailing_factorial_zeros](algorithm_lab/trailing_factorial_zeros.py) | Number theory | Count trailing factorial zeros in any integer base |
 | [digit_sum](algorithm_lab/digit_sum.py) | Number theory | Sum absolute-value digits in any base of at least two |
 | [digital_root](algorithm_lab/digital_root.py) | Number theory | Compute an absolute-value digital root in any integer base |
+| [base_conversion](algorithm_lab/base_conversion.py) | Number theory | Format signed integers in bases two through thirty-six |
 
 ## Validation
 
