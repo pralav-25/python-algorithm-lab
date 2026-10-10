@@ -38,7 +38,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 The [study guides](docs/README.md) explain algorithm invariants, practical uses,
 and boundaries with examples checked by the test suite.
 
-## Catalog (172 algorithms)
+## Catalog (173 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -214,6 +214,7 @@ and boundaries with examples checked by the test suite.
 | [lah_number](algorithm_lab/lah_number.py) | Combinatorics | Count partitions into unordered blocks of ordered elements |
 | [eulerian_number](algorithm_lab/eulerian_number.py) | Combinatorics | Count permutations with a specified number of descents |
 | [narayana_number](algorithm_lab/narayana_number.py) | Combinatorics | Count Dyck paths with a specified number of peaks |
+| [catalan_triangle](algorithm_lab/catalan_triangle.py) | Combinatorics | Build ballot-number rows of the Catalan triangle |
 
 ## Validation
 
