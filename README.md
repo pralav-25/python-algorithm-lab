@@ -38,7 +38,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 The [study guides](docs/README.md) explain algorithm invariants, practical uses,
 and boundaries with examples checked by the test suite.
 
-## Catalog (223 algorithms)
+## Catalog (224 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -265,6 +265,7 @@ and boundaries with examples checked by the test suite.
 | [boyer_moore_horspool](algorithm_lab/boyer_moore_horspool.py) | Strings | Overlapping substring matches with Horspool bad-character shifts |
 | [sunday_search](algorithm_lab/sunday_search.py) | Strings | Overlapping substring matches with Sunday look-ahead shifts |
 | [damerau_levenshtein](algorithm_lab/damerau_levenshtein.py) | Strings | Unrestricted edit distance with reusable adjacent transpositions |
+| [longest_repeating_subsequence](algorithm_lab/longest_repeating_subsequence.py) | Strings | Repeated subsequence length with distinct aligned indices |
 
 ## Validation
 
