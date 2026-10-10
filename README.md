@@ -38,7 +38,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 The [study guides](docs/README.md) explain algorithm invariants, practical uses,
 and boundaries with examples checked by the test suite.
 
-## Catalog (226 algorithms)
+## Catalog (227 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -268,6 +268,7 @@ and boundaries with examples checked by the test suite.
 | [longest_repeating_subsequence](algorithm_lab/longest_repeating_subsequence.py) | Strings | Repeated subsequence length with distinct aligned indices |
 | [interleaving_strings](algorithm_lab/interleaving_strings.py) | Strings | Decide whether two strings preserve order in an interleaving |
 | [target_subsequence_count](algorithm_lab/target_subsequence_count.py) | Strings | Count source index selections forming a target subsequence |
+| [minimum_insertions_palindrome](algorithm_lab/minimum_insertions_palindrome.py) | Strings | Minimum insertions needed to form a palindrome |
 
 ## Validation
 
