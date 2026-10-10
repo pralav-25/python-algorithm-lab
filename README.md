@@ -38,7 +38,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 The [study guides](docs/README.md) explain algorithm invariants, practical uses,
 and boundaries with examples checked by the test suite.
 
-## Catalog (170 algorithms)
+## Catalog (171 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -212,6 +212,7 @@ and boundaries with examples checked by the test suite.
 | [word_break](algorithm_lab/word_break.py) | Dynamic programming | Minimum-word dictionary segmentation with reconstruction |
 | [bell_number](algorithm_lab/bell_number.py) | Combinatorics | Count partitions of a labeled set with Bell's triangle |
 | [lah_number](algorithm_lab/lah_number.py) | Combinatorics | Count partitions into unordered blocks of ordered elements |
+| [eulerian_number](algorithm_lab/eulerian_number.py) | Combinatorics | Count permutations with a specified number of descents |
 
 ## Validation
 
