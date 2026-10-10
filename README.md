@@ -38,7 +38,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 The [study guides](docs/README.md) explain algorithm invariants, practical uses,
 and boundaries with examples checked by the test suite.
 
-## Catalog (169 algorithms)
+## Catalog (170 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -211,6 +211,7 @@ and boundaries with examples checked by the test suite.
 | [longest_valid_parentheses](algorithm_lab/longest_valid_parentheses.py) | Strings | Earliest longest balanced parentheses substring |
 | [word_break](algorithm_lab/word_break.py) | Dynamic programming | Minimum-word dictionary segmentation with reconstruction |
 | [bell_number](algorithm_lab/bell_number.py) | Combinatorics | Count partitions of a labeled set with Bell's triangle |
+| [lah_number](algorithm_lab/lah_number.py) | Combinatorics | Count partitions into unordered blocks of ordered elements |
 
 ## Validation
 
