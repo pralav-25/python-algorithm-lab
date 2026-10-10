@@ -38,7 +38,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 The [study guides](docs/README.md) explain algorithm invariants, practical uses,
 and boundaries with examples checked by the test suite.
 
-## Catalog (242 algorithms)
+## Catalog (243 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -284,6 +284,7 @@ and boundaries with examples checked by the test suite.
 | [minimum_cost_path_grid](algorithm_lab/minimum_cost_path_grid.py) | Dynamic programming | Minimum grid path cost using only right and down steps |
 | [minimum_partition_difference](algorithm_lab/minimum_partition_difference.py) | Dynamic programming | Minimum complementary subset sum difference using a bitset |
 | [smith_waterman](algorithm_lab/smith_waterman.py) | Strings | Optimal local alignment score with linear gap penalties |
+| [needleman_wunsch](algorithm_lab/needleman_wunsch.py) | Strings | Optimal global alignment score with linear gap penalties |
 
 ## Validation
 
