@@ -38,7 +38,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 The [study guides](docs/README.md) explain algorithm invariants, practical uses,
 and boundaries with examples checked by the test suite.
 
-## Catalog (232 algorithms)
+## Catalog (233 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -274,6 +274,7 @@ and boundaries with examples checked by the test suite.
 | [boolean_parenthesization](algorithm_lab/boolean_parenthesization.py) | Dynamic programming | Count true and false evaluations of all full parenthesizations |
 | [burst_balloons](algorithm_lab/burst_balloons.py) | Dynamic programming | Choose balloon burst order to maximize neighboring-value products |
 | [egg_drop](algorithm_lab/egg_drop.py) | Dynamic programming | Minimum worst-case egg drops via floors reachable per move |
+| [optimal_bst](algorithm_lab/optimal_bst.py) | Dynamic programming | Optimal ordered search tree for successful-search frequencies |
 
 ## Validation
 
