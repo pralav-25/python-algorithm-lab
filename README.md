@@ -38,7 +38,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 The [study guides](docs/README.md) explain algorithm invariants, practical uses,
 and boundaries with examples checked by the test suite.
 
-## Catalog (190 algorithms)
+## Catalog (191 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -232,6 +232,7 @@ and boundaries with examples checked by the test suite.
 | [is_perfect_power](algorithm_lab/is_perfect_power.py) | Number theory | Recognize positive perfect powers with exact integer searches |
 | [divisor_count](algorithm_lab/divisor_count.py) | Number theory | Count positive divisors using trial prime factorization |
 | [divisor_sum](algorithm_lab/divisor_sum.py) | Number theory | Sum positive divisors using prime-power geometric sums |
+| [carmichael_function](algorithm_lab/carmichael_function.py) | Number theory | Compute the exponent of the multiplicative residue group |
 
 ## Validation
 
