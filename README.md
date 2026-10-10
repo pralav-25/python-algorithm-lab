@@ -38,7 +38,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 The [study guides](docs/README.md) explain algorithm invariants, practical uses,
 and boundaries with examples checked by the test suite.
 
-## Catalog (188 algorithms)
+## Catalog (189 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -230,6 +230,7 @@ and boundaries with examples checked by the test suite.
 | [digital_root](algorithm_lab/digital_root.py) | Number theory | Compute an absolute-value digital root in any integer base |
 | [base_conversion](algorithm_lab/base_conversion.py) | Number theory | Format signed integers in bases two through thirty-six |
 | [is_perfect_power](algorithm_lab/is_perfect_power.py) | Number theory | Recognize positive perfect powers with exact integer searches |
+| [divisor_count](algorithm_lab/divisor_count.py) | Number theory | Count positive divisors using trial prime factorization |
 
 ## Validation
 
