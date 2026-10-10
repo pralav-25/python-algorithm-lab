@@ -38,7 +38,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 The [study guides](docs/README.md) explain algorithm invariants, practical uses,
 and boundaries with examples checked by the test suite.
 
-## Catalog (199 algorithms)
+## Catalog (200 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -241,6 +241,7 @@ and boundaries with examples checked by the test suite.
 | [shell_sort](algorithm_lab/shell_sort.py) | Sorting | Shell sort with cached keys |
 | [pancake_sort](algorithm_lab/pancake_sort.py) | Sorting | Pancake sort with cached keys |
 | [gnome_sort](algorithm_lab/gnome_sort.py) | Sorting | Gnome sort with cached keys |
+| [comb_sort](algorithm_lab/comb_sort.py) | Sorting | Comb sort with cached keys |
 
 ## Validation
 
