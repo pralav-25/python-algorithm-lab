@@ -38,7 +38,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 The [study guides](docs/README.md) explain algorithm invariants, practical uses,
 and boundaries with examples checked by the test suite.
 
-## Catalog (193 algorithms)
+## Catalog (194 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -235,6 +235,7 @@ and boundaries with examples checked by the test suite.
 | [carmichael_function](algorithm_lab/carmichael_function.py) | Number theory | Compute the exponent of the multiplicative residue group |
 | [jacobi_symbol](algorithm_lab/jacobi_symbol.py) | Number theory | Evaluate Jacobi symbols by binary quadratic reciprocity |
 | [pythagorean_triples](algorithm_lab/pythagorean_triples.py) | Number theory | Enumerate primitive triples under an inclusive hypotenuse bound |
+| [farey_sequence](algorithm_lab/farey_sequence.py) | Number theory | Enumerate ordered reduced fractions with bounded denominators |
 
 ## Validation
 
