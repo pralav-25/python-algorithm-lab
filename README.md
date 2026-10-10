@@ -38,7 +38,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 The [study guides](docs/README.md) explain algorithm invariants, practical uses,
 and boundaries with examples checked by the test suite.
 
-## Catalog (206 algorithms)
+## Catalog (207 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -248,6 +248,7 @@ and boundaries with examples checked by the test suite.
 | [interpolation_search](algorithm_lab/interpolation_search.py) | Searching | Interpolation search with exact integer arithmetic |
 | [kth_two_sorted](algorithm_lab/kth_two_sorted.py) | Searching | Rank selection from two sorted sequences |
 | [h_index](algorithm_lab/h_index.py) | Sequences | Linear-time citation h-index |
+| [maximum_gap](algorithm_lab/maximum_gap.py) | Sequences | Linear-time maximum sorted gap |
 
 ## Validation
 
