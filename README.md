@@ -38,7 +38,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 The [study guides](docs/README.md) explain algorithm invariants, practical uses,
 and boundaries with examples checked by the test suite.
 
-## Catalog (211 algorithms)
+## Catalog (212 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -253,6 +253,7 @@ and boundaries with examples checked by the test suite.
 | [four_sum](algorithm_lab/four_sum.py) | Sequences | Unique four sum tuples |
 | [longest_consecutive](algorithm_lab/longest_consecutive.py) | Sequences | Longest consecutive integer run |
 | [smallest_missing_positive](algorithm_lab/smallest_missing_positive.py) | Sequences | Linear-time smallest missing positive integer |
+| [minimum_swaps_sort](algorithm_lab/minimum_swaps_sort.py) | Sequences | Minimum swaps for distinct integer sorting |
 
 ## Validation
 
