@@ -38,7 +38,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 The [study guides](docs/README.md) explain algorithm invariants, practical uses,
 and boundaries with examples checked by the test suite.
 
-## Catalog (184 algorithms)
+## Catalog (185 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -226,6 +226,7 @@ and boundaries with examples checked by the test suite.
 | [primitive_root](algorithm_lab/primitive_root.py) | Number theory | Find the least generator of coprime residues or report none |
 | [legendre_exponent](algorithm_lab/legendre_exponent.py) | Number theory | Count the exponent of a validated prime in a factorial |
 | [trailing_factorial_zeros](algorithm_lab/trailing_factorial_zeros.py) | Number theory | Count trailing factorial zeros in any integer base |
+| [digit_sum](algorithm_lab/digit_sum.py) | Number theory | Sum absolute-value digits in any base of at least two |
 
 ## Validation
 
