@@ -38,7 +38,7 @@ install `.[dev]` and run `ruff check .` and `ruff format --check .`.
 The [study guides](docs/README.md) explain algorithm invariants, practical uses,
 and boundaries with examples checked by the test suite.
 
-## Catalog (236 algorithms)
+## Catalog (237 algorithms)
 
 | Module | Topic | What it demonstrates |
 | --- | --- | --- |
@@ -278,6 +278,7 @@ and boundaries with examples checked by the test suite.
 | [unbounded_knapsack](algorithm_lab/unbounded_knapsack.py) | Dynamic programming | Maximum value from unlimited item copies within capacity |
 | [house_robber](algorithm_lab/house_robber.py) | Dynamic programming | Maximum nonadjacent house value along a line |
 | [circular_house_robber](algorithm_lab/circular_house_robber.py) | Dynamic programming | Maximum nonadjacent house value on a circle |
+| [decode_ways](algorithm_lab/decode_ways.py) | Dynamic programming | Count valid ASCII-digit decodings using codes 1 through 26 |
 
 ## Validation
 
