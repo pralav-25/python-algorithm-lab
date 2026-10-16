@@ -1,8 +1,9 @@
 # Algorithm study guides
 
 Worked examples connect the implementations to their invariants, tradeoffs, and edge cases.
-The examples are executable: the standard unittest command checks every guide with doctest.
-Each guide links to its implementation for the full API and complexity contract.
+Code blocks are copyable Python snippets. Guides that use interactive doctest prompts are
+exercised by the standard unittest command. Each guide links to its implementation for the
+full API and complexity contract.
 
 Start with binary search, prefix sums, and merge sort; then compare the string-search
 and dynamic-programming techniques. Use the topic lists to choose a focused lesson.
@@ -13,7 +14,8 @@ python -m unittest discover -s tests -v
 python -m doctest docs/guides/binary_search.md
 ```
 
-These guides were prepared with AI assistance and verified against executable examples.
+These guides were prepared with AI assistance. New snippets follow the module examples and
+can be run from the repository root.
 
 ## Algebra
 
@@ -50,6 +52,9 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Count partitions with a fixed number of groups](guides/stirling_second.md)
 - [Recover exact mask values from subset totals](guides/subset_mobius_transform.md)
 - [Aggregate a value over every subset of a mask](guides/subset_zeta_transform.md)
+- [Count ordered outcomes of identical numbered dice with a given total](guides/dice_sum_count.md)
+- [Count tilings of a 2-by-n rectangle with unlabelled 2-by-1 dominoes](guides/domino_tilings.md)
+- [Count unordered integer partitions of n into positive parts](guides/partition_count.md)
 
 ## Compression
 
@@ -84,6 +89,17 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Track reachable totals with a bitset](guides/subset_sum.md)
 - [Choose a cheapest route down a triangle](guides/triangle_min_path.md)
 - [Segment text using the fewest dictionary words](guides/word_break.md)
+- [Choose nonadjacent houses on a circle to maximize their total value](guides/circular_house_robber.md)
+- [Choose nonadjacent houses on a line to maximize their total value](guides/house_robber.md)
+- [Count decodings of ASCII digits into the symbols numbered 1 through 26](guides/decode_ways.md)
+- [Count false and true evaluations over all full parenthesizations](guides/boolean_parenthesization.md)
+- [Decide whether a string interleaves two strings in their original order](guides/interleaving_strings.md)
+- [Find the minimum top-left to bottom-right path cost with right/down steps](guides/minimum_cost_path_grid.md)
+- [Maximize coins earned by bursting balloons in any order](guides/burst_balloons.md)
+- [Maximize value with unlimited copies of each item within a capacity](guides/unbounded_knapsack.md)
+- [Minimize the absolute difference between sums of two complementary subsets](guides/minimum_partition_difference.md)
+- [Minimize weighted successful-search comparisons in an ordered BST](guides/optimal_bst.md)
+- [Return minimum worst-case drops needed to identify an egg-breaking floor](guides/egg_drop.md)
 
 ## Geometry
 
@@ -149,6 +165,14 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Enumerate primes by crossing out composites](guides/prime_sieve.md)
 - [Find primes inside a narrow interval](guides/segmented_sieve.md)
 - [Locate a positive fraction by mediant comparisons](guides/stern_brocot_path.md)
+- [Count trailing zero digits of n! represented in an arbitrary base](guides/trailing_factorial_zeros.md)
+- [Decide whether n=a**b for integers a>=2 and b>=2](guides/is_perfect_power.md)
+- [Enumerate primitive positive Pythagorean triples with bounded hypotenuse](guides/pythagorean_triples.md)
+- [Evaluate the Jacobi symbol (value/modulus) by quadratic reciprocity](guides/jacobi_symbol.md)
+- [Find the smallest primitive root of an integer modulus](guides/primitive_root.md)
+- [Format an integer in base 2 through 36 without a prefix](guides/base_conversion.md)
+- [Return the exponent of a prime in n! using Legendre's formula](guides/legendre_exponent.md)
+- [Return the exponent of the multiplicative group modulo n](guides/carmichael_function.md)
 
 ## Optimization
 
@@ -164,6 +188,10 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Locate the first repeated timestamp](guides/binary_search.md)
 - [Count repeated keys with two binary boundaries](guides/equal_range.md)
 - [Search a sorted cycle without unrotating it](guides/rotated_search.md)
+- [Find the first match in a sorted sequence by exponential bracketing](guides/exponential_search.md)
+- [Find the first match in ascending sorted data with square-root jumps](guides/jump_search.md)
+- [Find the first target occurrence by interpolating integer endpoints](guides/interpolation_search.md)
+- [Select the zero-based kth value from the merge of two sorted sequences](guides/kth_two_sorted.md)
 
 ## Selection
 
@@ -190,6 +218,19 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Count every target-sum slice, including overlapping ones](guides/subarray_sum_count.md)
 - [Compute the volume between retaining walls](guides/trapped_water.md)
 - [Match a pair to a fixed budget](guides/two_sum.md)
+- [Count nonempty contiguous subarrays whose XOR equals target](guides/subarray_xor_count.md)
+- [Return (maximum_sum, start_index) among all windows of the requested size](guides/max_sum_fixed_window.md)
+- [Return a new list rotated right by an integer number of steps](guides/rotate_sequence.md)
+- [Return half-open indices of the longest subarray with equal zeros and ones](guides/longest_balanced_binary.md)
+- [Return half-open indices of the shortest subarray with sum at least target](guides/min_length_subarray_sum.md)
+- [Return the largest adjacent gap in the sorted order of signed integers](guides/maximum_gap.md)
+- [Return the largest h with at least h citation counts greater than or equal to h](guides/h_index.md)
+- [Return the length of the longest consecutive run in an integer iterable](guides/longest_consecutive.md)
+- [Return the minimum absolute difference between two distinct input positions](guides/minimum_pair_difference.md)
+- [Return the minimum number of arbitrary pair swaps to sort distinct integers](guides/minimum_swaps_sort.md)
+- [Return the smallest positive integer absent from the supplied values](guides/smallest_missing_positive.md)
+- [Return unique sorted 3-tuples summing to target, in lexicographic order](guides/three_sum.md)
+- [Return unique sorted 4-tuples summing to target, in lexicographic order](guides/four_sum.md)
 
 ## Sorting
 
@@ -198,6 +239,9 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Sort priorities while preserving arrival order](guides/merge_sort.md)
 - [Separate equal keys during partition sorting](guides/quick_sort.md)
 - [Sort signed identifiers one byte at a time](guides/radix_sort.md)
+- [Insertion sort returning a new ascending list](guides/insertion_sort.md)
+- [Merge two ascending iterables into a new list, retaining duplicates](guides/merge_sorted.md)
+- [Return a three-way partition of integer values around pivot](guides/dutch_partition.md)
 
 ## Statistics
 
@@ -239,3 +283,15 @@ These guides were prepared with AI assistance and verified against executable ex
 - [Index suffixes without storing every substring](guides/suffix_array.md)
 - [Match an entire name with star and question mark](guides/wildcard_match.md)
 - [Reuse a prefix-match window across a string](guides/z_function.md)
+- [Compute unrestricted unit-cost Damerau-Levenshtein distance](guides/damerau_levenshtein.md)
+- [Count index selections whose characters form a target subsequence](guides/target_subsequence_count.md)
+- [Count nonempty palindromic substrings by their start and end positions](guides/palindrome_substring_count.md)
+- [Count segmentations of text into dictionary words](guides/word_break_count.md)
+- [Find a longest substring occurring at least twice, allowing overlaps](guides/longest_repeated_substring.md)
+- [Find exact substring matches using Sunday's look-ahead shifts](guides/sunday_search.md)
+- [Find exact substring matches with Boyer-Moore-Horspool shifts](guides/boyer_moore_horspool.md)
+- [Match an entire string against literals, dot wildcards and star repetition](guides/regex_match.md)
+- [Return the fewest inserted characters needed to make a palindrome](guides/minimum_insertions_palindrome.md)
+- [Return the length of a subsequence repeated at distinct aligned indices](guides/longest_repeating_subsequence.md)
+- [Return the optimal global alignment score with linear gap penalties](guides/needleman_wunsch.md)
+- [Return the optimal local alignment score with linear gap penalties](guides/smith_waterman.md)
