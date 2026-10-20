@@ -153,6 +153,7 @@ can be run from the repository root.
 - [Build rational approximations from successive prefixes](guides/continued_fraction_convergents.md)
 - [Build divisor lists for a whole interval](guides/divisor_sieve.md)
 - [Count the invertible residue classes](guides/euler_totient.md)
+- [Generate reduced fractions in increasing order](guides/farey_sequence.md)
 - [Recover a certificate for the greatest common divisor](guides/extended_gcd.md)
 - [Advance a recurrence by doubling its index](guides/fast_fibonacci.md)
 - [Certify an exact floor root of any positive degree](guides/integer_nth_root.md)
