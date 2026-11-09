@@ -13,7 +13,7 @@ The implementation's small example shows the return value directly:
 ```python
 from algorithm_lab.palindrome_substring_count import palindrome_substring_count
 
-print(repr(palindrome_substring_count('aaa')))  # 6
+print(repr(palindrome_substring_count("aaa")))  # 6
 ```
 
 ## Boundary to remember

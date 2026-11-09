@@ -91,7 +91,7 @@ and boundaries with examples checked by the test suite.
 | [binomial_coefficient](algorithm_lab/binomial_coefficient.py) | Combinatorics | Exact combinations without factorial intermediates |
 | [chinese_remainder](algorithm_lab/chinese_remainder.py) | Number theory | Merge modular constraints, including compatible non-coprime moduli |
 | [reservoir_sample](algorithm_lab/reservoir_sample.py) | Sampling | Uniform samples from a stream without knowing its length |
-| [running_stats](algorithm_lab/running_stats.py) | Streaming statistics | Welford mean and variance with validated atomic updates |
+| [running_stats](algorithm_lab/running_stats.py) | Streaming statistics | Exact-total mean and shifted Welford variance with atomic updates |
 | [fenwick_tree](algorithm_lab/fenwick_tree.py) | Data structures | Point updates and half-open range sums in logarithmic time |
 | [segment_tree](algorithm_lab/segment_tree.py) | Data structures | Iterative sum tree with point replacement and range queries |
 | [sparse_table](algorithm_lab/sparse_table.py) | Data structures | Static range minima with constant-time queries |

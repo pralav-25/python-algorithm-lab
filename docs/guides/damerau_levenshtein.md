@@ -13,7 +13,7 @@ The implementation's small example shows the return value directly:
 ```python
 from algorithm_lab.damerau_levenshtein import damerau_levenshtein
 
-print(repr(damerau_levenshtein('CA', 'ABC')))  # 2
+print(repr(damerau_levenshtein("CA", "ABC")))  # 2
 ```
 
 ## Boundary to remember

@@ -13,7 +13,7 @@ The implementation's small example shows the return value directly:
 ```python
 from algorithm_lab.longest_repeating_subsequence import longest_repeating_subsequence
 
-print(repr(longest_repeating_subsequence('aabebcdd')))  # 3
+print(repr(longest_repeating_subsequence("aabebcdd")))  # 3
 ```
 
 ## Boundary to remember

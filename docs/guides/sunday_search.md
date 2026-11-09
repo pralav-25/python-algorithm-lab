@@ -13,7 +13,7 @@ The implementation's small example shows the return value directly:
 ```python
 from algorithm_lab.sunday_search import sunday_search
 
-print(repr(sunday_search('aaaa', 'aa')))  # [0, 1, 2]
+print(repr(sunday_search("aaaa", "aa")))  # [0, 1, 2]
 ```
 
 ## Boundary to remember

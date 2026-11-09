@@ -13,7 +13,7 @@ The implementation's small example shows the return value directly:
 ```python
 from algorithm_lab.word_break_count import word_break_count
 
-print(repr(word_break_count('aaaa', ['a', 'aa', 'aa'])))  # 5
+print(repr(word_break_count("aaaa", ["a", "aa", "aa"])))  # 5
 ```
 
 ## Boundary to remember
