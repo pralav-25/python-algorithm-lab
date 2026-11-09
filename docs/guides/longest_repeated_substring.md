@@ -13,7 +13,7 @@ The implementation's small example shows the return value directly:
 ```python
 from algorithm_lab.longest_repeated_substring import longest_repeated_substring
 
-print(repr(longest_repeated_substring('banana')))  # 'ana'
+print(repr(longest_repeated_substring("banana")))  # 'ana'
 ```
 
 ## Boundary to remember

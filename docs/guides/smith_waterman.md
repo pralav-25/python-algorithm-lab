@@ -13,7 +13,7 @@ The implementation's small example shows the return value directly:
 ```python
 from algorithm_lab.smith_waterman import smith_waterman
 
-print(repr(smith_waterman('GGTTGACTA', 'TGTTACGG')))  # 9
+print(repr(smith_waterman("GGTTGACTA", "TGTTACGG")))  # 9
 ```
 
 ## Boundary to remember

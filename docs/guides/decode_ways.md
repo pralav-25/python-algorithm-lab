@@ -13,7 +13,7 @@ The implementation's small example shows the return value directly:
 ```python
 from algorithm_lab.decode_ways import decode_ways
 
-print(repr(decode_ways('226')))  # 3
+print(repr(decode_ways("226")))  # 3
 ```
 
 ## Boundary to remember

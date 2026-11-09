@@ -13,7 +13,7 @@ The implementation's small example shows the return value directly:
 ```python
 from algorithm_lab.boyer_moore_horspool import boyer_moore_horspool
 
-print(repr(boyer_moore_horspool('bananana', 'ana')))  # [1, 3, 5]
+print(repr(boyer_moore_horspool("bananana", "ana")))  # [1, 3, 5]
 ```
 
 ## Boundary to remember

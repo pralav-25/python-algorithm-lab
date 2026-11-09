@@ -13,7 +13,7 @@ The implementation's small example shows the return value directly:
 ```python
 from algorithm_lab.boolean_parenthesization import boolean_parenthesization
 
-print(repr(boolean_parenthesization('T|F&T')))  # (0, 2)
+print(repr(boolean_parenthesization("T|F&T")))  # (0, 2)
 ```
 
 ## Boundary to remember

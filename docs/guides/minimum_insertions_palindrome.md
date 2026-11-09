@@ -13,7 +13,7 @@ The implementation's small example shows the return value directly:
 ```python
 from algorithm_lab.minimum_insertions_palindrome import minimum_insertions_palindrome
 
-print(repr(minimum_insertions_palindrome('mbadm')))  # 2
+print(repr(minimum_insertions_palindrome("mbadm")))  # 2
 ```
 
 ## Boundary to remember

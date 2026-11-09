@@ -13,7 +13,7 @@ The implementation's small example shows the return value directly:
 ```python
 from algorithm_lab.needleman_wunsch import needleman_wunsch
 
-print(repr(needleman_wunsch('GATTACA', 'GCATGCU')))  # 0
+print(repr(needleman_wunsch("GATTACA", "GCATGCU")))  # 0
 ```
 
 ## Boundary to remember

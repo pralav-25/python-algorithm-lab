@@ -35,6 +35,18 @@ class RunningStatsTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             RunningStats([1]).variance(sample=True)
 
+    def test_variance_preserves_small_differences_at_large_offsets(self):
+        for offset in [1e16, -1e16]:
+            values = [offset, offset + 2, offset + 4, offset + 6]
+            stats = RunningStats()
+            for count, value in enumerate(values, 1):
+                stats.add(value)
+                prefix = values[:count]
+                self.assertEqual(stats.mean, statistics.mean(prefix))
+                self.assertEqual(stats.variance(), statistics.pvariance(prefix))
+                if count > 1:
+                    self.assertEqual(stats.variance(sample=True), statistics.variance(prefix))
+
     def test_invalid_observations_do_not_change_existing_state(self):
         stats = RunningStats([1, 2, 3])
         before = stats.count, stats.mean, stats.variance()

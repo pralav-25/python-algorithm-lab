@@ -13,7 +13,7 @@ The implementation's small example shows the return value directly:
 ```python
 from algorithm_lab.target_subsequence_count import target_subsequence_count
 
-print(repr(target_subsequence_count('rabbbit', 'rabbit')))  # 3
+print(repr(target_subsequence_count("rabbbit", "rabbit")))  # 3
 ```
 
 ## Boundary to remember

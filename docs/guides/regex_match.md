@@ -13,7 +13,7 @@ The implementation's small example shows the return value directly:
 ```python
 from algorithm_lab.regex_match import regex_match
 
-print(repr(regex_match('aab', 'c*a*b')))  # True
+print(repr(regex_match("aab", "c*a*b")))  # True
 ```
 
 ## Boundary to remember

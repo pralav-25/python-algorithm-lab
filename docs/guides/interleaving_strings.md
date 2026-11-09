@@ -13,7 +13,7 @@ The implementation's small example shows the return value directly:
 ```python
 from algorithm_lab.interleaving_strings import interleaving_strings
 
-print(repr(interleaving_strings('ab', 'cd', 'acbd')))  # True
+print(repr(interleaving_strings("ab", "cd", "acbd")))  # True
 ```
 
 ## Boundary to remember
